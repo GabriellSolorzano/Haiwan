@@ -486,7 +486,7 @@ h6,
     margin-bottom: 5px;
     padding: 0;
     text-align: left;
-    color: var(--light);
+    color: var(--dark);
     font-weight: normal;
     text-transform: capitalize;
     transition: .3s;
@@ -508,11 +508,11 @@ h6,
 
 .copyright {
     color: var(--light);
-    background: (--primary);
+    background: var(--primary);
 }
 
 .copyright a {
-    color: #FFFFFF;
+    color: var(--light);
 }
 
 .copyright a:hover {
