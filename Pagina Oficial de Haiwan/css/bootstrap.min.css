@@ -3423,13 +3423,15 @@ color:#000;background-color:#ffc107;border-color:#ffc107
 
 .btn-danger{
 
-color:#fff;background-color:#dc3545;border-color:#dc3545
+color:white;
+background-color:#ad6e79;
+border-color:#63465a
 
 }
 
 .btn-danger:hover{
 
-color:#fff;background-color:#bb2d3b;border-color:#b02a37
+color:#fff;background-color:#b85c4f;border-color:#ed7855
 
 }
 

@@ -60,9 +60,10 @@ h6,
     font-weight: 500;
 }
 
-.btn-primary,
-.btn-outline-primary:hover {
-    color:black;
+.btn-sm {
+
+    color:white;
+
 }
 
 .btn-square {
@@ -278,17 +279,17 @@ h6,
 }
 
 .service-item:hover .service-text h4 {
-    color: #FFFFFF;
+    color: var(--primary);
 }
 
 .service-item:hover .service-text p {
-    color: var(--light);
+    color: white;
 }
 
 .service-item .service-text .btn-square {
     width: 100px;
     height: 100px;
-    background: transparent;
+
     transition: .5s;
 }
 
@@ -301,8 +302,7 @@ h6,
     height: 31px;
     display: inline-flex;
     align-items: center;
-    color: var(--primary);
-    background: var(--secondary);
+    background: var(--primary);
     white-space: nowrap;
     overflow: hidden;
     transition: .3s;
@@ -316,14 +316,14 @@ h6,
 /*** Project Portfolio ***/
 #portfolio-flters {
     display: inline-block;
-    background: var(--light);
+    background: var(--primary);
     padding: 10px 15px;
 }
 
 #portfolio-flters li {
     display: inline-block;
     font-weight: 500;
-    color: var(--primary);
+    color: black;
     cursor: pointer;
     transition: .5s;
     border-bottom: 2px solid transparent;
@@ -331,8 +331,8 @@ h6,
 
 #portfolio-flters li:hover,
 #portfolio-flters li.active {
-    color: var(--primary);
-    border-color: var(--secondary);
+    color: black;
+    border-color: var(--light);
 }
 
 .portfolio-inner {
