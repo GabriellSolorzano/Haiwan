@@ -3462,16 +3462,14 @@ pointer-events:none
 .btn-primary{
 
 color:#fff;
-background-color:#4e73df;
-border-color:#4e73df
+background-color:#ad6e79;
 
 }
 
 .btn-primary:hover{
 
 color:#fff;
-background-color:#2e59d9;
-border-color:#2653d4
+background-color:#63465a;
 
 }
 
@@ -14684,7 +14682,7 @@ color:#b7b9cc!important
 
 .text-gray-600{
 
-color:#858796!important
+color: black
 
 }
 
