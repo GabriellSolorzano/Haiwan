@@ -74,7 +74,7 @@ session_start();
 
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0">
-        <a href="index.php" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+        <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
             <h1 class="m-0">Haiwan</h1>
         </a>
         <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
@@ -82,12 +82,13 @@ session_start();
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
-                <a href="index.php" class="nav-item nav-link active">Home</a>
-                <a href="about.php" class="nav-item nav-link">Nosotros</a>
-                <a href="service.php" class="nav-item nav-link">Servicios</a>
-                <a href="contact.php" class="nav-item nav-link">Contacto</a>
+                <a href="index.html" class="nav-item nav-link active">Home</a>
+                <a href="about.html" class="nav-item nav-link">Nosotros</a>
+                <a href="service.html" class="nav-item nav-link">Servicios</a>
+                <a href="project.html" class="nav-item nav-link">Proyectos</a>
+                <a href="contact.html" class="nav-item nav-link">Contacto</a>
             </div>
-            <a href="quote.php" class="btn btn-primary py-4 px-lg-4 rounded-0 d-none d-lg-block">Iniciar sesión<i class="fa fa-arrow-right ms-3"></i></a>
+            <a href="quote.html" class="btn btn-primary py-4 px-lg-4 rounded-0 d-none d-lg-block">Iniciar sesión<i class="fa fa-arrow-right ms-3"></i></a>
         </div>
     </nav>
     <!-- Navbar End -->
@@ -104,7 +105,7 @@ session_start();
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
                                     <h1 class="display-1 text-white mb-5 animated slideInDown">Adopta un mejor amigo</h1>
-                                    <a href="" class="btn btn-primary py-sm-3 px-sm-4">Explore More</a>
+                                    <a href="" class="btn btn-primary py-sm-3 px-sm-4">Saber más</a>
                                 </div>
                             </div>
                         </div>
@@ -117,7 +118,7 @@ session_start();
                             <div class="row justify-content-center">
                                 <div class="col-lg-7">
                                     <h1 class="display-1 text-white mb-5 animated slideInDown">Adopta a un mejor amigo</h1>
-                                    <a href="" class="btn btn-primary py-sm-3 px-sm-4">Explore More</a>
+                                    <a href="" class="btn btn-primary py-sm-3 px-sm-4">Saber más</a>
                                 </div>
                             </div>
                         </div>
@@ -150,8 +151,8 @@ session_start();
                                 <i class="fa fa-times text-primary"></i>
                             </div>
                             <div class="ps-3">
-                                <h4>No Hidden Cost</h4>
-                                <span>Clita erat ipsum lorem sit sed stet duo justo</span>
+                                <h4>Sin maltrato animal</h4>
+                                <span>Haiwan registra el cuidado de la mascota luego de que el usuario conozca a su nuevo amigo.</span>
                             </div>
                         </div>
                     </div>
@@ -163,8 +164,9 @@ session_start();
                                 <i class="fa fa-users text-primary"></i>
                             </div>
                             <div class="ps-3">
-                                <h4>Dedicated Team</h4>
-                                <span>Clita erat ipsum lorem sit sed stet duo justo</span>
+                                <h4>Equipo dedicado</h4>
+                                <span>Nuestro equipo trabaja diariamente para mejorar nuestros servicios como empresa y funcionalidad
+                                    en nuestro sitio web.</span>
                             </div>
                         </div>
                     </div>
@@ -176,8 +178,9 @@ session_start();
                                 <i class="fa fa-phone text-primary"></i>
                             </div>
                             <div class="ps-3">
-                                <h4>24/7 Available</h4>
-                                <span>Clita erat ipsum lorem sit sed stet duo justo</span>
+                                <h4>Servicio 24/7</h4>
+                                <span>Haiwan es una via de contacto para conocer informacion sobre tus mascotas o contactar con lineas de
+                                     servicio de ser necesario.</span>
                             </div>
                         </div>
                     </div>
@@ -197,25 +200,26 @@ session_start();
                 </div>
                 <div class="col-lg-6 col-md-7 wow fadeInUp" data-wow-delay="0.3s">
                     <h1 class="display-1 text-primary mb-0">25</h1>
-                    <p class="text-primary mb-4">Year of Experience</p>
+                    <p class="text-primary mb-4">Años de experiencia.</p>
                     <h1 class="display-5 mb-4">"La vida es mejor con una mascota a tu lado"</h1>
                     <p class="mb-4">Haiwan es un aplicativo que tiene como función poder adoptar cualquier animal doméstico, cumpliendo con el fin de apoyar a todo refugio y organizaciones de cuidados de mascotas para encontrarles a estos animales un nuevo hogar.</p>
-                    <a class="btn btn-primary py-3 px-4" href="">Explore More</a>
+                    <a class="btn btn-primary py-3 px-4" href="">Saber más</a>
                 </div>
                 <div class="col-lg-3 col-md-12 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="row g-5">
                         <div class="col-12 col-sm-6 col-lg-12">
                             <div class="border-start ps-4">
                                 <i class="fa fa-award fa-3x text-primary mb-3"></i>
-                                <h4 class="mb-3">Award Winning</h4>
-                                <span>Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna</span>
+                                <h4 class="mb-3">"Nada como lo que se ah visto antes"</h4>
+                                <span>Brindamos un servicio comodo y revolucionario nunca antes visto para nuestros amigos peludos.</span>
                             </div>
                         </div>
                         <div class="col-12 col-sm-6 col-lg-12">
                             <div class="border-start ps-4">
                                 <i class="fa fa-users fa-3x text-primary mb-3"></i>
-                                <h4 class="mb-3">Dedicated Team</h4>
-                                <span>Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna</span>
+                                <h4 class="mb-3">Equipo dedicado</h4>
+                                <span>Nuestro equipo trabaja diariamente para mejorar nuestros servicios como empresa y funcionalidad
+                                    en nuestro sitio web.</span>
                             </div>
                         </div>
                     </div>
@@ -231,20 +235,20 @@ session_start();
         <div class="container py-5">
             <div class="row g-5">
                 <div class="col-sm-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.1s">
-                    <h1 class="display-4 text-white" data-toggle="counter-up">1234</h1>
-                    <span class="fs-5 fw-semi-bold text-light">Happy Clients</span>
+                    <h1 class="display-4 text-white" data-toggle="counter-up">312</h1>
+                    <span class="fs-5 fw-semi-bold text-light">Clientes Satisfechos.</span>
                 </div>
                 <div class="col-sm-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.3s">
-                    <h1 class="display-4 text-white" data-toggle="counter-up">1234</h1>
-                    <span class="fs-5 fw-semi-bold text-light">Garden Complated</span>
+                    <h1 class="display-4 text-white" data-toggle="counter-up">460</h1>
+                    <span class="fs-5 fw-semi-bold text-light">Mascotas adoptadas.</span>
                 </div>
                 <div class="col-sm-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.5s">
-                    <h1 class="display-4 text-white" data-toggle="counter-up">1234</h1>
-                    <span class="fs-5 fw-semi-bold text-light">Dedicated Staff</span>
+                    <h1 class="display-4 text-white" data-toggle="counter-up">264</h1>
+                    <span class="fs-5 fw-semi-bold text-light">Trabajadores dedicados.</span>
                 </div>
                 <div class="col-sm-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.7s">
-                    <h1 class="display-4 text-white" data-toggle="counter-up">1234</h1>
-                    <span class="fs-5 fw-semi-bold text-light">Awards Achieved</span>
+                    <h1 class="display-4 text-white" data-toggle="counter-up">419</h1>
+                    <span class="fs-5 fw-semi-bold text-light">Centros de adopcion de mascotas registrados.</span>
                 </div>
             </div>
         </div>
@@ -260,7 +264,7 @@ session_start();
                     <p class="fs-5 fw-bold text-primary">¿Por qué elerginos?</p>
                     <h1 class="display-5 mb-4">Algunas razones por las que la gente nos elige</h1>
                     <p class="mb-4">...</p>
-                    <a class="btn btn-primary py-3 px-4" href="">Explore More</a>
+                    <a class="btn btn-primary py-3 px-4" href="">Saber más</a>
                 </div>
                 <div class="col-lg-6">
                     <div class="row g-4 align-items-center">
@@ -304,97 +308,97 @@ session_start();
     <div class="container-xxl py-5">
         <div class="container">
             <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
-                <p class="fs-5 fw-bold text-primary">Our Services</p>
-                <h1 class="display-5 mb-5">Services That We Offer For You</h1>
+                <p class="fs-5 fw-bold text-primary">¿Donde puedo encontrar a mi amigo animal?</p>
+                <h1 class="display-5 mb-5">Estos son algunos centros de adopcion de mascotas registrados en Haiwan.</h1>
             </div>
             <div class="row g-4">
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="service-item rounded d-flex h-100">
                         <div class="service-img rounded">
-                            <img class="img-fluid" src="img/service-1.jpg" alt="">
+                            <img class="img-fluid" src="img/centroadopciones-1.jpg" alt="">
                         </div>
                         <div class="service-text rounded p-5">
                             <div class="btn-square rounded-circle mx-auto mb-3">
-                                <img class="img-fluid" src="img/icon/icon-3.png" alt="Icon">
+                                <img class="img-fluid" src="img/icon/centro-icon.png" alt="Icon">
                             </div>
-                            <h4 class="mb-3">Landscaping</h4>
-                            <p class="mb-4">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.</p>
-                            <a class="btn btn-sm" href=""><i class="fa fa-plus text-primary me-2"></i>Read More</a>
+                            <h4 class="mb-3">Fundación Corazón Animal</h4>
+                            <p class="mb-4">Direccion: Vereda Quebradona, San Roque, Colombia</p>
+                            <a class="btn btn-sm" href=""><i class="fa fa-plus text-primary me-2"></i>Saber más</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="service-item rounded d-flex h-100">
                         <div class="service-img rounded">
-                            <img class="img-fluid" src="img/service-2.jpg" alt="">
+                            <img class="img-fluid" src="img/centroadopciones-2.jpg" alt="">
                         </div>
                         <div class="service-text rounded p-5">
                             <div class="btn-square rounded-circle mx-auto mb-3">
-                                <img class="img-fluid" src="img/icon/icon-6.png" alt="Icon">
+                                <img class="img-fluid" src="img/icon/centro-icon.png" alt="Icon">
                             </div>
-                            <h4 class="mb-3">Pruning plants</h4>
-                            <p class="mb-4">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.</p>
-                            <a class="btn btn-sm" href=""><i class="fa fa-plus text-primary me-2"></i>Read More</a>
+                            <h4 class="mb-3">Fundación Con Pasión Animal</h4>
+                            <p class="mb-4">Direccion: Transversal 32B # 74C - 55 Belén Alameda, Medellín - Colombia.</p>
+                            <a class="btn btn-sm" href=""><i class="fa fa-plus text-primary me-2"></i>Saber más</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="service-item rounded d-flex h-100">
                         <div class="service-img rounded">
-                            <img class="img-fluid" src="img/service-3.jpg" alt="">
+                            <img class="img-fluid" src="img/centroadopciones-3.jpg" alt="">
                         </div>
                         <div class="service-text rounded p-5">
                             <div class="btn-square rounded-circle mx-auto mb-3">
-                                <img class="img-fluid" src="img/icon/icon-5.png" alt="Icon">
+                                <img class="img-fluid" src="img/icon/centro-icon.png" alt="Icon">
                             </div>
-                            <h4 class="mb-3">Irrigation & Drainage</h4>
-                            <p class="mb-4">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.</p>
-                            <a class="btn btn-sm" href=""><i class="fa fa-plus text-primary me-2"></i>Read More</a>
+                            <h4 class="mb-3">Fundación Orca</h4>
+                            <p class="mb-4">Direccion: LUGAR CIRCULAR 3 A 71 30 APTO 301, Medellin, Antioquia.</p>
+                            <a class="btn btn-sm" href=""><i class="fa fa-plus text-primary me-2"></i>Saber más</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="service-item rounded d-flex h-100">
                         <div class="service-img rounded">
-                            <img class="img-fluid" src="img/service-4.jpg" alt="">
+                            <img class="img-fluid" src="img/centroadopciones-4.jpg" alt="" height="247px" width="247px">
                         </div>
                         <div class="service-text rounded p-5">
                             <div class="btn-square rounded-circle mx-auto mb-3">
-                                <img class="img-fluid" src="img/icon/icon-4.png" alt="Icon">
+                                <img class="img-fluid" src="img/icon/centro-icon.png" alt="Icon">
                             </div>
-                            <h4 class="mb-3">Garden Maintenance </h4>
-                            <p class="mb-4">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.</p>
-                            <a class="btn btn-sm" href=""><i class="fa fa-plus text-primary me-2"></i>Read More</a>
+                            <h4 class="mb-3">La Perla</h4>
+                            <p class="mb-4">Direccion: Cr112 12-01, Medellín, Antioquia </p>
+                            <a class="btn btn-sm" href=""><i class="fa fa-plus text-primary me-2"></i>Saber más</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="service-item rounded d-flex h-100">
                         <div class="service-img rounded">
-                            <img class="img-fluid" src="img/service-5.jpg" alt="">
+                            <img class="img-fluid" src="img/centroadopciones-5.jpg.png" alt="">
                         </div>
                         <div class="service-text rounded p-5">
                             <div class="btn-square rounded-circle mx-auto mb-3">
-                                <img class="img-fluid" src="img/icon/icon-8.png" alt="Icon">
+                                <img class="img-fluid" src="img/icon/centro-icon.png" alt="Icon">
                             </div>
-                            <h4 class="mb-3">Green Technology</h4>
-                            <p class="mb-4">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.</p>
-                            <a class="btn btn-sm" href=""><i class="fa fa-plus text-primary me-2"></i>Read More</a>
+                            <h4 class="mb-3">PetSon</h4>
+                            <p class="mb-4">Direccion: Dg 74B # 32-57, Medellín, Belén, Medellín, Antioquia.</p>
+                            <a class="btn btn-sm" href=""><i class="fa fa-plus text-primary me-2"></i>Saber más</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="service-item rounded d-flex h-100">
                         <div class="service-img rounded">
-                            <img class="img-fluid" src="img/service-6.jpg" alt="">
+                            <img class="img-fluid" src="img/centroadopciones-6.jpg" alt="">
                         </div>
                         <div class="service-text rounded p-5">
                             <div class="btn-square rounded-circle mx-auto mb-3">
-                                <img class="img-fluid" src="img/icon/icon-2.png" alt="Icon">
+                                <img class="img-fluid" src="img/icon/centro-icon.png" alt="Icon">
                             </div>
-                            <h4 class="mb-3">Urban Gardening</h4>
-                            <p class="mb-4">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.</p>
-                            <a class="btn btn-sm" href=""><i class="fa fa-plus text-primary me-2"></i>Read More</a>
+                            <h4 class="mb-3">Sociedad Protectora de Animales de Medellín</h4>
+                            <p class="mb-4">Direccion: CARRERA 75 65 176, MEDELLIN, Antioquia.</p>
+                            <a class="btn btn-sm" href=""><i class="fa fa-plus text-primary me-2"></i>Saber más</a>
                         </div>
                     </div>
                 </div>
@@ -403,77 +407,28 @@ session_start();
     </div>
     <!-- Service End -->
 
-        <!-- Quote Start -->
-        <div class="container-fluid quote my-5 py-5" data-parallax="scroll" data-image-src="img/acerca de.jpg">
-            <div class="container py-5">
-                <div class="row justify-content-center">
-                    <div class="col-lg-7">
-                        <div class="bg-white rounded p-4 p-sm-5 wow fadeIn" data-wow-delay="0.5s">
-                            <h1 class="display-5 text-center mb-5">Get A Free Quote</h1>
-                            <div class="row g-3">
-                                <div class="col-sm-6">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control bg-light border-0" id="gname" placeholder="Gurdian Name">
-                                        <label for="gname">Your Name</label>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="form-floating">
-                                        <input type="email" class="form-control bg-light border-0" id="gmail" placeholder="Gurdian Email">
-                                        <label for="gmail">Your Email</label>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control bg-light border-0" id="cname" placeholder="Child Name">
-                                        <label for="cname">Your Mobile</label>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control bg-light border-0" id="cage" placeholder="Child Age">
-                                        <label for="cage">Service Type</label>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="form-floating">
-                                        <textarea class="form-control bg-light border-0" placeholder="Leave a message here" id="message" style="height: 100px"></textarea>
-                                        <label for="message">Message</label>
-                                    </div>
-                                </div>
-                                <div class="col-12 text-center">
-                                    <button class="btn btn-primary py-3 px-4" type="submit">Submit Now</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Quote End -->
-
     <!-- Projects Start -->
     <div class="container-xxl py-5">
         <div class="container">
             <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
-                <p class="fs-5 fw-bold text-primary">Our Projects</p>
-                <h1 class="display-5 mb-5">Some Of Our Wonderful Projects</h1>
+                <p class="fs-5 fw-bold text-primary">Los favoritos</p>
+                <h1 class="display-5 mb-5">Algunas de las mascotas más queridas este mes.</h1>
             </div>
             <div class="row wow fadeInUp" data-wow-delay="0.3s">
                 <div class="col-12 text-center">
                     <ul class="list-inline rounded mb-5" id="portfolio-flters">
-                        <li class="mx-2 active" data-filter="*">All</li>
-                        <li class="mx-2" data-filter=".first">Complete Projects</li>
-                        <li class="mx-2" data-filter=".second">Ongoing Projects</li>
+                        <li class="mx-2 active" data-filter="*">Todos</li>
+                        <li class="mx-2" data-filter=".first">Perros</li>
+                        <li class="mx-2" data-filter=".second">Gatos</li>
                     </ul>
                 </div>
             </div>
             <div class="row g-4 portfolio-container">
                 <div class="col-lg-4 col-md-6 portfolio-item first wow fadeInUp" data-wow-delay="0.1s">
                     <div class="portfolio-inner rounded">
-                        <img class="img-fluid" src="img/service-1.jpg" alt="">
+                        <img class="img-fluid" src="img/favoritos-perros-1.jpg" alt="">
                         <div class="portfolio-text">
-                            <h4 class="text-white mb-4">Landscaping</h4>
+                            <h4 class="text-white mb-4">Henrick</h4>
                             <div class="d-flex">
                                 <a class="btn btn-lg-square rounded-circle mx-2" href="img/service-1.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
                                 <a class="btn btn-lg-square rounded-circle mx-2" href=""><i class="fa fa-link"></i></a>
@@ -483,9 +438,9 @@ session_start();
                 </div>
                 <div class="col-lg-4 col-md-6 portfolio-item second wow fadeInUp" data-wow-delay="0.3s">
                     <div class="portfolio-inner rounded">
-                        <img class="img-fluid" src="img/service-2.jpg" alt="">
+                        <img class="img-fluid" src="img/favoritos-gatos-1.jfif" alt="">
                         <div class="portfolio-text">
-                            <h4 class="text-white mb-4">Pruning plants</h4>
+                            <h4 class="text-white mb-4">Blanca</h4>
                             <div class="d-flex">
                                 <a class="btn btn-lg-square rounded-circle mx-2" href="img/service-2.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
                                 <a class="btn btn-lg-square rounded-circle mx-2" href=""><i class="fa fa-link"></i></a>
@@ -493,11 +448,23 @@ session_start();
                         </div>
                     </div>
                 </div>
+                <div class="col-lg-4 col-md-6 portfolio-item wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="portfolio-inner rounded">
+                        <img class="img-fluid" src="img/favoritos-general-1.jfif" alt="">
+                        <div class="portfolio-text">
+                            <h4 class="text-white mb-4">Tico</h4>
+                            <div class="d-flex">
+                                <a class="btn btn-lg-square rounded-circle mx-2" href="img/service-5.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                <a class="btn btn-lg-square rounded-circle mx-2" href=""><i class="fa fa-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>    
                 <div class="col-lg-4 col-md-6 portfolio-item first wow fadeInUp" data-wow-delay="0.5s">
                     <div class="portfolio-inner rounded">
-                        <img class="img-fluid" src="img/service-3.jpg" alt="">
+                        <img class="img-fluid" src="img/favoritos-perros-2.jpg" alt="">
                         <div class="portfolio-text">
-                            <h4 class="text-white mb-4">Irrigation & Drainage</h4>
+                            <h4 class="text-white mb-4">Daniel</h4>
                             <div class="d-flex">
                                 <a class="btn btn-lg-square rounded-circle mx-2" href="img/service-3.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
                                 <a class="btn btn-lg-square rounded-circle mx-2" href=""><i class="fa fa-link"></i></a>
@@ -505,11 +472,35 @@ session_start();
                         </div>
                     </div>
                 </div>
+                <div class="col-lg-4 col-md-6 portfolio-item first wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="portfolio-inner rounded">
+                        <img class="img-fluid" src="img/favoritos-perros-3.jpg" alt="">
+                        <div class="portfolio-text">
+                            <h4 class="text-white mb-4">Alberto</h4>
+                            <div class="d-flex">
+                                <a class="btn btn-lg-square rounded-circle mx-2" href="img/service-5.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                <a class="btn btn-lg-square rounded-circle mx-2" href=""><i class="fa fa-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="portfolio-inner rounded">
+                        <img class="img-fluid" src="img/favoritos-general-2.jfif" alt="">
+                        <div class="portfolio-text">
+                            <h4 class="text-white mb-4">Calcetin</h4>
+                            <div class="d-flex">
+                                <a class="btn btn-lg-square rounded-circle mx-2" href="img/service-5.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                <a class="btn btn-lg-square rounded-circle mx-2" href=""><i class="fa fa-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="col-lg-4 col-md-6 portfolio-item second wow fadeInUp" data-wow-delay="0.1s">
                     <div class="portfolio-inner rounded">
-                        <img class="img-fluid" src="img/service-4.jpg" alt="">
+                        <img class="img-fluid" src="img/favoritos-gatos-2.jfif" alt="">
                         <div class="portfolio-text">
-                            <h4 class="text-white mb-4">Garden Maintenance</h4>
+                            <h4 class="text-white mb-4">Max</h4>
                             <div class="d-flex">
                                 <a class="btn btn-lg-square rounded-circle mx-2" href="img/service-4.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
                                 <a class="btn btn-lg-square rounded-circle mx-2" href=""><i class="fa fa-link"></i></a>
@@ -517,11 +508,11 @@ session_start();
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 portfolio-item first wow fadeInUp" data-wow-delay="0.3s">
+                <div class="col-lg-4 col-md-6 portfolio-item wow fadeInUp" data-wow-delay="0.3s">
                     <div class="portfolio-inner rounded">
-                        <img class="img-fluid" src="img/service-5.jpg" alt="">
+                        <img class="img-fluid" src="img/favoritos-general-3.jfif" alt="">
                         <div class="portfolio-text">
-                            <h4 class="text-white mb-4">Green Technology</h4>
+                            <h4 class="text-white mb-4">Flash</h4>
                             <div class="d-flex">
                                 <a class="btn btn-lg-square rounded-circle mx-2" href="img/service-5.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
                                 <a class="btn btn-lg-square rounded-circle mx-2" href=""><i class="fa fa-link"></i></a>
@@ -531,9 +522,9 @@ session_start();
                 </div>
                 <div class="col-lg-4 col-md-6 portfolio-item second wow fadeInUp" data-wow-delay="0.5s">
                     <div class="portfolio-inner rounded">
-                        <img class="img-fluid" src="img/service-6.jpg" alt="">
+                        <img class="img-fluid" src="img/favoritos-gatos-3.jfif" alt="">
                         <div class="portfolio-text">
-                            <h4 class="text-white mb-4">Urban Gardening</h4>
+                            <h4 class="text-white mb-4">Arepita</h4>
                             <div class="d-flex">
                                 <a class="btn btn-lg-square rounded-circle mx-2" href="img/service-6.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
                                 <a class="btn btn-lg-square rounded-circle mx-2" href=""><i class="fa fa-link"></i></a>
@@ -551,8 +542,8 @@ session_start();
     <div class="container-xxl py-5">
         <div class="container">
             <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
-                <p class="fs-5 fw-bold text-primary">Our Team</p>
-                <h1 class="display-5 mb-5">Dedicated & Experienced Team Members</h1>
+                <p class="fs-5 fw-bold text-primary">Nuestro equipo</p>
+                <h1 class="display-5 mb-5">Conoce a los fundadores de Haiwan.</h1>
             </div>
             <div class="row g-4">
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
@@ -560,7 +551,7 @@ session_start();
                         <img class="img-fluid" src="img/team-1.jpg" alt="">
                         <div class="team-text">
                             <h4 class="mb-0">Samantha Quintero Ruiz</h4>
-                            <p class="text-primary">Directora de marketing</p>
+                            <p class="text-primary">Directora de Marketing</p>
                             <div class="team-social d-flex">
                                 <a class="btn btn-square rounded-circle me-2" href=""><i class="fab fa-facebook-f"></i></a>
                                 <a class="btn btn-square rounded-circle me-2" href=""><i class="fab fa-twitter"></i></a>
@@ -574,7 +565,7 @@ session_start();
                         <img class="img-fluid" src="img/team-2.jpg" alt="">
                         <div class="team-text">
                             <h4 class="mb-0">Juan Manuel Garzón Ocampo</h4>
-                            <p class="text-primary">Director financiero</p>
+                            <p class="text-primary">Director Financiero</p>
                             <div class="team-social d-flex">
                                 <a class="btn btn-square rounded-circle me-2" href=""><i class="fab fa-facebook-f"></i></a>
                                 <a class="btn btn-square rounded-circle me-2" href=""><i class="fab fa-twitter"></i></a>
@@ -588,7 +579,7 @@ session_start();
                         <img class="img-fluid" src="img/team-1.jpg" alt="">
                         <div class="team-text">
                             <h4 class="mb-0">Simóm Moná Vargas</h4>
-                            <p class="text-primary">Director de contenido</p>
+                            <p class="text-primary">Director de Contenido</p>
                             <div class="team-social d-flex">
                                 <a class="btn btn-square rounded-circle me-2" href=""><i class="fab fa-facebook-f"></i></a>
                                 <a class="btn btn-square rounded-circle me-2" href=""><i class="fab fa-twitter"></i></a>
@@ -616,48 +607,15 @@ session_start();
     </div>
     <!-- Team End -->
 
-
-    <!-- Testimonial Start -->
-    <div class="container-xxl py-5">
-        <div class="container">
-            <div class="row g-5">
-                <div class="col-lg-5 wow fadeInUp" data-wow-delay="0.1s">
-                    <p class="fs-5 fw-bold text-primary">Testimonial</p>
-                    <h1 class="display-5 mb-5">What Our Clients Say About Us!</h1>
-                    <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit sed stet lorem sit clita duo justo.</p>
-                    <a class="btn btn-primary py-3 px-4" href="">See More</a>
-                </div>
-                <div class="col-lg-7 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="owl-carousel testimonial-carousel">
-                        <div class="testimonial-item">
-                            <img class="img-fluid rounded mb-3" src="img/testimonial-1.jpg" alt="">
-                            <p class="fs-5">Dolores sed duo clita tempor justo dolor et stet lorem kasd labore dolore lorem ipsum. At lorem lorem magna ut et, nonumy et labore et tempor diam tempor erat.</p>
-                            <h4>Client Name</h4>
-                            <span>Profession</span>
-                        </div>
-                        <div class="testimonial-item">
-                            <img class="img-fluid rounded mb-3" src="img/testimonial-2.jpg" alt="">
-                            <p class="fs-5">Dolores sed duo clita tempor justo dolor et stet lorem kasd labore dolore lorem ipsum. At lorem lorem magna ut et, nonumy et labore et tempor diam tempor erat.</p>
-                            <h4>Client Name</h4>
-                            <span>Profession</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Testimonial End -->
-
-
     <!-- Footer Start -->
     <div class="container-fluid bg-dark text-light footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
         <div class="container py-5">
             <div class="row g-5">
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-4">Our Office</h4>
-                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Medellín, colombia</p>
+                <div class="col-lg-6 col-md-6">
+                    <h4 class="text-white mb-4">Nuestras Oficinas.</h4>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>CL 78B #75-181, Medellín, Robledo, Medellín, Antioquia</p>
                     <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
-                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>haiwanadoptions@gmail.com</p>
                     <div class="d-flex pt-2">
                         <a class="btn btn-square btn-outline-light rounded-circle me-2" href=""><i class="fab fa-twitter"></i></a>
                         <a class="btn btn-square btn-outline-light rounded-circle me-2" href=""><i class="fab fa-facebook-f"></i></a>
@@ -665,29 +623,14 @@ session_start();
                         <a class="btn btn-square btn-outline-light rounded-circle me-2" href=""><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-4">Services</h4>
-                    <a class="btn btn-link" href="">Landscaping</a>
-                    <a class="btn btn-link" href="">Pruning plants</a>
-                    <a class="btn btn-link" href="">Urban Gardening</a>
-                    <a class="btn btn-link" href="">Garden Maintenance</a>
-                    <a class="btn btn-link" href="">Green Technology</a>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-4">Quick Links</h4>
-                    <a class="btn btn-link" href="">About Us</a>
-                    <a class="btn btn-link" href="">Contact Us</a>
-                    <a class="btn btn-link" href="">Our Services</a>
-                    <a class="btn btn-link" href="">Terms & Condition</a>
-                    <a class="btn btn-link" href="">Support</a>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-4">Newsletter</h4>
-                    <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
-                    <div class="position-relative w-100">
-                        <input class="form-control bg-light border-light w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
-                        <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
-                    </div>
+                <div class="col-lg-6 col-md-6">
+                    <h4 class="text-white mb-4">Centros de Adopciones populares.</h4>
+                    <a class="btn btn-link" href="">Fundación Corazón Animal</a>
+                    <a class="btn btn-link" href="">Fundación Con Pasión Animal</a>
+                    <a class="btn btn-link" href="">Fundación Orca</a>
+                    <a class="btn btn-link" href="">La Perla</a>
+                    <a class="btn btn-link" href="">PetSon</a>
+                    <a class="btn btn-link" href="">Sociedad Protectora de Animales de Medellín</a>
                 </div>
             </div>
         </div>
