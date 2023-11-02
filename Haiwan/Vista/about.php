@@ -85,7 +85,8 @@ session_start();
                 <a href="index.php" class="nav-item nav-link">Home</a>
                 <a href="about.php" class="nav-item nav-link active">Nosotros</a>
                 <a href="service.php" class="nav-item nav-link">Servicios</a>
-                <a href="contact.php" class="nav-item nav-link">Contactos</a>
+                <a href="project.php" class="nav-item nav-link">Proyectos</a>
+                <a href="contact.php" class="nav-item nav-link">Contacto</a>
             </div>
             <a href="quote.php" class="btn btn-primary py-4 px-lg-4 rounded-0 d-none d-lg-block">Iniciar sesión<i class="fa fa-arrow-right ms-3"></i></a>
         </div>
@@ -114,29 +115,30 @@ session_start();
         <div class="container">
             <div class="row g-5 align-items-end">
                 <div class="col-lg-3 col-md-5 wow fadeInUp" data-wow-delay="0.1s">
-                    <img class="img-fluid rounded" data-wow-delay="0.1s" src="img/about.jpg">
+                    <img class="img-fluid rounded" data-wow-delay="0.1s" src="img/acerca de 5.jpg" height="50000px">
                 </div>
                 <div class="col-lg-6 col-md-7 wow fadeInUp" data-wow-delay="0.3s">
                     <h1 class="display-1 text-primary mb-0">25</h1>
-                    <p class="text-primary mb-4">Year of Experience</p>
+                    <p class="text-primary mb-4">Años de experiencia.</p>
                     <h1 class="display-5 mb-4">"La vida es mejor con una mascota a tu lado"</h1>
                     <p class="mb-4">Haiwan es un aplicativo que tiene como función poder adoptar cualquier animal doméstico, cumpliendo con el fin de apoyar a todo refugio y organizaciones de cuidados de mascotas para encontrarles a estos animales un nuevo hogar.</p>
-                    <a class="btn btn-primary py-3 px-4" href="">Explore More</a>
+                    <a class="btn btn-primary py-3 px-4" href="">Saber más</a>
                 </div>
                 <div class="col-lg-3 col-md-12 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="row g-5">
                         <div class="col-12 col-sm-6 col-lg-12">
                             <div class="border-start ps-4">
                                 <i class="fa fa-award fa-3x text-primary mb-3"></i>
-                                <h4 class="mb-3">Award Winning</h4>
-                                <span>Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna</span>
+                                <h4 class="mb-3">"Nada como lo que se ah visto antes"</h4>
+                                <span>Brindamos un servicio comodo y revolucionario nunca antes visto para nuestros amigos peludos.</span>
                             </div>
                         </div>
                         <div class="col-12 col-sm-6 col-lg-12">
                             <div class="border-start ps-4">
                                 <i class="fa fa-users fa-3x text-primary mb-3"></i>
-                                <h4 class="mb-3">Dedicated Team</h4>
-                                <span>Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna</span>
+                                <h4 class="mb-3">Equipo dedicado</h4>
+                                <span>Nuestro equipo trabaja diariamente para mejorar nuestros servicios como empresa y funcionalidad
+                                    en nuestro sitio web.</span>
                             </div>
                         </div>
                     </div>
@@ -146,26 +148,25 @@ session_start();
     </div>
     <!-- About End -->
 
-
     <!-- Facts Start -->
-    <div class="container-fluid facts my-5 py-5" data-parallax="scroll" data-image-src="img/carousel-1.jpg">
+    <div class="container-fluid facts my-5 py-5" data-parallax="scroll" data-image-src="img/estadisticas 3.jpg">
         <div class="container py-5">
             <div class="row g-5">
                 <div class="col-sm-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.1s">
-                    <h1 class="display-4 text-white" data-toggle="counter-up">1234</h1>
-                    <span class="fs-5 fw-semi-bold text-light">Happy Clients</span>
+                    <h1 class="display-4 text-white" data-toggle="counter-up">312</h1>
+                    <span class="fs-5 fw-semi-bold text-light">Clientes Satisfechos.</span>
                 </div>
                 <div class="col-sm-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.3s">
-                    <h1 class="display-4 text-white" data-toggle="counter-up">1234</h1>
-                    <span class="fs-5 fw-semi-bold text-light">Garden Complated</span>
+                    <h1 class="display-4 text-white" data-toggle="counter-up">460</h1>
+                    <span class="fs-5 fw-semi-bold text-light">Mascotas adoptadas.</span>
                 </div>
                 <div class="col-sm-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.5s">
-                    <h1 class="display-4 text-white" data-toggle="counter-up">1234</h1>
-                    <span class="fs-5 fw-semi-bold text-light">Dedicated Staff</span>
+                    <h1 class="display-4 text-white" data-toggle="counter-up">264</h1>
+                    <span class="fs-5 fw-semi-bold text-light">Trabajadores dedicados.</span>
                 </div>
                 <div class="col-sm-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.7s">
-                    <h1 class="display-4 text-white" data-toggle="counter-up">1234</h1>
-                    <span class="fs-5 fw-semi-bold text-light">Awards Achieved</span>
+                    <h1 class="display-4 text-white" data-toggle="counter-up">419</h1>
+                    <span class="fs-5 fw-semi-bold text-light">Centros de adopcion de masctoas registrados.</span>
                 </div>
             </div>
         </div>
@@ -178,7 +179,7 @@ session_start();
         <div class="container">
             <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
                 <p class="fs-5 fw-bold text-primary">Nuestro equipo</p>
-                <h1 class="display-5 mb-5">Dedicated & Experienced Team Members</h1>
+                <h1 class="display-5 mb-5">Conoce a los fundadores de Haiwan.</h1>
             </div>
             <div class="row g-4">
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
@@ -186,7 +187,7 @@ session_start();
                         <img class="img-fluid" src="img/team-1.jpg" alt="">
                         <div class="team-text">
                             <h4 class="mb-0">Samantha Quintero Ruiz</h4>
-                            <p class="text-primary">Directora de marketing</p>
+                            <p class="text-primary">Directora de Marketing</p>
                             <div class="team-social d-flex">
                                 <a class="btn btn-square rounded-circle me-2" href=""><i class="fab fa-facebook-f"></i></a>
                                 <a class="btn btn-square rounded-circle me-2" href=""><i class="fab fa-twitter"></i></a>
@@ -200,7 +201,7 @@ session_start();
                         <img class="img-fluid" src="img/team-2.jpg" alt="">
                         <div class="team-text">
                             <h4 class="mb-0">Juan Manuel Garzón Ocampo</h4>
-                            <p class="text-primary">Director financiero</p>
+                            <p class="text-primary">Director Financiero</p>
                             <div class="team-social d-flex">
                                 <a class="btn btn-square rounded-circle me-2" href=""><i class="fab fa-facebook-f"></i></a>
                                 <a class="btn btn-square rounded-circle me-2" href=""><i class="fab fa-twitter"></i></a>
@@ -209,12 +210,12 @@ session_start();
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="team-item rounded">
-                        <img class="img-fluid" src="img/team-2.jpg" alt="">
+                        <img class="img-fluid" src="img/team-1.jpg" alt="">
                         <div class="team-text">
-                            <h4 class="mb-0">Simón Moná Vargas</h4>
-                            <p class="text-primary">Director de contenido</p>
+                            <h4 class="mb-0">Simóm Moná Vargas</h4>
+                            <p class="text-primary">Director de Contenido</p>
                             <div class="team-social d-flex">
                                 <a class="btn btn-square rounded-circle me-2" href=""><i class="fab fa-facebook-f"></i></a>
                                 <a class="btn btn-square rounded-circle me-2" href=""><i class="fab fa-twitter"></i></a>
@@ -247,11 +248,11 @@ session_start();
     <div class="container-fluid bg-dark text-light footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
         <div class="container py-5">
             <div class="row g-5">
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-4">Our Office</h4>
-                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
+                <div class="col-lg-6 col-md-6">
+                    <h4 class="text-white mb-4">Nuestras Oficinas.</h4>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>CL 78B #75-181, Medellín, Robledo, Medellín, Antioquia</p>
                     <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
-                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>haiwanadoptions@gmail.com</p>
                     <div class="d-flex pt-2">
                         <a class="btn btn-square btn-outline-light rounded-circle me-2" href=""><i class="fab fa-twitter"></i></a>
                         <a class="btn btn-square btn-outline-light rounded-circle me-2" href=""><i class="fab fa-facebook-f"></i></a>
@@ -259,29 +260,14 @@ session_start();
                         <a class="btn btn-square btn-outline-light rounded-circle me-2" href=""><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-4">Services</h4>
-                    <a class="btn btn-link" href="">Landscaping</a>
-                    <a class="btn btn-link" href="">Pruning plants</a>
-                    <a class="btn btn-link" href="">Urban Gardening</a>
-                    <a class="btn btn-link" href="">Garden Maintenance</a>
-                    <a class="btn btn-link" href="">Green Technology</a>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-4">Quick Links</h4>
-                    <a class="btn btn-link" href="">About Us</a>
-                    <a class="btn btn-link" href="">Contact Us</a>
-                    <a class="btn btn-link" href="">Our Services</a>
-                    <a class="btn btn-link" href="">Terms & Condition</a>
-                    <a class="btn btn-link" href="">Support</a>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-4">Newsletter</h4>
-                    <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
-                    <div class="position-relative w-100">
-                        <input class="form-control bg-light border-light w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
-                        <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
-                    </div>
+                <div class="col-lg-6 col-md-6">
+                    <h4 class="text-white mb-4">Centros de Adopciones populares.</h4>
+                    <a class="btn btn-link" href="">Fundación Corazón Animal</a>
+                    <a class="btn btn-link" href="">Fundación Con Pasión Animal</a>
+                    <a class="btn btn-link" href="">Fundación Orca</a>
+                    <a class="btn btn-link" href="">La Perla</a>
+                    <a class="btn btn-link" href="">PetSon</a>
+                    <a class="btn btn-link" href="">Sociedad Protectora de Animales de Medellín</a>
                 </div>
             </div>
         </div>
