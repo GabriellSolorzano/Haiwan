@@ -14,7 +14,7 @@ session_start();
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>NOMBRE DEL PROYECTO</title>
+    <title>Haiwan</title>
 
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -38,9 +38,12 @@ session_start();
             <!-- Sidebar - Brand -->
             <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
                 <div class="sidebar-brand-icon rotate-n-15">
-                    <i class="fas fa-laugh-wink"></i>
+                    <img src="img/logo.jfif" 
+                    width="75px"
+                    height="75px"
+                    alt="">
                 </div>
-                <div class="sidebar-brand-text mx-3">HAIWAN</sup></div>
+                <div class="sidebar-brand-text mx-3">Haiwan</sup></div>
             </a>
 
             <!-- Divider -->
@@ -60,7 +63,6 @@ session_start();
 
             <!-- Heading -->
             <div class="sidebar-heading">
-                Addons
             </div>
 
             <!-- Nav Item - Pages Collapse Menu -->
@@ -77,24 +79,13 @@ session_start();
             <li class="nav-item">
                 <a class="nav-link" href="tables.php">
                     <i class="fas fa-fw fa-table"></i>
-                    <span>Tabla 1</span></a>
+                    <span>Mascotas</span></a>
             </li>
              
              <li class="nav-item">
                 <a class="nav-link" href="tables.php">
                     <i class="fas fa-fw fa-table"></i>
-                    <span>Tabla2</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="tables.php">
-                    <i class="fas fa-fw fa-table"></i>
-                    <span>Tabla 3</span></a>
-            </li>
-
-            <li class="nav-item">
-                <a class="nav-link" href="tables.php">
-                    <i class="fas fa-fw fa-table"></i>
-                    <span>Reportes</span></a>
+                    <span>Fundaciones</span></a>
             </li>
 
 

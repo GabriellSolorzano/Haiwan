@@ -85,92 +85,75 @@ session_start();
                 <a href="index.php" class="nav-item nav-link">Home</a>
                 <a href="about.php" class="nav-item nav-link">Nosotros</a>
                 <a href="service.php" class="nav-item nav-link">Servicios</a>
-                <a href="contact.php" class="nav-item nav-link">Contactos</a>
+                <a href="project.php" class="nav-item nav-link">Proyectos</a>
+                <a href="contact.php" class="nav-item nav-link">Contacto</a>
             </div>
             <a href="" class="btn btn-primary py-4 px-lg-4 rounded-0 d-none d-lg-block">Iniciar sesión<i class="fa fa-arrow-right ms-3"></i></a>
         </div>
     </nav>
     <!-- Navbar End -->
 
-
-    <!-- Page Header Start -->
-    <div class="container-fluid page-header py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
-        <div class="container text-center py-5">
-            <h1 class="display-3 text-white mb-4 animated slideInDown">Free Quote</h1>
-            <nav aria-label="breadcrumb animated slideInDown">
-                <ol class="breadcrumb justify-content-center mb-0">
-                    <li class="breadcrumb-item"><a href="#">Home</a></li>
-                    <li class="breadcrumb-item"><a href="#">Páginas</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Free Quote</li>
-                </ol>
-            </nav>
-        </div>
-    </div>
-    <!-- Page Header End -->
-
-
-    <!-- Quote Start -->
-    <div class="container-fluid py-5">
-        <div class="container">
-            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
-                <p class="fs-5 fw-bold text-primary">Free Quote</p>
-                <h1 class="display-5 mb-5">Get A Free Quote</h1>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-lg-7">
-                    <div class="bg-light rounded p-4 p-sm-5 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="row g-3">
-                            <div class="col-sm-6">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control border-0" id="gname" placeholder="Gurdian Name">
-                                    <label for="gname">Your Name</label>
+        <!-- Quote Start -->
+            <div class="container py-5">
+                <div class="row justify-content-center">
+                    <div class="col-lg-7">
+                        <div class="bg-white rounded p-4 p-sm-5 wow fadeIn" data-wow-delay="0.5s">
+                            <h1 class="display-5 text-center mb-5">Registrate</h1>
+                            <div class="row g-3">
+                                <div class="col-sm-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control bg-light border-0" id="gname" placeholder="Gurdian Name">
+                                        <label for="gname">Tu nombre</label>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="form-floating">
-                                    <input type="email" class="form-control border-0" id="gmail" placeholder="Gurdian Email">
-                                    <label for="gmail">Your Email</label>
+                                <div class="col-sm-6">
+                                    <div class="form-floating">
+                                        <input type="email" class="form-control bg-light border-0" id="gmail" placeholder="Gurdian Email">
+                                        <label for="gmail">Tu Email</label>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control border-0" id="cname" placeholder="Child Name">
-                                    <label for="cname">Your Mobile</label>
+                                <div class="col-sm-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control bg-light border-0" id="cname" placeholder="Child Name">
+                                        <label for="cname">Tu numero de celular</label>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control border-0" id="cage" placeholder="Child Age">
-                                    <label for="cage">Service Type</label>
+                                <div class="col-sm-6">
+                                    <div class="form-floating">
+                                        <input type="password" class="form-control bg-light border-0" id="pass" placeholder="Child Name">
+                                        <label for="pass">Crea una contraseña</label>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="form-floating">
-                                    <textarea class="form-control border-0" placeholder="Leave a message here" id="message" style="height: 100px"></textarea>
-                                    <label for="message">Message</label>
+                                <div class="col-12">
+                                    <div>
+                                        <select class="form-select bg-light border-0" id="select">
+                                            <option selected>¿Como que te quieres registrar?</option>
+                                            <option value="1">Cliente</option>
+                                            <option value="2">Centro de adopcion</option>
+                                        </select>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-12 text-center">
-                                <button class="btn btn-primary py-3 px-4" type="submit">Submit Now</button>
+                                <div class="col-12 text-center">
+                                    <button class="btn btn-primary py-3 px-4" type="submit">Registrarse</button>
+                                    <button class="btn btn-primary py-3 px-4" type="">Ya tengo cuenta</button>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <!-- Quote End -->
+        <!-- Quote End -->
 
 
     <!-- Footer Start -->
     <div class="container-fluid bg-dark text-light footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
         <div class="container py-5">
             <div class="row g-5">
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-4">Our Office</h4>
-                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
+                <div class="col-lg-6 col-md-6">
+                    <h4 class="text-white mb-4">Nuestras Oficinas.</h4>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>CL 78B #75-181, Medellín, Robledo, Medellín, Antioquia</p>
                     <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
-                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>haiwanadoptions@gmail.com</p>
                     <div class="d-flex pt-2">
                         <a class="btn btn-square btn-outline-light rounded-circle me-2" href=""><i class="fab fa-twitter"></i></a>
                         <a class="btn btn-square btn-outline-light rounded-circle me-2" href=""><i class="fab fa-facebook-f"></i></a>
@@ -178,29 +161,14 @@ session_start();
                         <a class="btn btn-square btn-outline-light rounded-circle me-2" href=""><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-4">Services</h4>
-                    <a class="btn btn-link" href="">Landscaping</a>
-                    <a class="btn btn-link" href="">Pruning plants</a>
-                    <a class="btn btn-link" href="">Urban Gardening</a>
-                    <a class="btn btn-link" href="">Garden Maintenance</a>
-                    <a class="btn btn-link" href="">Green Technology</a>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-4">Quick Links</h4>
-                    <a class="btn btn-link" href="">About Us</a>
-                    <a class="btn btn-link" href="">Contact Us</a>
-                    <a class="btn btn-link" href="">Our Services</a>
-                    <a class="btn btn-link" href="">Terms & Condition</a>
-                    <a class="btn btn-link" href="">Support</a>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-4">Newsletter</h4>
-                    <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
-                    <div class="position-relative w-100">
-                        <input class="form-control bg-light border-light w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
-                        <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
-                    </div>
+                <div class="col-lg-6 col-md-6">
+                    <h4 class="text-white mb-4">Centros de Adopciones populares.</h4>
+                    <a class="btn btn-link" href="">Fundación Corazón Animal</a>
+                    <a class="btn btn-link" href="">Fundación Con Pasión Animal</a>
+                    <a class="btn btn-link" href="">Fundación Orca</a>
+                    <a class="btn btn-link" href="">La Perla</a>
+                    <a class="btn btn-link" href="">PetSon</a>
+                    <a class="btn btn-link" href="">Sociedad Protectora de Animales de Medellín</a>
                 </div>
             </div>
         </div>
