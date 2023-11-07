@@ -167,7 +167,7 @@ h6,
     align-items: center;
     justify-content: center;
     text-align: center;
-    background: rgb(173, 110, 121, .6);
+    background: rgb(173, 110, 121, .4);
     z-index: 1;
 }
 
@@ -181,8 +181,8 @@ h6,
     width: 3rem;
     height: 3rem;
     border-radius: 3rem;
-    background-color: var(--primary);
-    border: 10px solid var(--primary);
+    background-color: var(--secondary);
+    border: 10px solid var(--secondary);
 }
 
 @media (max-width: 768px) {
@@ -228,7 +228,7 @@ h6,
 /*** Facts & Quote ***/
 .facts,
 .quote {
-    background: rgb(173, 110, 121, .6);
+    background: rgb(173, 110, 121, .4);
 }
 
 
@@ -270,7 +270,7 @@ h6,
 }
 
 .service-item:hover .service-text {
-    background: rgb(173, 110, 121, .6);
+    background: rgb(173, 110, 121, .4);
 }
 
 .service-item .service-text h4,
@@ -348,7 +348,7 @@ h6,
     height: 100%;
     top: 0;
     left: 0;
-    background: rgb(173, 110, 121, .6);
+    background: rgb(173, 110, 121, .4);
     transition: .5s;
 }
 
