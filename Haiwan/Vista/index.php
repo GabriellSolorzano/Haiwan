@@ -87,7 +87,7 @@ session_start();
                 <a href="service.php" class="nav-item nav-link">Servicios</a>
                 <a href="contact.php" class="nav-item nav-link">Contacto</a>
             </div>
-            <a href="quote.php" class="btn btn-primary py-4 px-lg-4 rounded-0 d-none d-lg-block">Regístrate<i class="fa fa-arrow-right ms-3"></i></a>
+            <a href="quote.php" class="btn btn-primary py-4 px-lg-4 rounded-0 d-none d-lg-block">Iniciar sesión<i class="fa fa-arrow-right ms-3"></i></a>
         </div>
     </nav>
     <!-- Navbar End -->
