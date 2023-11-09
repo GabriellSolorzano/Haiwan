@@ -85,10 +85,9 @@ session_start();
                 <a href="index.php" class="nav-item nav-link">Home</a>
                 <a href="about.php" class="nav-item nav-link">Nosotros</a>
                 <a href="service.php" class="nav-item nav-link active">Servicios</a>
-                <a href="project.php" class="nav-item nav-link">Proyectos</a>
                 <a href="contact.php" class="nav-item nav-link">Contacto</a>
             </div>
-            <a href="" class="btn btn-primary py-4 px-lg-4 rounded-0 d-none d-lg-block">Iniciar sesión<i class="fa fa-arrow-right ms-3"></i></a>
+            <a href="quote.php" class="btn btn-primary py-4 px-lg-4 rounded-0 d-none d-lg-block">Iniciar sesión<i class="fa fa-arrow-right ms-3"></i></a>
         </div>
     </nav>
     <!-- Navbar End -->

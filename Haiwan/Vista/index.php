@@ -60,7 +60,7 @@ session_start();
             </div>
             <div class="col-lg-5 px-5 text-end">
                 <div class="h-100 d-inline-flex align-items-center mx-n2">
-                    <span>Siguenos:</span>
+                    <span>Síguenos:</span>
                     <a class="btn btn-link text-light" href=""><i class="fab fa-facebook-f"></i></a>
                     <a class="btn btn-link text-light" href=""><i class="fab fa-twitter"></i></a>
                     <a class="btn btn-link text-light" href=""><i class="fab fa-linkedin-in"></i></a>
@@ -85,10 +85,9 @@ session_start();
                 <a href="index.php" class="nav-item nav-link active">Home</a>
                 <a href="about.php" class="nav-item nav-link">Nosotros</a>
                 <a href="service.php" class="nav-item nav-link">Servicios</a>
-                <a href="project.php" class="nav-item nav-link">Proyectos</a>
                 <a href="contact.php" class="nav-item nav-link">Contacto</a>
             </div>
-            <a href="quote.php" class="btn btn-primary py-4 px-lg-4 rounded-0 d-none d-lg-block">Iniciar sesión<i class="fa fa-arrow-right ms-3"></i></a>
+            <a href="quote.php" class="btn btn-primary py-4 px-lg-4 rounded-0 d-none d-lg-block">Regístrate<i class="fa fa-arrow-right ms-3"></i></a>
         </div>
     </nav>
     <!-- Navbar End -->
@@ -179,7 +178,7 @@ session_start();
                             </div>
                             <div class="ps-3">
                                 <h4>Servicio 24/7</h4>
-                                <span>Haiwan es una via de contacto para conocer informacion sobre tus mascotas o contactar con lineas de
+                                <span>Haiwan es una via de contacto para conocer información sobre tus mascotas o contactar con lineas de
                                      servicio de ser necesario.</span>
                             </div>
                         </div>
@@ -203,7 +202,7 @@ session_start();
                     <p class="text-primary mb-4">Años de experiencia.</p>
                     <h1 class="display-5 mb-4">"La vida es mejor con una mascota a tu lado"</h1>
                     <p class="mb-4">Haiwan es un aplicativo que tiene como función poder adoptar cualquier animal doméstico, cumpliendo con el fin de apoyar a todo refugio y organizaciones de cuidados de mascotas para encontrarles a estos animales un nuevo hogar.</p>
-                    <a class="btn btn-primary py-3 px-4" href="">Saber más</a>
+                    <a class="btn btn-primary py-3 px-4" href="about.php">Saber más</a>
                 </div>
                 <div class="col-lg-3 col-md-12 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="row g-5">
@@ -211,7 +210,7 @@ session_start();
                             <div class="border-start ps-4">
                                 <i class="fa fa-award fa-3x text-primary mb-3"></i>
                                 <h4 class="mb-3">"Nada como lo que se ah visto antes"</h4>
-                                <span>Brindamos un servicio comodo y revolucionario nunca antes visto para nuestros amigos peludos.</span>
+                                <span>Brindamos un servicio cómodo y revolucionario nunca antes visto para nuestros amigos peludos.</span>
                             </div>
                         </div>
                         <div class="col-12 col-sm-6 col-lg-12">
@@ -248,7 +247,7 @@ session_start();
                 </div>
                 <div class="col-sm-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.7s">
                     <h1 class="display-4 text-white" data-toggle="counter-up">419</h1>
-                    <span class="fs-5 fw-semi-bold text-light">Centros de adopcion de mascotas registrados.</span>
+                    <span class="fs-5 fw-semi-bold text-light">Centros de adopción de mascotas registrados.</span>
                 </div>
             </div>
         </div>
@@ -261,7 +260,7 @@ session_start();
         <div class="container">
             <div class="row g-5 align-items-center">
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <p class="fs-5 fw-bold text-primary">¿Por qué elerginos?</p>
+                    <p class="fs-5 fw-bold text-primary">¿Por qué elegirnos?</p>
                     <h1 class="display-5 mb-4">Algunas razones por las que la gente nos elige</h1>
                     <p class="mb-4">...</p>
                     <a class="btn btn-primary py-3 px-4" href="">Saber más</a>
@@ -322,7 +321,7 @@ session_start();
                                 <img class="img-fluid" src="img/icon/centro-icon.png" alt="Icon">
                             </div>
                             <h4 class="mb-3">Fundación Corazón Animal</h4>
-                            <p class="mb-4">Direccion: Vereda Quebradona, San Roque, Colombia</p>
+                            <p class="mb-4">Dirección: Vereda Quebradona, San Roque, Colombia</p>
                             <a class="btn btn-sm" href=""><i class="fa fa-plus text-primary me-2"></i>Saber más</a>
                         </div>
                     </div>
@@ -337,7 +336,7 @@ session_start();
                                 <img class="img-fluid" src="img/icon/centro-icon.png" alt="Icon">
                             </div>
                             <h4 class="mb-3">Fundación Con Pasión Animal</h4>
-                            <p class="mb-4">Direccion: Transversal 32B # 74C - 55 Belén Alameda, Medellín - Colombia.</p>
+                            <p class="mb-4">Dirección: Transversal 32B # 74C - 55 Belén Alameda, Medellín - Colombia.</p>
                             <a class="btn btn-sm" href=""><i class="fa fa-plus text-primary me-2"></i>Saber más</a>
                         </div>
                     </div>
@@ -352,7 +351,7 @@ session_start();
                                 <img class="img-fluid" src="img/icon/centro-icon.png" alt="Icon">
                             </div>
                             <h4 class="mb-3">Fundación Orca</h4>
-                            <p class="mb-4">Direccion: LUGAR CIRCULAR 3 A 71 30 APTO 301, Medellin, Antioquia.</p>
+                            <p class="mb-4">Dirección: LUGAR CIRCULAR 3 A 71 30 APTO 301, Medellin, Antioquia.</p>
                             <a class="btn btn-sm" href=""><i class="fa fa-plus text-primary me-2"></i>Saber más</a>
                         </div>
                     </div>
@@ -367,7 +366,7 @@ session_start();
                                 <img class="img-fluid" src="img/icon/centro-icon.png" alt="Icon">
                             </div>
                             <h4 class="mb-3">La Perla</h4>
-                            <p class="mb-4">Direccion: Cr112 12-01, Medellín, Antioquia </p>
+                            <p class="mb-4">Dirección: Cr112 12-01, Medellín, Antioquia </p>
                             <a class="btn btn-sm" href=""><i class="fa fa-plus text-primary me-2"></i>Saber más</a>
                         </div>
                     </div>
@@ -382,7 +381,7 @@ session_start();
                                 <img class="img-fluid" src="img/icon/centro-icon.png" alt="Icon">
                             </div>
                             <h4 class="mb-3">PetSon</h4>
-                            <p class="mb-4">Direccion: Dg 74B # 32-57, Medellín, Belén, Medellín, Antioquia.</p>
+                            <p class="mb-4">Dirección: Dg 74B # 32-57, Medellín, Belén, Medellín, Antioquia.</p>
                             <a class="btn btn-sm" href=""><i class="fa fa-plus text-primary me-2"></i>Saber más</a>
                         </div>
                     </div>
@@ -397,7 +396,7 @@ session_start();
                                 <img class="img-fluid" src="img/icon/centro-icon.png" alt="Icon">
                             </div>
                             <h4 class="mb-3">Sociedad Protectora de Animales de Medellín</h4>
-                            <p class="mb-4">Direccion: CARRERA 75 65 176, MEDELLIN, Antioquia.</p>
+                            <p class="mb-4">Dilección: CARRERA 75 65 176, MEDELLIN, Antioquia.</p>
                             <a class="btn btn-sm" href=""><i class="fa fa-plus text-primary me-2"></i>Saber más</a>
                         </div>
                     </div>
@@ -488,7 +487,7 @@ session_start();
                     <div class="portfolio-inner rounded">
                         <img class="img-fluid" src="img/favoritos-general-2.jfif" alt="">
                         <div class="portfolio-text">
-                            <h4 class="text-white mb-4">Calcetin</h4>
+                            <h4 class="text-white mb-4">Calcetín</h4>
                             <div class="d-flex">
                                 <a class="btn btn-lg-square rounded-circle mx-2" href="img/service-5.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
                                 <a class="btn btn-lg-square rounded-circle mx-2" href=""><i class="fa fa-link"></i></a>
@@ -578,7 +577,7 @@ session_start();
                     <div class="team-item rounded">
                         <img class="img-fluid" src="img/team-1.jpg" alt="">
                         <div class="team-text">
-                            <h4 class="mb-0">Simóm Moná Vargas</h4>
+                            <h4 class="mb-0">Simón Moná Vargas</h4>
                             <p class="text-primary">Director de Contenido</p>
                             <div class="team-social d-flex">
                                 <a class="btn btn-square rounded-circle me-2" href=""><i class="fab fa-facebook-f"></i></a>

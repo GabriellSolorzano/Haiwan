@@ -85,7 +85,6 @@ session_start();
                 <a href="index.php" class="nav-item nav-link">Home</a>
                 <a href="about.php" class="nav-item nav-link active">Nosotros</a>
                 <a href="service.php" class="nav-item nav-link">Servicios</a>
-                <a href="project.php" class="nav-item nav-link">Proyectos</a>
                 <a href="contact.php" class="nav-item nav-link">Contacto</a>
             </div>
             <a href="quote.php" class="btn btn-primary py-4 px-lg-4 rounded-0 d-none d-lg-block">Iniciar sesión<i class="fa fa-arrow-right ms-3"></i></a>
@@ -119,21 +118,22 @@ session_start();
                 </div>
                 <div class="col-lg-6 col-md-7 wow fadeInUp" data-wow-delay="0.3s">
                     <h1 class="display-1 text-primary mb-0">25</h1>
-                    <p class="text-primary mb-4">Años de experiencia.</p>
+                    <p class="text-primary mb-4">Años de experiencia</p>
                     <h1 class="display-5 mb-4">"La vida es mejor con una mascota a tu lado"</h1>
                     <p class="mb-4">Haiwan es un aplicativo que tiene como función poder adoptar cualquier animal doméstico, cumpliendo con el fin de apoyar a todo refugio y organizaciones de cuidados de mascotas para encontrarles a estos animales un nuevo hogar.</p>
-                    <a class="btn btn-primary py-3 px-4" href="">Saber más</a>
+
                 </div>
+
                 <div class="col-lg-3 col-md-12 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="row g-5">
-                        <div class="col-12 col-sm-6 col-lg-12">
+                        <div class="col-md-12 col-sm-6 col-lg-12">
                             <div class="border-start ps-4">
                                 <i class="fa fa-award fa-3x text-primary mb-3"></i>
-                                <h4 class="mb-3">"Nada como lo que se ah visto antes"</h4>
-                                <span>Brindamos un servicio comodo y revolucionario nunca antes visto para nuestros amigos peludos.</span>
+                                <h4 class="mb-3">"Nada como lo que se ha visto antes"</h4>
+                                <span>Brindamos un servicio cómodo y revolucionario nunca antes visto para nuestros amigos peludos.</span>
                             </div>
                         </div>
-                        <div class="col-12 col-sm-6 col-lg-12">
+                        <div class="col-md-12 col-sm-6 col-lg-12">
                             <div class="border-start ps-4">
                                 <i class="fa fa-users fa-3x text-primary mb-3"></i>
                                 <h4 class="mb-3">Equipo dedicado</h4>
@@ -143,6 +143,21 @@ session_start();
                         </div>
                     </div>
                 </div>
+
+          
+                <div class="col-lg-6 col-md-12 wow fadeInUp">
+                    <h2> Misión</h2><br>
+                    <p class="mb-4">Haiwan es un aplicativo que tiene como función poder adoptar cualquier animal doméstico, cumpliendo con el fin de apoyar a todo refugio y organizaciones de cuidados de mascotas para encontrarles a estos animales un nuevo hogar.
+                        Logrando la disminución y con el objetivo de la erradicación de más animales en estado de abandono para lograr un bien social y ambiental para el bienestar y salud de estos animales, creando una gran amistad entre las personas y los animales con nuestra ayuda para lograr un mundo con menos y sin maltrato animal encontrándoles hogares por medio de nosotros y con la gran facilidad de tenerlos y encariñarse con ellos.
+                    </p>
+                </div>
+                
+                <div class="col-lg-6 col-md-12 wow fadeInUp">
+                    <h2> Visión</h2><br>
+                    <p class="mb-4">Para poder obtener todas las metas y logros que busca obtener Haiwan se tiene un plan de crecimiento y desarrollo, antes de poder ofrecer este aplicativo al resto del mundo buscaremos una entidad interesada en otorgarnos su patrocinio asegurándonos que las necesidades del aplicativo estarán completamente cubiertas, este primer paso se busca lograr en un lapso de un año, ofreciendo Haiwan al mundo más prontamente, lo segundo es buscar el interés de las veterinarias y de los refugios animales ofreciéndoles un lugar seguro y confiable donde se les facilitaría aún más la labor de dar en adopción a mascotas y animales domésticos a personas con buena fiabilidad.</p>
+                </div>
+                
+
             </div>
         </div>
     </div>
