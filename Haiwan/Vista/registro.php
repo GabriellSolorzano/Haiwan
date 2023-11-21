@@ -85,9 +85,10 @@ session_start();
                 <a href="index.php" class="nav-item nav-link">Home</a>
                 <a href="about.php" class="nav-item nav-link">Nosotros</a>
                 <a href="service.php" class="nav-item nav-link">Servicios</a>
+                <a href="project.php" class="nav-item nav-link">Proyectos</a>
                 <a href="contact.php" class="nav-item nav-link">Contacto</a>
             </div>
-            <a href="" class="btn btn-primary py-4 px-lg-4 rounded-0 d-none d-lg-block">Iniciar sesión<i class="fa fa-arrow-right ms-3"></i></a>
+            <a href="" class="btn btn-primary py-4 px-lg-4 rounded-0 d-none d-lg-block">Registrate<i class="fa fa-arrow-right ms-3"></i></a>
         </div>
     </nav>
     <!-- Navbar End -->
@@ -97,33 +98,35 @@ session_start();
                 <div class="row justify-content-center">
                     <div class="col-lg-7">
                         <div class="bg-white rounded p-4 p-sm-5 wow fadeIn" data-wow-delay="0.5s">
-                            <h1 class="display-5 text-center mb-5">Iniciar sesión</h1>
+                            <h1 class="display-5 text-center mb-5">Regístrate</h1>
                             <div class="row g-3">
-                                <div class="col-sm-12">
+                                <div class="col-sm-6">
                                     <div class="form-floating">
                                         <input type="text" class="form-control bg-light border-0" id="gname" placeholder="Gurdian Name">
-                                        <label for="gname">Usuario</label>
+                                        <label for="gname">Nombre/Usuario</label>
                                     </div>
                                 </div>
-                                <div class="col-12">
-                                    <div>
-                                        <select class="form-select bg-light border-0" id="select">
-                                            <option selected>¿Como quieres iniciar sesión?</option>
-                                            <option value="1">Cliente</option>
-                                            <option value="2">Centro de adopcion</option>
-                                        </select>
+                                <div class="col-sm-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control bg-light border-0" id="pass" placeholder="Child Name">
+                                        <label for="pass">Gmail</label>
                                     </div>
                                 </div>
-                                <div class="col-sm-12">
+                                <div class="col-sm-6">
                                     <div class="form-floating">
                                         <input type="password" class="form-control bg-light border-0" id="pass" placeholder="Child Name">
                                         <label for="pass">Contraseña</label>
                                     </div>
                                 </div>
-                
+                                <div class="col-sm-6">
+                                    <div class="form-floating">
+                                        <input type="password" class="form-control bg-light border-0" id="pass" placeholder="Child Name">
+                                        <label for="pass">Confirmar contraseña</label>
+                                    </div>
+                                </div>
                                 <div class="col-12 text-center">
                                     <button class="btn btn-primary py-3 px-4" type="submit">Iniciar sesión</button>
-                                    <br><br><p> ¿Nuevo en Haiwan? <a href="registro.php">Registrate</a> </p>
+                                    <br><br><p> ¿Ya tienes cuenta? <a href="quote.php">Inicia sesión</a> </p>
                                 </div>
                             </div>
                         </div>
