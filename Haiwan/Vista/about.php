@@ -51,7 +51,7 @@ session_start();
             <div class="col-lg-7 px-5 text-start">
                 <div class="h-100 d-inline-flex align-items-center me-4">
                     <span class="fa fa-phone-alt me-2"></span>
-                    <span>+012 345 6789</span>
+                    <span>+57 3135417303</span>
                 </div>
                 <div class="h-100 d-inline-flex align-items-center">
                     <span class="far fa-envelope me-2"></span>
@@ -118,7 +118,7 @@ session_start();
                 </div>
                 <div class="col-lg-6 col-md-7 wow fadeInUp" data-wow-delay="0.3s">
                     <h1 class="display-1 text-primary mb-0">25</h1>
-                    <p class="text-primary mb-4">Años de experiencia</p>
+                    <p class="text-primary mb-4">Años de experiencia.</p>
                     <h1 class="display-5 mb-4">"La vida es mejor con una mascota a tu lado"</h1>
                     <p class="mb-4">Haiwan es un aplicativo que tiene como función poder adoptar cualquier animal doméstico, cumpliendo con el fin de apoyar a todo refugio y organizaciones de cuidados de mascotas para encontrarles a estos animales un nuevo hogar.</p>
 
@@ -169,19 +169,19 @@ session_start();
             <div class="row g-5">
                 <div class="col-sm-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.1s">
                     <h1 class="display-4 text-white" data-toggle="counter-up">312</h1>
-                    <span class="fs-5 fw-semi-bold text-light">Clientes Satisfechos.</span>
+                    <span class="fs-5 fw-semi-bold text-light">Clientes Satisfechos</span>
                 </div>
                 <div class="col-sm-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.3s">
                     <h1 class="display-4 text-white" data-toggle="counter-up">460</h1>
-                    <span class="fs-5 fw-semi-bold text-light">Mascotas adoptadas.</span>
+                    <span class="fs-5 fw-semi-bold text-light">Mascotas adoptadas</span>
                 </div>
                 <div class="col-sm-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.5s">
                     <h1 class="display-4 text-white" data-toggle="counter-up">264</h1>
-                    <span class="fs-5 fw-semi-bold text-light">Trabajadores dedicados.</span>
+                    <span class="fs-5 fw-semi-bold text-light">Trabajadores dedicados</span>
                 </div>
                 <div class="col-sm-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.7s">
                     <h1 class="display-4 text-white" data-toggle="counter-up">419</h1>
-                    <span class="fs-5 fw-semi-bold text-light">Centros de adopcion de masctoas registrados.</span>
+                    <span class="fs-5 fw-semi-bold text-light">Centros de adopcion de masctoas registrados</span>
                 </div>
             </div>
         </div>
@@ -194,7 +194,7 @@ session_start();
         <div class="container">
             <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
                 <p class="fs-5 fw-bold text-primary">Nuestro equipo</p>
-                <h1 class="display-5 mb-5">Conoce a los fundadores de Haiwan.</h1>
+                <h1 class="display-5 mb-5">Conoce a los fundadores de Haiwan</h1>
             </div>
             <div class="row g-4">
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
@@ -264,9 +264,9 @@ session_start();
         <div class="container py-5">
             <div class="row g-5">
                 <div class="col-lg-6 col-md-6">
-                    <h4 class="text-white mb-4">Nuestras Oficinas.</h4>
+                    <h4 class="text-white mb-4">Nuestras Oficinas</h4>
                     <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>CL 78B #75-181, Medellín, Robledo, Medellín, Antioquia</p>
-                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+57 3135417303</p>
                     <p class="mb-2"><i class="fa fa-envelope me-3"></i>haiwanadoptions@gmail.com</p>
                     <div class="d-flex pt-2">
                         <a class="btn btn-square btn-outline-light rounded-circle me-2" href=""><i class="fab fa-twitter"></i></a>
@@ -276,35 +276,19 @@ session_start();
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6">
-                    <h4 class="text-white mb-4">Centros de Adopciones populares.</h4>
-                    <a class="btn btn-link" href="">Fundación Corazón Animal</a>
-                    <a class="btn btn-link" href="">Fundación Con Pasión Animal</a>
-                    <a class="btn btn-link" href="">Fundación Orca</a>
-                    <a class="btn btn-link" href="">La Perla</a>
-                    <a class="btn btn-link" href="">PetSon</a>
-                    <a class="btn btn-link" href="">Sociedad Protectora de Animales de Medellín</a>
+                    <h4 class="text-white mb-4">Centros de Adopciones populares</h4>
+                    <a class="btn btn-link" href="https://fundacioncorazonanimal.org/">Fundación Corazón Animal</a>
+                    <a class="btn btn-link" href="https://www.conpasionanimal.org/">Fundación Con Pasión Animal</a>
+                    <a class="btn btn-link" href="https://fundacionorca.org/">Fundación Orca</a>
+                    <a class="btn btn-link" href="https://www.instagram.com/laperlamed/?hl=es">La Perla</a>
+                    <a class="btn btn-link" href="https://www.instagram.com/fundacionpetson/?hl=es-la">PetSon</a>
+                    <a class="btn btn-link" href="https://www.protectoranimales.org/">Sociedad Protectora de Animales de Medellín</a>
                 </div>
             </div>
         </div>
     </div>
     <!-- Footer End -->
 
-
-    <!-- Copyright Start -->
-    <div class="container-fluid copyright py-4">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                    &copy; <a class="border-bottom" href="#">Your Site Name</a>, All Right Reserved.
-                </div>
-                <div class="col-md-6 text-center text-md-end">
-                    <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                    Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a> Distributed By <a href="https://themewagon.com">ThemeWagon</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Copyright End -->
 
 
     <!-- Back to Top -->
