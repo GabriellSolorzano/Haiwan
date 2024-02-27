@@ -33,17 +33,17 @@ session_start();
     <div id="wrapper">
 
         <!-- Sidebar -->
-        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+        <ul class="navbar-nav bg-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
             <!-- Sidebar - Brand -->
-            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+            <a class="sidebar-brand d-flex align-items-center justify-content-center bg-primary" href="index.html">
                 <div class="sidebar-brand-icon rotate-n-15">
                     <img src="img/logo.jfif" 
                     width="75px"
                     height="75px"
                     alt="">
                 </div>
-                <div class="sidebar-brand-text mx-3">Haiwan</sup></div>
+                <div class="sidebar-brand-text mx-3 bordetxt" style="color: #ed7855; -webkit-text-stroke: 2px;">Haiwan</sup></div>
             </a>
 
             <!-- Divider -->
@@ -102,7 +102,7 @@ session_start();
          <span> Configuración</span>
      </a>
      <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
-         <div class="bg-white py-2 collapse-inner rounded">
+         <div class="bg-secondary py-2 collapse-inner rounded">
              
              <a class="collapse-item" href="">Ciudad</a>
              <a class="collapse-item" href="">Departamento</a>
@@ -133,7 +133,7 @@ session_start();
             <div id="content">
 
                 <!-- Topbar -->
-                <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+                <nav class="navbar navbar-expand navbar-light bg-primary topbar mb-4 static-top shadow">
 
                     <!-- Sidebar Toggle (Topbar) -->
                     <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
