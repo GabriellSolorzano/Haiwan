@@ -12,7 +12,7 @@ include('Menu.php');
                     <div class="card shadow mb-4">
                        
                         <div class="col-md-12 align-self-end card-header py-3 justify-content-end">
-                            <button class="btn btn-sm bg-gradient-primary offset-md-10 col-md-2 " data-toggle="modal" data-target="#exampleModal">Nuevo Usuario</button>
+                            <button class="btn btn-sm  offset-md-10 col-md-2 " data-toggle="modal" data-target="#exampleModal">Nuevo Usuario</button>
                         </div>
                         <div class="card-body">
                            
@@ -52,8 +52,8 @@ include('Menu.php');
                                             <th>Dianeth Yamile</th>
                                             <th>León Valencia</th>
                                             <th>3135417303</th>
-                                            <th><center><button class="btn btn-sm bg-gradient-primary">Eliminar</center></button></th>
-                                            <th><center><button class="btn btn-sm bg-gradient-danger">Modificar</center></button></th>
+                                            <th><center><button class="btn btn-sm btn-danger">Eliminar</center></button></th>
+                                            <th><center><button class="btn btn-sm btn-primary">Modificar</center></button></th>
                                         </tr>
                                         <tr>
                                             <th>33816156</th>
@@ -62,8 +62,8 @@ include('Menu.php');
                                             <th>Dianeth Yamile</th>
                                             <th>León Valencia</th>
                                             <th>3135417303</th>
-                                            <th><center><button class="btn btn-sm bg-gradient-primary">Eliminar</center></button></th>
-                                            <th><center><button class="btn btn-sm bg-gradient-danger">Modificar</center></button></th>
+                                            <th><center><button class="btn btn-sm btn-danger">Eliminar</center></button></th>
+                                            <th><center><button class="btn btn-sm btn-primary">Modificar</center></button></th>
                                         </tr>
 
                                     </tbody>
