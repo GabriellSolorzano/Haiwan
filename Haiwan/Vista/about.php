@@ -60,7 +60,7 @@ session_start();
             </div>
             <div class="col-lg-5 px-5 text-end">
                 <div class="h-100 d-inline-flex align-items-center mx-n2">
-                    <span>Siguenos:</span>
+                    <span>Síguenos:</span>
                     <a class="btn btn-link text-light" href=""><i class="fab fa-facebook-f"></i></a>
                     <a class="btn btn-link text-light" href=""><i class="fab fa-twitter"></i></a>
                     <a class="btn btn-link text-light" href=""><i class="fab fa-linkedin-in"></i></a>
@@ -101,7 +101,7 @@ session_start();
                 <ol class="breadcrumb justify-content-center mb-0">
                     <li class="breadcrumb-item"><a href="#">Home</a></li>
                     <li class="breadcrumb-item"><a href="#">Páginas</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Nosostros</li>
+                    <li class="breadcrumb-item active" aria-current="page">Nosotros</li>
                 </ol>
             </nav>
         </div>
@@ -181,7 +181,7 @@ session_start();
                 </div>
                 <div class="col-sm-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.7s">
                     <h1 class="display-4 text-white" data-toggle="counter-up">419</h1>
-                    <span class="fs-5 fw-semi-bold text-light">Centros de adopcion de masctoas registrados</span>
+                    <span class="fs-5 fw-semi-bold text-light">Centros de adopción de mascotas registrados</span>
                 </div>
             </div>
         </div>
@@ -229,7 +229,7 @@ session_start();
                     <div class="team-item rounded">
                         <img class="img-fluid" src="img/team-1.jpg" alt="">
                         <div class="team-text">
-                            <h4 class="mb-0">Simóm Moná Vargas</h4>
+                            <h4 class="mb-0">Simón Moná Vargas</h4>
                             <p class="text-primary">Director de Contenido</p>
                             <div class="team-social d-flex">
                                 <a class="btn btn-square rounded-circle me-2" href=""><i class="fab fa-facebook-f"></i></a>
@@ -304,7 +304,7 @@ session_start();
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
     <script src="lib/counterup/counterup.min.js"></script>
     <script src="lib/parallax/parallax.min.js"></script>
-    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/isotope/isotope.Conoce.min.js"></script>
     <script src="lib/lightbox/js/lightbox.min.js"></script>
 
     <!-- Template Javascript -->

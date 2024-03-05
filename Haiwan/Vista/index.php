@@ -621,7 +621,7 @@ session_start();
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6">
-                    <h4 class="text-white mb-4">Centros de Adopciones populares.</h4>
+                    <h4 class="text-white mb-4">Centros de Adopciones populares</h4>
                     <a class="btn btn-link" href="https://fundacioncorazonanimal.org/">Fundación Corazón Animal</a>
                     <a class="btn btn-link" href="https://www.conpasionanimal.org/">Fundación Con Pasión Animal</a>
                     <a class="btn btn-link" href="https://fundacionorca.org/">Fundación Orca</a>

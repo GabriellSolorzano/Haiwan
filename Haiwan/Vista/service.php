@@ -217,7 +217,7 @@ session_start();
         <div class="container py-5">
             <div class="row g-5">
                 <div class="col-lg-6 col-md-6">
-                    <h4 class="text-white mb-4">Nuestras Oficinas.</h4>
+                    <h4 class="text-white mb-4">Nuestras Oficinas</h4>
                     <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>CL 78B #75-181, Medellín, Robledo, Medellín, Antioquia</p>
                     <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+57 3135417303</p>
                     <p class="mb-2"><i class="fa fa-envelope me-3"></i>haiwanadoptions@gmail.com</p>
@@ -229,7 +229,7 @@ session_start();
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6">
-                    <h4 class="text-white mb-4">Centros de Adopciones populares.</h4>
+                    <h4 class="text-white mb-4">Centros de Adopciones populares</h4>
                     <a class="btn btn-link" href="https://fundacioncorazonanimal.org/">Fundación Corazón Animal</a>
                     <a class="btn btn-link" href="https://www.conpasionanimal.org/">Fundación Con Pasión Animal</a>
                     <a class="btn btn-link" href="https://fundacionorca.org/">Fundación Orca</a>
