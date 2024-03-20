@@ -37,10 +37,10 @@ session_start();
 
             <!-- Sidebar - Brand -->
             <a class="sidebar-brand d-flex align-items-center justify-content-center bg-primary" href="index.html">
-                <div class="sidebar-brand-icon rotate-n-15">
-                    <img src="img/logo.jfif" 
-                    width="75px"
-                    height="75px"
+                <div class="sidebar-brand-icon">
+                    <img src="img/logo_notext1.png" 
+                    width="60px"
+                    height="60px"
                     alt="">
                 </div>
                 <div class="sidebar-brand-text mx-3 bordetxt" style="color: #ed7855; -webkit-text-stroke: 2px;">Haiwan</sup></div>
@@ -77,13 +77,13 @@ session_start();
 
             <!-- Nav Item - Tables -->
             <li class="nav-item">
-                <a class="nav-link" href="tables.php">
+                <a class="nav-link" href="Tabla1.php">
                     <i class="fas fa-fw fa-table"></i>
                     <span>Mascotas</span></a>
             </li>
              
              <li class="nav-item">
-                <a class="nav-link" href="tables.php">
+                <a class="nav-link" href="Tabla2.php">
                     <i class="fas fa-fw fa-table"></i>
                     <span>Fundaciones</span></a>
             </li>
@@ -101,8 +101,8 @@ session_start();
          <i class="fas fa-fw fa-cog"></i>
          <span> Configuración</span>
      </a>
-     <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
-         <div class="bg-secondary py-2 collapse-inner rounded">
+     <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar" >
+         <div class="py-2 collapse-inner rounded" style="background-color: #ed7855">
              
              <a class="collapse-item" href="">Ciudad</a>
              <a class="collapse-item" href="">Departamento</a>
@@ -147,7 +147,7 @@ session_start();
                             <input type="text" class="form-control bg-light border-0 small" placeholder="Buscar..."
                                 aria-label="Search" aria-describedby="basic-addon2">
                             <div class="input-group-append">
-                                <button class="btn btn-primary" type="button">
+                                <button class="btn btn-danger" type="button">
                                     <i class="fas fa-search fa-sm"></i>
                                 </button>
                             </div>
