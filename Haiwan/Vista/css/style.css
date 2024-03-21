@@ -200,8 +200,20 @@ h6,
     }
 }
 
-.page-header {
-    background: linear-gradient(rgb(173, 110, 121, .6), rgb(173, 110, 121, .6)), url(../img/carousel-1.jpg) center center no-repeat;
+.page-header-1 {
+    background: linear-gradient(rgb(173, 110, 121, .6), rgb(173, 110, 121, .6)), url(../img/nosotros-bg-1.jpeg) center center no-repeat;
+    background-size: cover;
+}
+
+.page-header-2 {
+    background: linear-gradient(rgb(173, 110, 121, .6), rgb(173, 110, 121, .6)), 
+    url(../img/servicio-bg-1.jpeg) center center no-repeat;
+    background-size: cover;
+}
+
+.page-header-3 {
+    background: linear-gradient(rgb(173, 110, 121, .6), rgb(173, 110, 121, .6)), 
+    url(../img/contacto-bg-1.jpeg) center center no-repeat;
     background-size: cover;
 }
 

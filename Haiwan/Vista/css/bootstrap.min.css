@@ -459,7 +459,7 @@ a{
 
 
     
-    color:#348E38;
+    color:black;
     text-decoration:none;
 
 
@@ -5367,13 +5367,13 @@ padding-left:.5rem
 
 .breadcrumb-item+.breadcrumb-item::before{
 
-float:left;padding-right:.5rem;color:#6c757d;content:var(--bs-breadcrumb-divider, "/") /* rtl: var(--bs-breadcrumb-divider, "/") */
+float:left;padding-right:.5rem;color: black;content:var(--bs-breadcrumb-divider, "/") /* rtl: var(--bs-breadcrumb-divider, "/") */
 
 }
 
 .breadcrumb-item.active{
 
-color:#6c757d
+color:#03286F
 
 }
 

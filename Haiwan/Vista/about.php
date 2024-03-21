@@ -48,7 +48,7 @@ session_start();
     <!-- Topbar Start -->
     <div class="container-fluid bg-dark text-light px-0 py-2">
         <div class="row gx-0 d-none d-lg-flex">
-            <div class="col-lg-7 px-5 text-start">
+            <div class="col-lg-7 col-sm-7 px-5 text-start">
                 <div class="h-100 d-inline-flex align-items-center me-4">
                     <span class="fa fa-phone-alt me-2"></span>
                     <span>+57 3135417303</span>
@@ -58,7 +58,7 @@ session_start();
                     <span>haiwanadoptions@gmail.com</span>
                 </div>
             </div>
-            <div class="col-lg-5 px-5 text-end">
+            <div class="col-lg-5 col-sm-5 px-5 text-end">
                 <div class="h-100 d-inline-flex align-items-center mx-n2">
                     <span>Síguenos:</span>
                     <a class="btn btn-link text-light" href=""><i class="fab fa-facebook-f"></i></a>
@@ -94,7 +94,7 @@ session_start();
 
 
     <!-- Page Header Start -->
-    <div class="container-fluid page-header py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
+    <div class="container-fluid page-header-1 py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
         <div class="container text-center py-5">
             <h1 class="display-3 text-white mb-4 animated slideInDown">Nosotros</h1>
             <nav aria-label="breadcrumb animated slideInDown">
