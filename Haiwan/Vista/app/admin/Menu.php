@@ -23,7 +23,7 @@ session_start();
         rel="stylesheet">
 
     <!-- Custom styles for this template-->
-    <link href="css/sb-admin-2.min.css" rel="stylesheet">
+    <link href="css/sb-admin-2.css" rel="stylesheet">
 
 </head>
 
@@ -36,7 +36,7 @@ session_start();
         <ul class="navbar-nav bg-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
             <!-- Sidebar - Brand -->
-            <a class="sidebar-brand d-flex align-items-center justify-content-center bg-primary" href="index.html">
+            <a class="sidebar-brand d-flex align-items-center justify-content-center bg-primary" href="http://localhost/Haiwan/Vista/index.php">
                 <div class="sidebar-brand-icon">
                     <img src="img/logo_notext1.png" 
                     width="60px"
