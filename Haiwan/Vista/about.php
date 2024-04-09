@@ -147,16 +147,26 @@ session_start();
           
                 <div class="col-lg-6 col-md-12 wow fadeInUp">
                     <h2> Misión</h2><br>
-                    <p class="mb-4">Haiwan es un aplicativo que tiene como función poder adoptar cualquier animal doméstico, cumpliendo con el fin de apoyar a todo refugio y organizaciones de cuidados de mascotas para encontrarles a estos animales un nuevo hogar.
-                        Logrando la disminución y con el objetivo de la erradicación de más animales en estado de abandono para lograr un bien social y ambiental para el bienestar y salud de estos animales, creando una gran amistad entre las personas y los animales con nuestra ayuda para lograr un mundo con menos y sin maltrato animal encontrándoles hogares por medio de nosotros y con la gran facilidad de tenerlos y encariñarse con ellos.
+                    <p class="mb-4">
+                        Conectar a los animales abandonados de los albergues y refugios de Medellín con hogares amorosos, promoviendo la adopción responsable y concientizando a la comunidad sobre el cuidado y la protección de los animales en situación de calle. Nuestra misión es brindar una plataforma accesible y confiable que fomente el bienestar animal y contribuya a reducir la población de animales sin hogar en nuestra ciudad.
                     </p>
                 </div>
                 
                 <div class="col-lg-6 col-md-12 wow fadeInUp">
                     <h2> Visión</h2><br>
-                    <p class="mb-4">Para poder obtener todas las metas y logros que busca obtener Haiwan se tiene un plan de crecimiento y desarrollo, antes de poder ofrecer este aplicativo al resto del mundo buscaremos una entidad interesada en otorgarnos su patrocinio asegurándonos que las necesidades del aplicativo estarán completamente cubiertas, este primer paso se busca lograr en un lapso de un año, ofreciendo Haiwan al mundo más prontamente, lo segundo es buscar el interés de las veterinarias y de los refugios animales ofreciéndoles un lugar seguro y confiable donde se les facilitaría aún más la labor de dar en adopción a mascotas y animales domésticos a personas con buena fiabilidad.</p>
+                    <p class="mb-4">
+                        Ser la principal plataforma en línea para la adopción de animales en Medellín, reconocida por nuestra dedicación a la causa del bienestar animal y nuestro compromiso con la construcción de una comunidad compasiva y responsable hacia los animales. Nos esforzamos por crear un futuro donde cada animal tenga la oportunidad de vivir una vida plena y feliz en un hogar amoroso.
+                    </p>
                 </div>
                 
+                <div class="col-md-12 col-sm-12">
+                    <h2>Justificacion</h2>
+                    <p>
+                    La ciudad de Medellín enfrenta un problema persistente de animales abandonados y en situación de calle, lo que conlleva a diversas problemáticas como el maltrato, la proliferación de enfermedades y la sobrepoblación de animales en los albergues y refugios. Nuestro proyecto surge como respuesta a esta necesidad urgente de proporcionar una solución sostenible y compasiva.
+La adopción de animales es una forma efectiva de brindarles una segunda oportunidad de vida, pero muchas veces carece de una plataforma centralizada y accesible que facilite este proceso. A través de nuestro aplicativo web, buscamos facilitar el encuentro entre las mascotas necesitadas de un hogar y las personas interesadas en adoptar, creando así vínculos duraderos que beneficien tanto a los animales como a las familias adoptantes.
+Además de promover la adopción, también nos dedicamos a sensibilizar a la comunidad sobre la importancia del cuidado y la protección de los animales, fomentando prácticas responsables de tenencia y promoviendo la esterilización como medida efectiva para controlar la población animal. Creemos firmemente que, al trabajar juntos, podemos construir una sociedad más compasiva y solidaria, donde cada animal sea tratado con el respeto y el amor que merece.
+                    </p>
+                </div>
 
             </div>
         </div>
