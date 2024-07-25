@@ -20,14 +20,11 @@ include('Menu.php');
                                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                                     <thead>
                                         <tr>
-                                            <th>Usuario</th>
-                                            <th>Tipo Documento</th>
-                                            <th>Tipo Usuario</th>
-                                            <th>Identificación</th>
-                                            <th>Nombre</th>
-                                            <th>Apellidos</th>
-                                            <th>Correo</th>
-                                            <th>Contraseña</th>
+                                            <th>Cod. Solicitud</th>
+                                            <th>Animal</th>
+                                            <th>Fecha de solocitud</th>
+                                            <th>Documento</th>
+                                            <th>Estado de solicitud</th>
                                             <th>Modificar</th>
                                             <th>Eliminar</th>
                                         </tr>
@@ -44,10 +41,7 @@ include('Menu.php');
                                         <td><?php echo ''.$row[1].''; ?></td>
                                         <td><?php echo ''.$row[2].''; ?></td>
                                         <td><?php echo ''.$row[3].''; ?></td>
-                                        <td><?php echo ''.$row[4].''; ?></td>
-                                        <td><?php echo ''.$row[5].''; ?></td>
-                                        <td><?php echo ''.$row[6].''; ?></td>
-                                        <td><?php echo ''.$row[7].''; ?></td>       
+                                        <td><?php echo ''.$row[4].''; ?></td>      
             
                    
                                         <!-- Si el usuario presiona el botòn Modificar ira a el archivo Modificarusua, si presiona eliminar irà a Borrarusua en la Carpeta Control--> 
@@ -87,7 +81,7 @@ include('Menu.php');
     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Nuevo Usuario</h5>
+          <h5 class="modal-title" id="exampleModalLabel">Solicitud</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
@@ -96,22 +90,36 @@ include('Menu.php');
             <form action="../../../controlador/crearUsuario.php">
               <div class="form-row">
                 <div class="form-group col-md-6">
-                  <label for="input_nombre">Nombres</label>
-                  <input type="text" class="form-control" name="input_nombre" required>
+                  <label for="input_nombre">Animal</label>
+                  <select class="form-control" name="Animal" required>
                 </div>
-                <div class="form-group col-md-6">
-                  <label for="input_apellido">Apellidos</label>
-                  <input type="text" class="form-control" name="input_apellido" required>
+
+                <?php  
+                        include( '../../../Controlador/conex.php');
+                          # Consultamos a la tabla tipodocu, que es la que tiene los tipos de docuementos en la BD:
+                          $sql = "SELECT * FROM tipodocumento";
+                          $eje = $conexion->query($sql);
+                          # Mostramos a través de un ciclo todas las opciones válidas:
+                          while($row1 = $eje->fetch_row()){
+                            echo '<option value="'.$row1[0].'">'.$row1[1].'</option>';
+                          }
+                        ?>
+                  </select>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-">
+                  <label for="input_apellido">Fecha de solicitud</label>
+                  <input type="date" class="form-control" name="FechaSolicitud" required>
                 </div>
               </div>
               <div class="form-row">
                 <div class="form-group col-md-6">
                   <label for="input_documento">Documento</label>
-                  <input type="number" class="form-control" name="input_documento" required>
+                  <input type="file" class="form-control" name="DocumentoSop" required>
                 </div>
                 <div class="form-group col-md-6">
-                  <label for="input_tipoDocumento">Tipo de documento</label>
-                  <select id="inputState" class="form-control">
+                  <label for="input_tipoDocumento"> Estado de solicitud</label>
+                  <select class="form-control" name= "EstadoSolicitud" require>
                     <?php  
                         include( '../../../Controlador/conex.php');
                           # Consultamos a la tabla tipodocu, que es la que tiene los tipos de docuementos en la BD:
@@ -122,50 +130,9 @@ include('Menu.php');
                             echo '<option value="'.$row1[0].'">'.$row1[1].'</option>';
                           }
                         ?>
- </select>
-
-                </div>
-              </div>
-              <div class="form-row">
-                <div class="form-group col-md-6">
-                  <label for="input_tipoUsuario">Tipo Usuario</label>
-                  <input type="text" class="form-control" name="input_tipoUsuario" required>
-                </div>
-                <div class="form-group col-md-6">
-                  <label for="input_genero">Género</label>
-                  <select name="input_genero" class="form-control" required>
-                  
-                    <option>Masculino</option>
-                    <option>Femenino</option>
                   </select>
-                </div>
-              </div>
-              <div class="form-row">
-                <div class="form-group col-md-6">
-                  <label for="input_fechaNacimiento">Fecha de nacimiento</label>
-                  <input type="date" class="form-control" name="input_fechaNacimiento" required>
-                </div>
-                <div class="form-group col-md-6">
-                  <label for="input_direccion">Dirección</label>
-                  <input type="address" class="form-control" name="input_direccion" required>
-                </div>
-              </div>
-              <div class="form-row">
-                <div class="form-group col-md-12">
-                  <label for="input_telefono">Teléfono</label>
-                  <input type="tel" class="form-control" name="input_telefono" required>
-                </div>
-              </div>
-              <div class="form-row">
-                <div class="form-group col-md-6">
-                  <label for="input_email">Correo</label>
-                  <input type="email" class="form-control" name="input_email" required>
-                </div>
-                <div class="form-group col-md-6">
-                  <label for="input_contrasena">Contraseña</label>
-                  <input type="password" class="form-control" name="input_contrasena" required>
-                </div>
-              </div>
+
+          
               <center> <button type="submit" class="btn btn-primary">Guardar</button></center> 
               </form>
         </div>
