@@ -7,7 +7,7 @@ include('Menu.php');
                 <div class="container-fluid">
 
                     <!-- Page Heading -->
-                    <h1 class="h3 mb-2 text-gray-800">Usuarios</h1>
+                    <h1 class="h3 mb-2 text-gray-800">Fundaciones</h1>
                     <!-- DataTales Example -->
                     <div class="card shadow mb-4">
                        
@@ -20,31 +20,18 @@ include('Menu.php');
                                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                                     <thead>
                                         <tr>
-                                            <th>Identificación</th>
-                                            <th>Tipo Usuario</th>
-                                            <th>Tipo Doc.</th>
-                                            <th>Nombres</th>
-                                            <th>Apellidos</th>
-                                            <th>Teléfono</th>
+                                            <th>Documento</th>
+                                            <th>Razon Social</th>
+                                            <th>Direccion</th>
+                                            <th>Telefono</th>
+                                            <th>Correo</th>
+                                            <th>Clave</th>
                                             <th>Eliminar</th>
                                             <th>Modificar</th>
 
                                         </tr>
                                     </thead>
-                                    <tfoot>
-                                        <tr>
-                                            <th>Identificación</th>
-                                            <th>Tipo Usuario</th>
-                                            <th>Tipo Doc.</th>
-                                            <th>Nombres</th>
-                                            <th>Apellidos</th>
-                                            <th>Teléfono</th>
-                                            <th>Eliminar</th>
-                                            <th>Modificar</th>
-                                        </tr>
-                                    </tfoot>
                                     <tbody>
-                                       
                                         <tr>
                                             <th>33816156</th>
                                             <th>Administrador</th>
@@ -116,38 +103,39 @@ include('Menu.php');
             <form>
                 <div class="form-row">
                   <div class="form-group col-md-6">
-                    <label for="inputEmail4">Email</label>
-                    <input type="email" class="form-control" id="inputEmail4">
+                    <label for="inputEmail4">Nombre:</label>
+                    <input type="text" class="form-control" name="Nombre" placeholder="Digita el nombre" required>
                   </div>
-                  <div class="form-group col-md-6">
-                    <label for="inputPassword4">Password</label>
-                    <input type="password" class="form-control" id="inputPassword4">
+                  <div class="form-group col-md-4">
+                    <label for="inputPassword4">Logo:</label>
+                    <input type="file" name="Logo">
                   </div>
                 </div>
-                <div class="form-group">
-                  <label for="inputAddress">Address</label>
-                  <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                <div class="form-group col-md-6">
+                  <label for="inputAddress">Documento:</label>
+                  <input type="number" class="form-control" name="Documento" placeholder="Cedula del responsable">
                 </div>
                 <div class="form-group">
-                  <label for="inputAddress2">Address 2</label>
-                  <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                  <label for="inputAddress2">Razon Social:</label>
+                  <textarea type="text" class="form-control" name="RazonSocial" placeholder="Descripcion de la Fundacion"></textarea>
                 </div>
                 <div class="form-row">
                   <div class="form-group col-md-6">
-                    <label for="inputCity">City</label>
-                    <input type="text" class="form-control" id="inputCity">
+                    <label for="inputCity">Direccion:</label>
+                    <input type="text" class="form-control" name="Direccion" placeholder="Direccion de la sede principal">
                   </div>
-                  <div class="form-group col-md-4">
-                    <label for="inputState">State</label>
-                    <select id="inputState" class="form-control">
-                      <option selected>Choose...</option>
-                      <option>...</option>
-                    </select>
+                  <div class="form-group col-md-6">
+                    <label for="inputState">Telefono:</label>
+                    <input type="number" class="form-control" name="Telefono" placeholder="Numero Telefonico">
                   </div>
-                  <div class="form-group col-md-2">
-                    <label for="inputZip">Zip</label>
-                    <input type="text" class="form-control" id="inputZip">
+                  <div class="form-group col-md-6">
+                    <label for="inputZip">Correo:</label>
+                    <input type="text" class="form-control" name="CorreoElectronico">
                   </div>
+                  <div class="form-group">
+                  <label for="inputAddress">Clave:</label>
+                  <input type="passwor" class="form-control" name="Clave" placeholder="Contraseña de la cuenta">
+                </div>
                 </div>
                 
               <center> <button type="submit" class="btn btn-primary">Guardar</button></center> 

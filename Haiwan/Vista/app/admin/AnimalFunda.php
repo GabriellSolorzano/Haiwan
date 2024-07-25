@@ -16,24 +16,49 @@ include('Menu.php');
                         </div>
                         <div class="card-body">
                            
-                            <div class="table-responsive">
-                                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                                    <thead>
-                                        <tr>
-                                            <th>Usuario</th>
-                                            <th>Tipo Documento</th>
-                                            <th>Tipo Usuario</th>
-                                            <th>Identificación</th>
-                                            <th>Nombre</th>
-                                            <th>Apellidos</th>
-                                            <th>Correo</th>
-                                            <th>Contraseña</th>
-                                            <th>Modificar</th>
-                                            <th>Eliminar</th>
-                                        </tr>
-                                    </thead>
-                                    <tfoot> 
-                                    </tfoot>
+                        <div class="card-body">
+                           
+                           <div class="table-responsive">
+                               <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                                   <thead>
+                                       <tr>
+                                           <th>Documento</th>
+                                           <th>Razon Social</th>
+                                           <th>Direccion</th>
+                                           <th>Telefono</th>
+                                           <th>Correo</th>
+                                           <th>Clave</th>
+                                           <th>Eliminar</th>
+                                           <th>Modificar</th>
+
+                                       </tr>
+                                   </thead>
+                                   <tbody>
+                                       <tr>
+                                           <th>33816156</th>
+                                           <th>Administrador</th>
+                                           <th>Tipo Doc.</th>
+                                           <th>Dianeth Yamile</th>
+                                           <th>León Valencia</th>
+                                           <th>3135417303</th>
+                                           <th><center><button class="btn btn-sm btn-danger">Eliminar</center></button></th>
+                                           <th><center><button class="btn btn-sm btn-primary">Modificar</center></button></th>
+                                       </tr>
+                                       <tr>
+                                           <th>33816156</th>
+                                           <th>Administrador</th>
+                                           <th>Tipo Doc.</th>
+                                           <th>Dianeth Yamile</th>
+                                           <th>León Valencia</th>
+                                           <th>3135417303</th>
+                                           <th><center><button class="btn btn-sm btn-danger">Eliminar</center></button></th>
+                                           <th><center><button class="btn btn-sm btn-primary">Modificar</center></button></th>
+                                       </tr>
+
+                                   </tbody>
+                               </table>
+                           </div>
+                       </div>
                                     <?php 
                                                   include( '../../../Control/Conex.php'); 
                                                   $cons = $conexion -> query("SELECT *  FROM usuario");
