@@ -20,7 +20,7 @@ include('Menu.php');
                                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                                     <thead>
                                         <tr>
-                                        <th>Cód. Mascota</th>
+                                            <th>Cód. Mascota</th>
                                             <th>Nombre</th>
                                             <th>Foto</th>
                                             <th>Descripción</th>
@@ -98,7 +98,7 @@ include('Menu.php');
             <form action="../../../controlador/crearUsuario.php">
               <div class="form-row">
                 <div class="form-group col-md-6">
-                  <label for="input_nombre">Nombre:</label>
+                  <label for="input_nombre">Nombre</label>
                   <input type="text" class="form-control" name="Nombre" placeholder="Nombre mascota" required>
                 </div>
                 <div class="form-group col-md-6">
@@ -115,7 +115,8 @@ include('Menu.php');
                <div class="form-row">
                 <div class="form-group col-md-6">
                   <label for="input_tipoDocumento">Tipo de animal </label>
-                  <select id="inputState" class="form-control">
+                  <select id="inputState" class="form-control" name="Tipo animal" require>
+                </div>
                     <?php  
                         include( '../../../Controlador/conex.php');
                           # Consultamos a la tabla tipodocu, que es la que tiene los tipos de docuementos en la BD:
@@ -130,8 +131,8 @@ include('Menu.php');
 
                 </div>
                 <div class="form-group col-md-6">
-                  <label for="input_tipoDocumento">Raza</label>
-                  <select id="inputState" class="form-control">
+                  <label for="input_tipoDocumento">Características</label>
+                  <select id="inputState" class="form-control" name="Carateristicas" require>
                     <?php  
                         include( '../../../Controlador/conex.php');
                           # Consultamos a la tabla tipodocu, que es la que tiene los tipos de docuementos en la BD:
@@ -148,46 +149,22 @@ include('Menu.php');
               </div>
               <div class="form-row">
                 <div class="form-group col-md-6">
-                  <label for="input_tipoUsuario">Tipo Usuario</label>
-                  <input type="text" class="form-control" name="input_tipoUsuario" required>
+                  <label for="input_tipoUsuario">Edad promedio</label>
+                  <input type="number" class="form-control" name="Edad" required>
                 </div>
                 <div class="form-group col-md-6">
-                  <label for="input_genero">Género</label>
-                  <select name="input_genero" class="form-control" required>
-                  
-                    <option>Masculino</option>
-                    <option>Femenino</option>
-                  </select>
+                  <label for="input_genero">Ciudad</label>
+                  <select name="inputState" class="form-control" name="Ciudad" required>
                 </div>
               </div>
-              <div class="form-row">
-                <div class="form-group col-md-6">
-                  <label for="input_fechaNacimiento">Fecha de nacimiento</label>
-                  <input type="date" class="form-control" name="input_fechaNacimiento" required>
+
+              <div class="form-group col-md-6">
+                  <label for="input_fechaNacimiento">Departamento</label>
+                  <select name="inputState" class="form-control" name="Dapartamento" required>
                 </div>
-                <div class="form-group col-md-6">
-                  <label for="input_direccion">Dirección</label>
-                  <input type="address" class="form-control" name="input_direccion" required>
-                </div>
-              </div>
-              <div class="form-row">
-                <div class="form-group col-md-12">
-                  <label for="input_telefono">Teléfono</label>
-                  <input type="tel" class="form-control" name="input_telefono" required>
-                </div>
-              </div>
-              <div class="form-row">
-                <div class="form-group col-md-6">
-                  <label for="input_email">Correo</label>
-                  <input type="email" class="form-control" name="input_email" required>
-                </div>
-                <div class="form-group col-md-6">
-                  <label for="input_contrasena">Contraseña</label>
-                  <input type="password" class="form-control" name="input_contrasena" required>
-                </div>
-              </div>
-              <center> <button type="submit" class="btn btn-primary">Guardar</button></center> 
-              </form>
+
+               <button type="submit" class="btn btn-primary">Guardar</button>
+            </form>
         </div>
         
       </div>
@@ -195,7 +172,7 @@ include('Menu.php');
   </div>
   </div>
 
-  </div>
+  </div>          
     <!-- Footer -->
     <footer class="sticky-footer bg-white">
                 <div class="container my-auto">
