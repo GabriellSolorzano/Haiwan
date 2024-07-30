@@ -156,14 +156,14 @@ include('Menu.php');
                   <label for="input_genero">Ciudad</label>
                   <select name="inputState" class="form-control" name="Ciudad" required>
                 </div>
-              </div>
+                </div>
 
-              <div class="form-group col-md-6">
+               <div class="form-group col-md-6">
                   <label for="input_fechaNacimiento">Departamento</label>
                   <select name="inputState" class="form-control" name="Dapartamento" required>
                 </div>
 
-               <button type="submit" class="btn btn-primary">Guardar</button>
+               <center> <button type="submit" class="btn btn-primary">Guardar</button> </center>
             </form>
         </div>
         

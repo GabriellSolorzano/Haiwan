@@ -115,7 +115,7 @@ include('Menu.php');
               <div class="form-row">
                 <div class="form-group col-md-6">
                   <label for="input_documento">Documento</label>
-                  <input type="file" class="form-control" name="DocumentoSop" required>
+                  <input type="type" class="form-control" name="DocumentoSop" required>
                 </div>
                 <div class="form-group col-md-6">
                   <label for="input_tipoDocumento"> Estado de solicitud</label>
@@ -131,9 +131,7 @@ include('Menu.php');
                           }
                         ?>
                   </select>
-
-          
-              <center> <button type="submit" class="btn btn-primary">Guardar</button></center> 
+                   <button type="submit" class="btn btn-primary">Guardar</button>
               </form>
         </div>
         
