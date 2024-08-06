@@ -20,13 +20,22 @@ include('Menu.php');
                                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                                     <thead>
                                         <tr>
-                                            <th>Fundacion</th>
-                                            <th>Animal</th>
+                                            <th>Fundación</th>
+                                            <th>Mascota</th>
                                             <th>Eliminar</th>
                                             <th>Modificar</th>
 
                                         </tr>
                                     </thead>
+                                    <?php 
+                                                  include( '../../../Controlador/conex.php'); 
+                                                  $cons = $conexion -> query("SELECT *  FROM usuario");
+                                                  while ($row = $cons -> fetch_row()) {
+                                                ?>
+                                            <tr>
+                                        <td><?php echo number_format(''.$row[0].''); ?></td>
+                                        <td><?php echo ''.$row[1].''; ?></td>
+                                        <td><?php echo ''.$row[2].''; ?></td>
                                     <tbody>
                                         <tr>
                                             <th>La Perla</th>

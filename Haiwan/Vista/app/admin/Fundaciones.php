@@ -20,17 +20,39 @@ include('Menu.php');
                                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                                     <thead>
                                         <tr>
+                                            <th>Fundacion</th>
+                                            <th>Tipode de Documento</th>
+                                            <th>Tipo de Fundacion</th>
                                             <th>Documento</th>
                                             <th>Razon Social</th>
                                             <th>Direccion</th>
                                             <th>Telefono</th>
                                             <th>Correo</th>
                                             <th>Clave</th>
+                                            <th>Ciudad</th>
+                                            <th>Departamento</th>
                                             <th>Eliminar</th>
                                             <th>Modificar</th>
 
                                         </tr>
                                     </thead>
+                                    <?php 
+                                                  include( '../../../Controlador/conex.php'); 
+                                                  $cons = $conexion -> query("SELECT *  FROM usuario");
+                                                  while ($row = $cons -> fetch_row()) {
+                                                ?>
+                                            <tr>
+                                        <td><?php echo number_format(''.$row[0].''); ?></td>
+                                        <td><?php echo ''.$row[1].''; ?></td>
+                                        <td><?php echo ''.$row[2].''; ?></td>
+                                        <td><?php echo ''.$row[3].''; ?></td>
+                                        <td><?php echo ''.$row[4].''; ?></td>
+                                        <td><?php echo ''.$row[5].''; ?></td>
+                                        <td><?php echo ''.$row[6].''; ?></td>
+                                        <td><?php echo ''.$row[7].''; ?></td>
+                                        <td><?php echo ''.$row[8].''; ?></td>
+                                        <td><?php echo ''.$row[9].''; ?></td>
+                                        <td><?php echo ''.$row[10].''; ?></td>
                                     <tbody>
                                         <tr>
                                             <th>33816156</th>
