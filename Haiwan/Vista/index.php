@@ -260,8 +260,7 @@ session_start();
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
                     <p class="fs-5 fw-bold text-primary">¿Por qué elegirnos?</p>
                     <h1 class="display-5 mb-4">Algunas razones por las que la gente nos elige</h1>
-                    <p class="mb-4">...</p>
-                    <a class="btn btn-primary py-3 px-4" href="">Saber más</a>
+                    <p class="mb-4"></p>
                 </div>
                 <div class="col-lg-6">
                     <div class="row g-4 align-items-center">
@@ -334,7 +333,7 @@ session_start();
                                 <img class="img-fluid" src="img/icon/centro-icon.png" alt="Icon">
                             </div>
                             <h4 class="mb-3">Fundación Con Pasión Animal</h4>
-                            <p class="mb-4">Dirección: Transversal 32B # 74C - 55 Belén Alameda, Medellín - Colombia.</p>
+                            <p class="mb-4">Dirección: Tv. 32B # 74C - 55 Belén Alameda - Medellín, Colombia.</p>
                             <a class="btn btn-sm" href="https://www.conpasionanimal.org/"><i class="fa fa-plus text-primary me-2"></i>Saber más</a>
                         </div>
                     </div>
@@ -349,7 +348,7 @@ session_start();
                                 <img class="img-fluid" src="img/icon/centro-icon.png" alt="Icon">
                             </div>
                             <h4 class="mb-3">Fundación Orca</h4>
-                            <p class="mb-4">Dirección: LUGAR CIRCULAR 3 A 71 30 APTO 301, Medellin, Antioquia.</p>
+                            <p class="mb-4">Dirección: Tv. 41 #72-24, Laureles - Medellín, Colombia.</p>
                             <a class="btn btn-sm" href="https://fundacionorca.org/"><i class="fa fa-plus text-primary me-2"></i>Saber más</a>
                         </div>
                     </div>
@@ -364,7 +363,7 @@ session_start();
                                 <img class="img-fluid" src="img/icon/centro-icon.png" alt="Icon">
                             </div>
                             <h4 class="mb-3">La Perla</h4>
-                            <p class="mb-4">Dirección: Cr112 12-01, Medellín, Antioquia </p>
+                            <p class="mb-4">Dirección: Cr. 112 12-01, Medellín, Colombia. </p>
                             <a class="btn btn-sm" href="https://www.instagram.com/laperlamed/?hl=es"><i class="fa fa-plus text-primary me-2"></i>Saber más</a>
                         </div>
                     </div>
@@ -379,7 +378,7 @@ session_start();
                                 <img class="img-fluid" src="img/icon/centro-icon.png" alt="Icon">
                             </div>
                             <h4 class="mb-3">PetSon</h4>
-                            <p class="mb-4">Dirección: Dg 74B # 32-57, Medellín, Belén, Medellín, Antioquia.</p>
+                            <p class="mb-4">Dirección: Dg. 74B #32-57, Belén - Medellín, Colombia.</p>
                             <a class="btn btn-sm" href="https://www.instagram.com/fundacionpetson/?hl=es-la"><i class="fa fa-plus text-primary me-2"></i>Saber más</a>
                         </div>
                     </div>
@@ -394,7 +393,7 @@ session_start();
                                 <img class="img-fluid" src="img/icon/centro-icon.png" alt="Icon">
                             </div>
                             <h4 class="mb-3">Sociedad Protectora de Animales de Medellín</h4>
-                            <p class="mb-4">Dirección: CARRERA 75 65 176, MEDELLIN, Antioquia.</p>
+                            <p class="mb-4">Dirección: Cr. 75 #65-176, Medellín, Antioquia.</p>
                             <a class="btn btn-sm" href="https://www.protectoranimales.org/"><i class="fa fa-plus text-primary me-2"></i>Saber más</a>
                         </div>
                     </div>
@@ -533,101 +532,6 @@ session_start();
         </div>
     </div>
     <!-- Projects End -->
-
-    <!-- Lost n found Start -->
-    <div class="container-xxl py-5">
-        <div class="container">
-            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
-                <p class="fs-5 fw-bold text-primary">Perdidos y Encontrados</p>
-                <h1 class="display-5 mb-5">¿Perdiste a tu mascota?</h1>
-                <p class="fs-5 fw-bold text-secondary">Haiwan te da un medio para encontrar a tus mascotas Perdidas y para ver que mascotas fueron encontradas con un collar o similar.</p>
-            </div>
-            <div class="row wow fadeInUp" data-wow-delay="0.3s">
-                <div class="col-12 text-center">
-                    <ul class="list-inline rounded mb-5" id="portfolio-flters">
-                        <li class="mx-2" data-filter=".first">Perdidos</li>
-                        <li class="mx-2" data-filter=".second">Encontrados</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="row g-4 portfolio-container">
-                <div class="col-lg-4 col-md-6 portfolio-item first wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="portfolio-inner rounded">
-                        <img class="img-fluid" src="img/favoritos-perros-1.jpg" alt="">
-                        <div class="portfolio-text">
-                            <h4 class="text-white mb-4">Henrick</h4>
-                            <div class="d-flex">
-                                <a class="btn btn-lg-square rounded-circle mx-2" href="img/service-1.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                                <a class="btn btn-lg-square rounded-circle mx-2" href=""><i class="fa fa-link"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 portfolio-item second wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="portfolio-inner rounded">
-                        <img class="img-fluid" src="img/favoritos-gatos-1.jfif" alt="">
-                        <div class="portfolio-text">
-                            <h4 class="text-white mb-4">Blanca</h4>
-                            <div class="d-flex">
-                                <a class="btn btn-lg-square rounded-circle mx-2" href="img/service-2.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                                <a class="btn btn-lg-square rounded-circle mx-2" href=""><i class="fa fa-link"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 portfolio-item first wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="portfolio-inner rounded">
-                        <img class="img-fluid" src="img/favoritos-general-1.jfif" alt="">
-                        <div class="portfolio-text">
-                            <h4 class="text-white mb-4">Tico</h4>
-                            <div class="d-flex">
-                                <a class="btn btn-lg-square rounded-circle mx-2" href="img/service-5.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                                <a class="btn btn-lg-square rounded-circle mx-2" href=""><i class="fa fa-link"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>    
-                <div class="col-lg-4 col-md-6 portfolio-item first wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="portfolio-inner rounded">
-                        <img class="img-fluid" src="img/favoritos-perros-2.jpg" alt="">
-                        <div class="portfolio-text">
-                            <h4 class="text-white mb-4">Daniel</h4>
-                            <div class="d-flex">
-                                <a class="btn btn-lg-square rounded-circle mx-2" href="img/service-3.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                                <a class="btn btn-lg-square rounded-circle mx-2" href=""><i class="fa fa-link"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 portfolio-item second wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="portfolio-inner rounded">
-                        <img class="img-fluid" src="img/favoritos-perros-3.jpg" alt="">
-                        <div class="portfolio-text">
-                            <h4 class="text-white mb-4">Alberto</h4>
-                            <div class="d-flex">
-                                <a class="btn btn-lg-square rounded-circle mx-2" href="img/service-5.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                                <a class="btn btn-lg-square rounded-circle mx-2" href=""><i class="fa fa-link"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 portfolio-item second wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="portfolio-inner rounded">
-                        <img class="img-fluid" src="img/favoritos-general-2.jfif" alt="">
-                        <div class="portfolio-text">
-                            <h4 class="text-white mb-4">Calcetín</h4>
-                            <div class="d-flex">
-                                <a class="btn btn-lg-square rounded-circle mx-2" href="img/service-5.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                                <a class="btn btn-lg-square rounded-circle mx-2" href=""><i class="fa fa-link"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Lost n found End -->
-
 
 
     <!-- Team Start -->

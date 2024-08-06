@@ -2,20 +2,15 @@
 error_reporting(0);
 session_start();
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-
     <title>Haiwan</title>
-
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link
@@ -67,25 +62,63 @@ session_start();
 
             <!-- Nav Item - Pages Collapse Menu -->
           
-
-            <!-- Nav Item - Charts -->
             <li class="nav-item">
-                <a class="nav-link" href="usuarios.php">
-                    <i class=" fas fa-duotone fa-users"></i>
-                   <span>Usuarios</span></a>
+                <a class="nav-link" href="Fundaciones.php">
+                    <i class="fas fa-fw fa-table"></i>
+                    <span>Fundaciones</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="AnimalFunda.php">
+                    <i class="fas fa-fw fa-table"></i>
+                    <span>Animal en Fundación</span></a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="PublicaFunda.php">
+                    <i class="fas fa-fw fa-table"></i>
+                    <span>Publicación Fundación</span></a>
+            </li>
+
+            
+            <li class="nav-item">
+                <a class="nav-link" href="PublicaUsua.php">
+                    <i class="fas fa-fw fa-table"></i>
+                    <span>Publicación Usuarios</span></a>
+            </li>
+
+            
+            <li class="nav-item">
+                <a class="nav-link" href="Comentarios.php">
+                    <i class="fas fa-fw fa-table"></i>
+                    <span>Comentarios</span></a>
+            </li>
+
+            
+            <li class="nav-item">
+                <a class="nav-link" href="MacotasFav.php">
+                    <i class="fas fa-fw fa-table"></i>
+                    <span>Mascotas Favoritas</span></a>
             </li>
 
             <!-- Nav Item - Tables -->
             <li class="nav-item">
-                <a class="nav-link" href="Tabla1.php">
+                <a class="nav-link" href="Mascotas.php">
                     <i class="fas fa-fw fa-table"></i>
                     <span>Mascotas</span></a>
             </li>
              
-             <li class="nav-item">
-                <a class="nav-link" href="Tabla2.php">
+             
+
+            <li class="nav-item">
+                <a class="nav-link" href="SolicitudA.php">
                     <i class="fas fa-fw fa-table"></i>
-                    <span>Fundaciones</span></a>
+                    <span>Solicitud de Adopción</span></a>
+            </li>
+             <!-- Nav Item - Charts -->
+             <li class="nav-item">
+                <a class="nav-link" href="usuarios.php">
+                    <i class=" fas fa-duotone fa-users"></i>
+                   <span>Usuarios</span></a>
             </li>
 
 
@@ -199,3 +232,23 @@ session_start();
 
                 </nav>
                 <!-- End of Topbar -->
+
+ <!-- Logout Modal-->
+    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">¿Listo para salir?</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"></span>
+                    </button>
+                </div>
+                <div class="modal-body" style= "color:black">Presiona "cerrar sesión" en el caso de salir.</div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancelar</button>
+                    <a class="btn btn-primary" href="../../../Control/Logout.php">Cerrar sesión</a>
+                </div>
+            </div>
+        </div>
+    </div>
