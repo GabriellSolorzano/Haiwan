@@ -12,7 +12,7 @@ include('Menu.php');
                     <div class="card shadow mb-4">
                        
                         <div class="col-md-12 align-self-end card-header py-3 justify-content-end">
-                            <button class="btn btn-sm bg-gradient-primary offset-md-10 col-md-2" data-toggle="modal" data-target="#exampleModal">Nueva Mascota</button>
+                            <button class="btn btn-sm btn-primary offset-md-10 col-md-2" data-toggle="modal" data-target="#exampleModal">Nueva Mascota</button>
                         </div>
                         <div class="card-body">
                            
@@ -54,8 +54,8 @@ include('Menu.php');
                    
                                         <!-- Si el usuario presiona el botòn Modificar ira a el archivo Modificarusua, si presiona eliminar irà a Borrarusua en la Carpeta Control--> 
                                         <!-- Onclick nos dice a donde se va a dirigir cuando presione el botón-->    
-                                        <td> <center> <button type="submit" class="btn btn-sm btn-danger"><img src="img/Modificar.png" width="25px"></button> 
-                                        <td> <center><button type="submit" class="btn btn-sm btn-primary" name="EliminaUsua" onclick="location='../../../Controlador/borrarUsuario.php?id=<?php echo ''.$row[0].'' ?>'"><img src="img/Eliminar.png" width="25px"></button></center></td>
+                                        <td> <center> <button type="submit" class="btn btn-sm btn-primary"><img src="img/Modificar.png" width="25px"></button> 
+                                        <td> <center><button type="submit" class="btn btn-sm btn-danger" name="EliminaUsua" onclick="location='../../../Controlador/borrarUsuario.php?id=<?php echo ''.$row[0].'' ?>'"><img src="img/Eliminar.png" width="25px"></button></center></td>
                                           
                                                     
                                     </tr>

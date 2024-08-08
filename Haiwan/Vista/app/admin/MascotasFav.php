@@ -12,7 +12,7 @@ include('Menu.php');
                     <div class="card shadow mb-4">
                        
                         <div class="col-md-12 align-self-end card-header py-3 justify-content-end">
-                            <button class="btn btn-sm bg-gradient-primary offset-md-10 col-md-2" data-toggle="modal" data-target="#exampleModal">Nueva Mascota</button>
+                            <button class="btn btn-sm btn-primary offset-md-10 col-md-2" data-toggle="modal" data-target="#exampleModal">Nueva Mascota</button>
                         </div>
                         <div class="card-body">
                            
@@ -20,15 +20,10 @@ include('Menu.php');
                                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                                     <thead>
                                         <tr>
-                                        <th>Cód. Mascota</th>
-                                            <th>Nombre</th>
-                                            <th>Foto</th>
-                                            <th>Descripción</th>
-                                            <th>Tipo Animal</th>
-                                            <th>Raza</th>
-                                            <th>Edad Prom.</th>
-                                            <th>Ciudad</th>
-                                            <th>Departamento</th>
+                                            <th>Cód. Mascota Favorita</th>
+                                            <th>Usuario</th>
+                                            <th>Animal</th>
+                                            <th>Calificacion</th>
                                             <th>Modificar</th>
                                             <th>Eliminar</th>
                                         </tr>
@@ -37,25 +32,19 @@ include('Menu.php');
                                     </tfoot>
                                     <?php 
                                                   include( '../../../Control/Conex.php'); 
-                                                  $cons = $conexion -> query("SELECT *  FROM Usuario");
+                                                  $cons = $conexion -> query("SELECT *  FROM animalfavorito");
                                                   while ($row = $cons -> fetch_row()) {
                                                 ?>
                                             <tr>
                                         <td><?php echo number_format(''.$row[0].''); ?></td>
                                         <td><?php echo ''.$row[1].''; ?></td>
                                         <td><?php echo ''.$row[2].''; ?></td>
-                                        <td><?php echo ''.$row[3].''; ?></td>
-                                        <td><?php echo ''.$row[4].''; ?></td>
-                                        <td><?php echo ''.$row[5].''; ?></td>
-                                        <td><?php echo ''.$row[6].''; ?></td>
-                                        <td><?php echo ''.$row[7].''; ?></td>    
-                                        <td><?php echo ''.$row[8].''; ?></td>       
-            
+                                        <td><?php echo ''.$row[3].''; ?></td>            
                    
                                         <!-- Si el usuario presiona el botòn Modificar ira a el archivo Modificarusua, si presiona eliminar irà a Borrarusua en la Carpeta Control--> 
                                         <!-- Onclick nos dice a donde se va a dirigir cuando presione el botón-->    
-                                        <td> <center> <button type="submit" class="btn btn-sm bg-gradient-primary"><img src="img/Modificar.png" width="25px"></button> 
-                                        <td> <center><button type="submit" class="btn btn-sm bg-gradient-danger" name="EliminaUsua" onclick="location='../../../Controlador/borrarUsuario.php?id=<?php echo ''.$row[0].'' ?>'"><img src="img/Eliminar.png" width="25px"></button></center></td>
+                                        <td> <center> <button type="submit" class="btn btn-sm btn-primary"><img src="img/Modificar.png" width="25px"></button> 
+                                        <td> <center><button type="submit" class="btn btn-sm btn-danger" name="EliminaUsua" onclick="location='../../../Controlador/borrarUsuario.php?id=<?php echo ''.$row[0].'' ?>'"><img src="img/Eliminar.png" width="25px"></button></center></td>
                                           
                                                     
                                     </tr>
@@ -98,7 +87,7 @@ include('Menu.php');
             <form action="../../../controlador/crearUsuario.php">
               <div class="form-row">
                 <div class="form-group col-md-6">
-                  <label for="input_nombre">Nombre:</label>
+                  <label for="input_nombre">Nombre</label>
                   <input type="text" class="form-control" name="Nombre" placeholder="Nombre mascota" required>
                 </div>
                 <div class="form-group col-md-6">
@@ -115,7 +104,8 @@ include('Menu.php');
                <div class="form-row">
                 <div class="form-group col-md-6">
                   <label for="input_tipoDocumento">Tipo de animal </label>
-                  <select id="inputState" class="form-control">
+                  <select id="inputState" class="form-control" name="Tipo animal" require>
+                </div>
                     <?php  
                         include( '../../../Controlador/conex.php');
                           # Consultamos a la tabla tipodocu, que es la que tiene los tipos de docuementos en la BD:
@@ -130,8 +120,8 @@ include('Menu.php');
 
                 </div>
                 <div class="form-group col-md-6">
-                  <label for="input_tipoDocumento">Raza</label>
-                  <select id="inputState" class="form-control">
+                  <label for="input_tipoDocumento">Características</label>
+                  <select id="inputState" class="form-control" name="Carateristicas" require>
                     <?php  
                         include( '../../../Controlador/conex.php');
                           # Consultamos a la tabla tipodocu, que es la que tiene los tipos de docuementos en la BD:
@@ -148,46 +138,22 @@ include('Menu.php');
               </div>
               <div class="form-row">
                 <div class="form-group col-md-6">
-                  <label for="input_tipoUsuario">Tipo Usuario</label>
-                  <input type="text" class="form-control" name="input_tipoUsuario" required>
+                  <label for="input_tipoUsuario">Edad promedio</label>
+                  <input type="number" class="form-control" name="Edad" required>
                 </div>
                 <div class="form-group col-md-6">
-                  <label for="input_genero">Género</label>
-                  <select name="input_genero" class="form-control" required>
-                  
-                    <option>Masculino</option>
-                    <option>Femenino</option>
-                  </select>
+                  <label for="input_genero">Ciudad</label>
+                  <select name="inputState" class="form-control" name="Ciudad" required>
                 </div>
-              </div>
-              <div class="form-row">
-                <div class="form-group col-md-6">
-                  <label for="input_fechaNacimiento">Fecha de nacimiento</label>
-                  <input type="date" class="form-control" name="input_fechaNacimiento" required>
                 </div>
-                <div class="form-group col-md-6">
-                  <label for="input_direccion">Dirección</label>
-                  <input type="address" class="form-control" name="input_direccion" required>
+
+               <div class="form-group col-md-6">
+                  <label for="input_fechaNacimiento">Departamento</label>
+                  <select name="inputState" class="form-control" name="Dapartamento" required>
                 </div>
-              </div>
-              <div class="form-row">
-                <div class="form-group col-md-12">
-                  <label for="input_telefono">Teléfono</label>
-                  <input type="tel" class="form-control" name="input_telefono" required>
-                </div>
-              </div>
-              <div class="form-row">
-                <div class="form-group col-md-6">
-                  <label for="input_email">Correo</label>
-                  <input type="email" class="form-control" name="input_email" required>
-                </div>
-                <div class="form-group col-md-6">
-                  <label for="input_contrasena">Contraseña</label>
-                  <input type="password" class="form-control" name="input_contrasena" required>
-                </div>
-              </div>
-              <center> <button type="submit" class="btn btn-primary">Guardar</button></center> 
-              </form>
+
+               <center> <button type="submit" class="btn btn-primary">Guardar</button> </center>
+            </form>
         </div>
         
       </div>
@@ -195,7 +161,7 @@ include('Menu.php');
   </div>
   </div>
 
-  </div>
+  </div>          
     <!-- Footer -->
     <footer class="sticky-footer bg-white">
                 <div class="container my-auto">

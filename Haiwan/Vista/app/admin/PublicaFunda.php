@@ -7,12 +7,12 @@ include('Menu.php');
                 <div class="container-fluid">
 
                     <!-- Page Heading -->
-                    <h1 class="h3 mb-2 text-gray-800">Usuarios</h1>
+                    <h1 class="h3 mb-2 text-gray-800">Publicaciones de Fundaciones</h1>
                     <!-- DataTales Example -->
                     <div class="card shadow mb-4">
                        
                         <div class="col-md-12 align-self-end card-header py-3 justify-content-end">
-                            <button class="btn btn-sm bg-gradient-primary offset-md-10 col-md-2" data-toggle="modal" data-target="#exampleModal">Nuevo Usuario</button>
+                            <button class="btn btn-sm btn-primary offset-md-10 col-md-2" data-toggle="modal" data-target="#exampleModal">Nuevo Usuario</button>
                         </div>
                         <div class="card-body">
                            
@@ -20,14 +20,11 @@ include('Menu.php');
                                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                                     <thead>
                                         <tr>
-                                            <th>Usuario</th>
-                                            <th>Tipo Documento</th>
-                                            <th>Tipo Usuario</th>
-                                            <th>Identificación</th>
-                                            <th>Nombre</th>
-                                            <th>Apellidos</th>
-                                            <th>Correo</th>
-                                            <th>Contraseña</th>
+                                            <th>Cod. de Publicacion</th>
+                                            <th>Fundacion</th>
+                                            <th>Animal</th>
+                                            <th>Fecha de la Publicacion</th>
+                                            <th>Estado de la Publicacion</th>
                                             <th>Modificar</th>
                                             <th>Eliminar</th>
                                         </tr>
@@ -36,7 +33,7 @@ include('Menu.php');
                                     </tfoot>
                                     <?php 
                                                   include( '../../../Control/Conex.php'); 
-                                                  $cons = $conexion -> query("SELECT *  FROM usuario");
+                                                  $cons = $conexion -> query("SELECT *  FROM publicacionfund");
                                                   while ($row = $cons -> fetch_row()) {
                                                 ?>
                                             <tr>
@@ -44,16 +41,12 @@ include('Menu.php');
                                         <td><?php echo ''.$row[1].''; ?></td>
                                         <td><?php echo ''.$row[2].''; ?></td>
                                         <td><?php echo ''.$row[3].''; ?></td>
-                                        <td><?php echo ''.$row[4].''; ?></td>
-                                        <td><?php echo ''.$row[5].''; ?></td>
-                                        <td><?php echo ''.$row[6].''; ?></td>
-                                        <td><?php echo ''.$row[7].''; ?></td>       
-            
+                                        <td><?php echo ''.$row[4].''; ?></td>            
                    
                                         <!-- Si el usuario presiona el botòn Modificar ira a el archivo Modificarusua, si presiona eliminar irà a Borrarusua en la Carpeta Control--> 
                                         <!-- Onclick nos dice a donde se va a dirigir cuando presione el botón-->    
-                                        <td> <center> <button type="submit" class="btn btn-sm bg-gradient-primary"><img src="img/Modificar.png" width="25px"></button> 
-                                        <td> <center><button type="submit" class="btn btn-sm bg-gradient-danger" name="EliminaUsua" onclick="location='../../../Controlador/borrarUsuario.php?id=<?php echo ''.$row[0].'' ?>'"><img src="img/Eliminar.png" width="25px"></button></center></td>
+                                        <td> <center> <button type="submit" class="btn btn-sm btn-primary"><img src="img/Modificar.png" width="25px"></button> 
+                                        <td> <center><button type="submit" class="btn btn-sm btn-danger" name="EliminaUsua" onclick="location='../../../Control/borrarUsuario.php?id=<?php echo ''.$row[0].'' ?>'"><img src="img/Eliminar.png" width="25px"></button></center></td>
                                           
                                                     
                                     </tr>
