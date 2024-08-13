@@ -84,77 +84,49 @@ include('Menu.php');
           </button>
         </div>
         <div class="modal-body">
-            <form action="../../../controlador/crearUsuario.php">
-              <div class="form-row">
+        <form action="../../../controlador/crearUsuario.php">
+        <div class="form-row">
                 <div class="form-group col-md-6">
-                  <label for="input_nombre">Nombre</label>
-                  <input type="text" class="form-control" name="Nombre" placeholder="Nombre mascota" required>
+                  <label for="input_tipoDocumento">Usuario</label>
+                  <select id="inputState" class="form-control">
+                    <?php  
+                        include( '../../../Control/conex.php');
+                          # Consultamos a la tabla tipodocu, que es la que tiene los tipos de docuementos en la BD:
+                          $sql = "SELECT * FROM usuario";
+                          $eje = $conexion->query($sql);
+                          # Mostramos a través de un ciclo todas las opciones válidas:
+                          while($row1 = $eje->fetch_row()){
+                            echo '<option value="'.$row1[0].'">'.$row1[1].'</option>';
+                          }
+                        ?>
+ </select>
+
                 </div>
                 <div class="form-group col-md-6">
-                  <label for="input_apellido">Foto</label>
-                  <input type="file" class="form-control" name="Foto" required>
+                  <label for="input_tipoDocumento">Animal</label>
+                  <select id="inputState" class="form-control">
+                    <?php  
+                        include( '../../../Control/conex.php');
+                          # Consultamos a la tabla tipodocu, que es la que tiene los tipos de docuementos en la BD:
+                          $sql = "SELECT * FROM animal";
+                          $eje = $conexion->query($sql);
+                          # Mostramos a través de un ciclo todas las opciones válidas:
+                          while($row1 = $eje->fetch_row()){
+                            echo '<option value="'.$row1[0].'">'.$row1[1].'</option>';
+                          }
+                        ?>
+ </select>
+
                 </div>
-              </div>
+                </div>
               <div class="form-row">
                 <div class="form-group col-md-12">
-                  <label for="input_documento">Descripción</label>
-                  <textarea class="form-control" name="Descripcion"  required>Descripción</textarea>
+                  <label for="input_documento">Calificacion</label>
+                  <input type="number" min="0" max="5" class="form-control" name="input_documento" required>
                 </div>
-               </div>
-               <div class="form-row">
-                <div class="form-group col-md-6">
-                  <label for="input_tipoDocumento">Tipo de animal </label>
-                  <select id="inputState" class="form-control" name="Tipo animal" require>
-                </div>
-                    <?php  
-                        include( '../../../Controlador/conex.php');
-                          # Consultamos a la tabla tipodocu, que es la que tiene los tipos de docuementos en la BD:
-                          $sql = "SELECT * FROM tipodocumento";
-                          $eje = $conexion->query($sql);
-                          # Mostramos a través de un ciclo todas las opciones válidas:
-                          while($row1 = $eje->fetch_row()){
-                            echo '<option value="'.$row1[0].'">'.$row1[1].'</option>';
-                          }
-                        ?>
-                </select>
+                <center> <button type="submit" class="btn btn-primary col-md-12">Guardar</button> </center>
 
-                </div>
-                <div class="form-group col-md-6">
-                  <label for="input_tipoDocumento">Características</label>
-                  <select id="inputState" class="form-control" name="Carateristicas" require>
-                    <?php  
-                        include( '../../../Controlador/conex.php');
-                          # Consultamos a la tabla tipodocu, que es la que tiene los tipos de docuementos en la BD:
-                          $sql = "SELECT * FROM tipodocumento";
-                          $eje = $conexion->query($sql);
-                          # Mostramos a través de un ciclo todas las opciones válidas:
-                          while($row1 = $eje->fetch_row()){
-                            echo '<option value="'.$row1[0].'">'.$row1[1].'</option>';
-                          }
-                        ?>
-                </select>
-
-                </div>
-              </div>
-              <div class="form-row">
-                <div class="form-group col-md-6">
-                  <label for="input_tipoUsuario">Edad promedio</label>
-                  <input type="number" class="form-control" name="Edad" required>
-                </div>
-                <div class="form-group col-md-6">
-                  <label for="input_genero">Ciudad</label>
-                  <select name="inputState" class="form-control" name="Ciudad" required>
-                </div>
-                </div>
-
-               <div class="form-group col-md-6">
-                  <label for="input_fechaNacimiento">Departamento</label>
-                  <select name="inputState" class="form-control" name="Dapartamento" required>
-                </div>
-
-               <center> <button type="submit" class="btn btn-primary">Guardar</button> </center>
-            </form>
-        </div>
+              </form>        </div>
         
       </div>
     </div>
