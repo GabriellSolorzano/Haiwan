@@ -96,7 +96,7 @@ include('Menu.php');
                           $eje = $conexion->query($sql);
                           # Mostramos a través de un ciclo todas las opciones válidas:
                           while($row1 = $eje->fetch_row()){
-                            echo '<option value="'.$row1[0].'">'.$row1[1].'</option>';
+                            echo '<option value="'.$row1[0].'">'.$row1[4].'</option>';
                           }
                         ?>
  </select>
@@ -124,7 +124,9 @@ include('Menu.php');
                   <label for="input_documento">Calificación</label>
                   <input type="number" min="0" max="5" class="form-control" name="input_documento" required>
                 </div>
-                <center> <button type="submit" class="btn btn-primary col-md-12">Guardar</button> </center>
+                </div>
+
+                <center> <button type="submit" class="btn btn-primary">Guardar</button> </center>
 
               </form>        </div>
         

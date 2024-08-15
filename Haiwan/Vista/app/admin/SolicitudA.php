@@ -12,7 +12,7 @@ include('Menu.php');
                     <div class="card shadow mb-4">
                        
                         <div class="col-md-12 align-self-end card-header py-3 justify-content-end">
-                            <button class="btn btn-sm btn-primary offset-md-10 col-md-2" data-toggle="modal" data-target="#exampleModal">Nuevo Usuario</button>
+                            <button class="btn btn-sm btn-primary offset-md-10 col-md-2" data-toggle="modal" data-target="#exampleModal">Nueva Solicitud</button>
                         </div>
                         <div class="card-body">
                            
@@ -83,7 +83,7 @@ include('Menu.php');
     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Solicitud</h5>
+          <h5 class="modal-title" id="exampleModalLabel" style="color:Black;">Solicitud</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
@@ -99,7 +99,7 @@ include('Menu.php');
                 <?php  
                         include( '../../../Controlador/conex.php');
                           # Consultamos a la tabla tipodocu, que es la que tiene los tipos de docuementos en la BD:
-                          $sql = "SELECT * FROM tipodocumento";
+                          $sql = "SELECT * FROM animal";
                           $eje = $conexion->query($sql);
                           # Mostramos a través de un ciclo todas las opciones válidas:
                           while($row1 = $eje->fetch_row()){
@@ -108,8 +108,7 @@ include('Menu.php');
                         ?>
                   </select>
               </div>
-              <div class="form-row">
-                <div class="form-group col-md-">
+                <div class="form-group col-md-6">
                   <label for="input_apellido">Fecha de solicitud</label>
                   <input type="date" class="form-control" name="FechaSolicitud" required>
                 </div>
@@ -123,9 +122,9 @@ include('Menu.php');
                   <label for="input_tipoDocumento"> Estado de solicitud</label>
                   <select class="form-control" name= "EstadoSolicitud" require>
                     <?php  
-                        include( '../../../Controlador/conex.php');
+                        include( '../../../Control/conex.php');
                           # Consultamos a la tabla tipodocu, que es la que tiene los tipos de docuementos en la BD:
-                          $sql = "SELECT * FROM tipodocumento";
+                          $sql = "SELECT * FROM estadosolicitud";
                           $eje = $conexion->query($sql);
                           # Mostramos a través de un ciclo todas las opciones válidas:
                           while($row1 = $eje->fetch_row()){
@@ -133,8 +132,10 @@ include('Menu.php');
                           }
                         ?>
                   </select>
-                   <button type="submit" class="btn btn-primary">Guardar</button>
-              </form>
+                  </div>
+                  </div>
+                  <center> <button type="submit" class="btn btn-primary">Guardar</button></center>
+                  </form>
         </div>
         
       </div>

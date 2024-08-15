@@ -12,7 +12,7 @@ include('Menu.php');
                     <div class="card shadow mb-4">
                        
                         <div class="col-md-12 align-self-end card-header py-3 justify-content-end">
-                            <button class="btn btn-sm btn-primary offset-md-10 col-md-2 " data-toggle="modal" data-target="#exampleModal">Nuevo Usuario</button>
+                            <button class="btn btn-sm btn-primary offset-md-10 col-md-2 " data-toggle="modal" data-target="#exampleModal">Nueva Fundacion</button>
                         </div>
                         <div class="card-body">
                            
@@ -20,8 +20,8 @@ include('Menu.php');
                                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                                     <thead>
                                         <tr>
-                                            <th>Fundacion</th>
-                                            <th>Tipode de Documento</th>
+                                            <th>Cód. de Fundacion</th>
+                                            <th>Tipo de Documento</th>
                                             <th>Tipo de Fundacion</th>
                                             <th>Documento</th>
                                             <th>Razon Social</th>
@@ -56,8 +56,8 @@ include('Menu.php');
                                         <td><?php echo ''.$row[10].''; ?></td>
                                     <!-- Si el usuario presiona el botòn Modificar ira a el archivo Modificarusua, si presiona eliminar irà a Borrarusua en la Carpeta Control--> 
                                         <!-- Onclick nos dice a donde se va a dirigir cuando presione el botón-->    
-                                        <td> <center> <button type="submit" class="btn btn-sm btn-primary">Modificar</button> 
-                                        <td> <center><button type="submit" class="btn btn-sm btn-danger" name="EliminaUsua" onclick="location='../../../Control/borrarUsuario.php?id=<?php echo ''.$row[0].'' ?>'">Eliminar</button></center></td>
+                                        <td> <center> <button type="submit" class="btn btn-sm btn-primary"><img src="img/Modificar.png" width="25px"></button> 
+                                        <td> <center><button type="submit" class="btn btn-sm btn-danger" name="EliminaUsua" onclick="location='../../../Control/borrarUsuario.php?id=<?php echo ''.$row[0].'' ?>'"><img src="img/Eliminar.png" width="25px"></button></center></td>
                                           
                                                     
                                     </tr>
@@ -106,7 +106,7 @@ include('Menu.php');
     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Nuevo Usuario</h5>
+          <h5 class="modal-title" id="exampleModalLabel" style="color:black;">Nueva Fundacion</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
@@ -116,38 +116,45 @@ include('Menu.php');
                 <div class="form-row">
                   <div class="form-group col-md-6">
                     <label for="inputEmail4">Nombre:</label>
-                    <input type="text" class="form-control" name="Nombre" placeholder="Digita el nombre" required>
+                      <input type="text" class="form-control" name="Nombre" placeholder="Digita el nombre" required>
                   </div>
-                  <div class="form-group col-md-4">
+                  <div class="form-group col-md-6">
                     <label for="inputPassword4">Logo:</label>
-                    <input type="file" name="Logo">
+                      <input type="file" name="Logo">
                   </div>
                 </div>
-                <div class="form-group col-md-6">
-                  <label for="inputAddress">Documento:</label>
-                  <input type="number" class="form-control" name="Documento" placeholder="Cedula del responsable">
+
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="inputAddress">Documento:</label>
+                      <input type="number" class="form-control" name="Documento" placeholder="Cedula del responsable">
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="inputAddress2">Razon Social:</label>
+                      <textarea type="text" class="form-control" name="RazonSocial" placeholder="Descripcion de la Fundacion"></textarea>
+                  </div>
                 </div>
-                <div class="form-group">
-                  <label for="inputAddress2">Razon Social:</label>
-                  <textarea type="text" class="form-control" name="RazonSocial" placeholder="Descripcion de la Fundacion"></textarea>
-                </div>
+
                 <div class="form-row">
                   <div class="form-group col-md-6">
                     <label for="inputCity">Direccion:</label>
-                    <input type="text" class="form-control" name="Direccion" placeholder="Direccion de la sede principal">
+                      <input type="text" class="form-control" name="Direccion" placeholder="Direccion de la sede principal">
                   </div>
                   <div class="form-group col-md-6">
                     <label for="inputState">Telefono:</label>
-                    <input type="number" class="form-control" name="Telefono" placeholder="Numero Telefonico">
+                      <input type="number" class="form-control" name="Telefono" placeholder="Numero Telefonico">
                   </div>
+                </div>
+
+                <div class="form-row">
                   <div class="form-group col-md-6">
                     <label for="inputZip">Correo:</label>
-                    <input type="text" class="form-control" name="CorreoElectronico">
+                      <input type="text" class="form-control" name="CorreoElectronico">
                   </div>
-                  <div class="form-group">
-                  <label for="inputAddress">Clave:</label>
-                  <input type="passwor" class="form-control" name="Clave" placeholder="Contraseña de la cuenta">
-                </div>
+                  <div class="form-group col-md-6">
+                    <label for="inputAddress">Clave:</label>
+                      <input type="passwor" class="form-control" name="Clave" placeholder="Contraseña de la cuenta">
+                  </div>
                 </div>
                 
               <center> <button type="submit" class="btn btn-primary">Guardar</button></center> 

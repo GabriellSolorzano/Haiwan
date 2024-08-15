@@ -140,6 +140,7 @@ include('Menu.php');
                           }
                         ?>
                   </select>
+                  </div>
 
               </div>
               <center> <button type="submit" class="btn btn-primary">Guardar</button></center> 
