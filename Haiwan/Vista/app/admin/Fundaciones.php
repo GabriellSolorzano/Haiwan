@@ -31,14 +31,15 @@ include('Menu.php');
                                             <th>Clave</th>
                                             <th>Ciudad</th>
                                             <th>Departamento</th>
-                                            <th>Eliminar</th>
                                             <th>Modificar</th>
+                                            <th>Eliminar</th>
 
                                         </tr>
                                     </thead>
+                                    <tbody>
                                     <?php 
-                                                  include( '../../../Controlador/conex.php'); 
-                                                  $cons = $conexion -> query("SELECT *  FROM usuario");
+                                                  include( '../../../Control/conex.php'); 
+                                                  $cons = $conexion -> query("SELECT *  FROM fundacion");
                                                   while ($row = $cons -> fetch_row()) {
                                                 ?>
                                             <tr>
@@ -53,27 +54,16 @@ include('Menu.php');
                                         <td><?php echo ''.$row[8].''; ?></td>
                                         <td><?php echo ''.$row[9].''; ?></td>
                                         <td><?php echo ''.$row[10].''; ?></td>
-                                    <tbody>
-                                        <tr>
-                                            <th>33816156</th>
-                                            <th>Administrador</th>
-                                            <th>Tipo Doc.</th>
-                                            <th>Dianeth Yamile</th>
-                                            <th>León Valencia</th>
-                                            <th>3135417303</th>
-                                            <th><center><button class="btn btn-sm btn-danger">Eliminar</center></button></th>
-                                            <th><center><button class="btn btn-sm btn-primary">Modificar</center></button></th>
-                                        </tr>
-                                        <tr>
-                                            <th>33816156</th>
-                                            <th>Administrador</th>
-                                            <th>Tipo Doc.</th>
-                                            <th>Dianeth Yamile</th>
-                                            <th>León Valencia</th>
-                                            <th>3135417303</th>
-                                            <th><center><button class="btn btn-sm btn-danger">Eliminar</center></button></th>
-                                            <th><center><button class="btn btn-sm btn-primary">Modificar</center></button></th>
-                                        </tr>
+                                    <!-- Si el usuario presiona el botòn Modificar ira a el archivo Modificarusua, si presiona eliminar irà a Borrarusua en la Carpeta Control--> 
+                                        <!-- Onclick nos dice a donde se va a dirigir cuando presione el botón-->    
+                                        <td> <center> <button type="submit" class="btn btn-sm btn-primary">Modificar</button> 
+                                        <td> <center><button type="submit" class="btn btn-sm btn-danger" name="EliminaUsua" onclick="location='../../../Control/borrarUsuario.php?id=<?php echo ''.$row[0].'' ?>'">Eliminar</button></center></td>
+                                          
+                                                    
+                                    </tr>
+                                    <?php }   ?>
+</body>
+
 
                                     </tbody>
                                 </table>
@@ -186,6 +176,5 @@ include('Menu.php');
     <!-- Page level custom scripts -->
     <script src="js/demo/datatables-demo.js"></script>
 
-</body>
 
 </html>

@@ -20,37 +20,32 @@ include('Menu.php');
                                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                                     <thead>
                                         <tr>
-                                            <th>Fundación</th>
-                                            <th>Mascota</th>
-                                            <th>Eliminar</th>
+                                            <th>Residencia</th>
+                                            <th>Fundacion
+                                            <th>Animal</th>
                                             <th>Modificar</th>
+                                            <th>Eliminar</th>
 
                                         </tr>
                                     </thead>
                                     <?php 
-                                                  include( '../../../Controlador/conex.php'); 
-                                                  $cons = $conexion -> query("SELECT *  FROM usuario");
+                                                  include( '../../../Control/conex.php'); 
+                                                  $cons = $conexion -> query("SELECT *  FROM residenciaanimal");
                                                   while ($row = $cons -> fetch_row()) {
                                                 ?>
                                             <tr>
                                         <td><?php echo number_format(''.$row[0].''); ?></td>
                                         <td><?php echo ''.$row[1].''; ?></td>
                                         <td><?php echo ''.$row[2].''; ?></td>
-                                    <tbody>
-                                        <tr>
-                                            <th>La Perla</th>
-                                            <th>Perro</th>
-                                            <th><center><button class="btn btn-sm btn-danger">Eliminar</center></button></th>
-                                            <th><center><button class="btn btn-sm btn-primary">Modificar</center></button></th>
-                                        </tr>
-                                        <tr>
-                                            <th>PetSon</th>
-                                            <th>Gato</th>
-                                            <th><center><button class="btn btn-sm btn-danger">Eliminar</center></button></th>
-                                            <th><center><button class="btn btn-sm btn-primary">Modificar</center></button></th>
-                                        </tr>
-
-                                    </tbody>
+                                    <!-- Si el usuario presiona el botòn Modificar ira a el archivo Modificarusua, si presiona eliminar irà a Borrarusua en la Carpeta Control--> 
+                                        <!-- Onclick nos dice a donde se va a dirigir cuando presione el botón-->    
+                                        <td> <center> <button type="submit" class="btn btn-sm btn-primary">Modificar</button> 
+                                        <td> <center><button type="submit" class="btn btn-sm btn-danger" name="EliminaUsua" onclick="location='../../../Control/borrarUsuario.php?id=<?php echo ''.$row[0].'' ?>'">Eliminar</button></center></td>
+                                          
+                                                    
+                                    </tr>
+                                    <?php }   ?>
+</body>
                                 </table>
                             </div>
                         </div>
