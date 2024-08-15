@@ -120,7 +120,7 @@ include('Menu.php');
                 </div>
                 <div class="form-group col-md-6">
                   <label for="input_tipoDocumento"> Estado de solicitud</label>
-                  <select class="form-control" name= "EstadoSolicitud" require>
+                    <select class="form-control" name= "EstadoSolicitud" require>
                     <?php  
                         include( '../../../Control/conex.php');
                           # Consultamos a la tabla tipodocu, que es la que tiene los tipos de docuementos en la BD:
