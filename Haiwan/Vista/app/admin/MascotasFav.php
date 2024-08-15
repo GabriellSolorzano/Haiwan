@@ -23,7 +23,7 @@ include('Menu.php');
                                             <th>Cód. Mascota Favorita</th>
                                             <th>Usuario</th>
                                             <th>Animal</th>
-                                            <th>Calificacion</th>
+                                            <th>Calificación</th>
                                             <th>Modificar</th>
                                             <th>Eliminar</th>
                                         </tr>
@@ -121,7 +121,7 @@ include('Menu.php');
                 </div>
               <div class="form-row">
                 <div class="form-group col-md-12">
-                  <label for="input_documento">Calificacion</label>
+                  <label for="input_documento">Calificación</label>
                   <input type="number" min="0" max="5" class="form-control" name="input_documento" required>
                 </div>
                 <center> <button type="submit" class="btn btn-primary col-md-12">Guardar</button> </center>

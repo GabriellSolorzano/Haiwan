@@ -196,7 +196,7 @@ session_start();
                     <img class="img-fluid rounded" data-wow-delay="0.1s" src="img/acerca de 5.jpg" height="50000px">
                 </div>
                 <div class="col-lg-6 col-md-7 wow fadeInUp" data-wow-delay="0.3s">
-                    <h1 class="display-1 text-primary mb-0">25</h1>
+                    <h1 class="display-1 text-primary mb-0">2</h1>
                     <p class="text-primary mb-4">Años de experiencia.</p>
                     <h1 class="display-5 mb-4">"La vida es mejor con una mascota a tu lado"</h1>
                     <p class="mb-4">Haiwan es un aplicativo que tiene como función poder adoptar cualquier animal doméstico, cumpliendo con el fin de apoyar a todo refugio y organizaciones de cuidados de mascotas para encontrarles a estos animales un nuevo hogar.</p>
@@ -207,7 +207,7 @@ session_start();
                         <div class="col-12 col-sm-6 col-lg-12">
                             <div class="border-start ps-4">
                                 <i class="fa fa-award fa-3x text-primary mb-3"></i>
-                                <h4 class="mb-3">"Nada como lo que se ah visto antes"</h4>
+                                <h4 class="mb-3">"Nada como lo que se ha visto antes"</h4>
                                 <span>Brindamos un servicio cómodo y revolucionario nunca antes visto para nuestros amigos peludos.</span>
                             </div>
                         </div>

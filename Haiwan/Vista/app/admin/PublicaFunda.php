@@ -20,11 +20,11 @@ include('Menu.php');
                                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                                     <thead>
                                         <tr>
-                                            <th>Cod. de Publicacion</th>
-                                            <th>Fundacion</th>
+                                            <th>Cód. de Publicación</th>
+                                            <th>Fundación</th>
                                             <th>Animal</th>
-                                            <th>Fecha de la Publicacion</th>
-                                            <th>Estado de la Publicacion</th>
+                                            <th>Fecha de la Publicación</th>
+                                            <th>Estado de la Publicación</th>
                                             <th>Modificar</th>
                                             <th>Eliminar</th>
                                         </tr>
@@ -80,7 +80,7 @@ include('Menu.php');
     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel" style="color:black;">Nueva Publicacion de Fundacion</h5>
+          <h5 class="modal-title" id="exampleModalLabel" style="color:black;">Nueva Publicación de Fundación</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
@@ -89,7 +89,7 @@ include('Menu.php');
             <form action="../../../controlador/crearUsuario.php">
               <div class="form-row">
                 <div class="form-group col-md-6">
-                  <label for="input_tipoDocumento">Fundacion</label>
+                  <label for="input_tipoDocumento">Fundación</label>
                   <select id="inputState" class="form-control">
                     <?php  
                         include( '../../../Control/conex.php');
@@ -123,11 +123,11 @@ include('Menu.php');
 
               <div class="form-row">
                 <div class="form-group col-md-6">
-                  <label for="input_fechaNacimiento">Fecha de Publicacion</label>
+                  <label for="input_fechaNacimiento">Fecha de Publicación</label>
                   <input type="date" class="form-control" name="input_fechaNacimiento" required>
                 </div>
                 <div class="form-group col-md-6">
-                  <label for="input_tipoDocumento">Estado de Publicacion</label>
+                  <label for="input_tipoDocumento">Estado de Publicación</label>
                   <select id="inputState" class="form-control">
                     <?php  
                         include( '../../../Control/conex.php');
