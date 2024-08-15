@@ -115,23 +115,34 @@ include('Menu.php');
             <form>
                 <div class="form-row">
                   <div class="form-group col-md-6">
-                    <label for="inputEmail4">Nombre:</label>
-                      <input type="text" class="form-control" name="Nombre" placeholder="Digita el nombre" required>
+                    <label for="inputAddress2">Razon Social:</label>
+                      <textarea type="text" class="form-control" name="RazonSocial" placeholder="Fundacion..."></textarea>
                   </div>
-                  <div class="form-group col-md-6">
-                    <label for="inputPassword4">Logo:</label>
-                      <input type="file" name="Logo">
-                  </div>
-                </div>
-
-                <div class="form-row">
                   <div class="form-group col-md-6">
                     <label for="inputAddress">Documento:</label>
                       <input type="number" class="form-control" name="Documento" placeholder="Cedula del responsable">
                   </div>
+                </div>
+                
+                <div class="form-row">
                   <div class="form-group col-md-6">
-                    <label for="inputAddress2">Razon Social:</label>
-                      <textarea type="text" class="form-control" name="RazonSocial" placeholder="Descripcion de la Fundacion"></textarea>
+                    <label for="inputPassword4">Logo:</label>
+                      <input type="file" class="form-control" name="Logo">
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="input_tipoDocumento">Tipo de Fundacion</label>
+                      <select id="inputState" class="form-control">
+                      <?php  
+                        include( '../../../Control/conex.php');
+                          # Consultamos a la tabla tipodocu, que es la que tiene los tipos de docuementos en la BD:
+                          $sql = "SELECT * FROM tipofundacion";
+                          $eje = $conexion->query($sql);
+                          # Mostramos a través de un ciclo todas las opciones válidas:
+                          while($row1 = $eje->fetch_row()){
+                            echo '<option value="'.$row1[0].'">'.$row1[1].'</option>';
+                          }
+                        ?>
+                    </select>
                   </div>
                 </div>
 
@@ -147,6 +158,39 @@ include('Menu.php');
                 </div>
 
                 <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="input_tipoDocumento">Ciudad</label>
+                    <select id="inputState" class="form-control" name="Carateristicas" require>
+                    <?php  
+                        include( '../../../Control/conex.php');
+                          # Consultamos a la tabla tipodocu, que es la que tiene los tipos de docuementos en la BD:
+                          $sql = "SELECT * FROM ciudad";
+                          $eje = $conexion->query($sql);
+                          # Mostramos a través de un ciclo todas las opciones válidas:
+                          while($row1 = $eje->fetch_row()){
+                            echo '<option value="'.$row1[0].'">'.$row1[1].'</option>';
+                          }
+                        ?>
+                    </select>
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="input_fechaNacimiento">Departamento</label>
+                    <select id="inputState" class="form-control" name="Carateristicas" require>
+                    <?php  
+                        include( '../../../Control/conex.php');
+                          # Consultamos a la tabla tipodocu, que es la que tiene los tipos de docuementos en la BD:
+                          $sql = "SELECT * FROM departamento";
+                          $eje = $conexion->query($sql);
+                          # Mostramos a través de un ciclo todas las opciones válidas:
+                          while($row1 = $eje->fetch_row()){
+                            echo '<option value="'.$row1[0].'">'.$row1[1].'</option>';
+                          }
+                        ?>
+                    </select>
+                </div>
+              </div>
+
+              <div class="form-row">
                   <div class="form-group col-md-6">
                     <label for="inputZip">Correo:</label>
                       <input type="text" class="form-control" name="CorreoElectronico">
@@ -156,7 +200,7 @@ include('Menu.php');
                       <input type="passwor" class="form-control" name="Clave" placeholder="Contraseña de la cuenta">
                   </div>
                 </div>
-                
+
               <center> <button type="submit" class="btn btn-primary">Guardar</button></center> 
               </form>
         </div>
