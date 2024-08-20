@@ -6,7 +6,7 @@ error_reporting(0);
 
 $id = $_REQUEST['id'];
 
-$del = $conexion -> query("DELETE FROM Fundaciones WHERE IdFundacion = '$id' ");
+$del = $conexion -> query("DELETE FROM Fundacion WHERE idFundacion = '$id' ");
 	if ($del) {
 		echo "<script>
 		location.href='../Vista/app/admin/Fundaciones.php#';
