@@ -98,34 +98,27 @@ session_start();
                     <div class="col-lg-7">
                         <div class="bg-white rounded p-4 p-sm-5 wow fadeIn" data-wow-delay="0.5s">
                             <h1 class="display-5 text-center mb-5">Iniciar sesión</h1>
+                            <form action="../Control/login.php " method="post">
                             <div class="row g-3">
                                 <div class="col-sm-12">
                                     <div class="form-floating">
-                                        <input type="text" class="form-control bg-light border-0" id="gname" placeholder="Gurdian Name">
+                                        <input name="CorreoUsuario" type="text" class="form-control bg-light border-0" id="gname">
                                         <label for="gname">Usuario</label>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div>
-                                        <select class="form-select bg-light border-0" id="select">
-                                            <option selected>¿Como quieres iniciar sesión?</option>
-                                            <option value="1">Cliente</option>
-                                            <option value="2">Centro de adopcion</option>
-                                        </select>
                                     </div>
                                 </div>
                                 <div class="col-sm-12">
                                     <div class="form-floating">
-                                        <input type="password" class="form-control bg-light border-0" id="pass" placeholder="Child Name">
+                                        <input name="Contraseña" type="password" class="form-control bg-light border-0" id="pass">
                                         <label for="pass">Contraseña</label>
                                     </div>
                                 </div>
                 
                                 <div class="col-12 text-center">
-                                    <button class="btn btn-primary py-3 px-4" type="submit">Iniciar sesión</button>
+                                    <button name="login" class="btn btn-primary py-3 px-4" type="submit">Iniciar sesión</button>
                                     <br><br><p> ¿Nuevo en Haiwan? <a href="registro.php">Registrate</a> </p>
                                 </div>
                             </div>
+                            </form>
                         </div>
                     </div>
                 </div>

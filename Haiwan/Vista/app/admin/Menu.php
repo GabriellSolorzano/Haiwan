@@ -95,7 +95,7 @@ session_start();
 
             
             <li class="nav-item">
-                <a class="nav-link" href="MacotasFav.php">
+                <a class="nav-link" href="MascotasFav.php">
                     <i class="fas fa-fw fa-table"></i>
                     <span>Mascotas Favoritas</span></a>
             </li>
