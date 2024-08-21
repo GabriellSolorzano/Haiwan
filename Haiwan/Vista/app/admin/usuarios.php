@@ -96,21 +96,21 @@ include('Menu.php');
             <form action="../../../controlador/crearUsuario.php">
               <div class="form-row">
                 <div class="form-group col-md-6">
-                  <label for="input_nombre">Nombres</label>
+                  <label style="color:black;" for="input_nombre">Nombres</label>
                   <input type="text" class="form-control" name="input_nombre" required>
                 </div>
                 <div class="form-group col-md-6">
-                  <label for="input_apellido">Apellidos</label>
+                  <label style="color:black;" for="input_apellido">Apellidos</label>
                   <input type="text" class="form-control" name="input_apellido" required>
                 </div>
               </div>
               <div class="form-row">
                 <div class="form-group col-md-6">
-                  <label for="input_documento">Documento</label>
+                  <label style="color:black;" for="input_documento">Documento</label>
                   <input type="number" class="form-control" name="input_documento" required>
                 </div>
                 <div class="form-group col-md-6">
-                  <label for="input_tipoDocumento">Tipo de documento</label>
+                  <label style="color:black;" for="input_tipoDocumento">Tipo de documento</label>
                     <select id="inputState" class="form-control">
                     <?php  
                         include( '../../../Control/conex.php');
@@ -128,7 +128,7 @@ include('Menu.php');
               </div>
               <div class="form-row">
                 <div class="form-group col-md-6">
-                  <label for="input_tipoUsuario">Tipo Usuario</label>
+                  <label style="color:black;" for="input_tipoUsuario">Tipo Usuario</label>
                     <select id="inputState" class="form-control">
                     <?php  
                         include( '../../../Control/conex.php');
@@ -143,7 +143,7 @@ include('Menu.php');
                     </select>
                 </div>
                 <div class="form-group col-md-6">
-                  <label for="input_genero">Género</label>
+                  <label style="color:black;" for="input_genero">Género</label>
                   <select name="input_genero" class="form-control" required>
                   
                     <option>Masculino</option>
@@ -153,27 +153,27 @@ include('Menu.php');
               </div>
               <div class="form-row">
                 <div class="form-group col-md-6">
-                  <label for="input_fechaNacimiento">Fecha de nacimiento</label>
+                  <label style="color:black;" for="input_fechaNacimiento">Fecha de nacimiento</label>
                   <input type="date" class="form-control" name="input_fechaNacimiento" required>
                 </div>
                 <div class="form-group col-md-6">
-                  <label for="input_direccion">Dirección</label>
+                  <label style="color:black;" for="input_direccion">Dirección</label>
                   <input type="address" class="form-control" name="input_direccion" required>
                 </div>
               </div>
               <div class="form-row">
                 <div class="form-group col-md-12">
-                  <label for="input_telefono">Teléfono</label>
+                  <label style="color:black;" for="input_telefono">Teléfono</label>
                   <input type="tel" class="form-control" name="input_telefono" required>
                 </div>
               </div>
               <div class="form-row">
                 <div class="form-group col-md-6">
-                  <label for="input_email">Correo</label>
+                  <label style="color:black;" for="input_email">Correo</label>
                   <input type="email" class="form-control" name="input_email" required>
                 </div>
                 <div class="form-group col-md-6">
-                  <label for="input_contrasena">Contraseña</label>
+                  <label style="color:black;" for="input_contrasena">Contraseña</label>
                   <input type="password" class="form-control" name="input_contrasena" required>
                 </div>
               </div>

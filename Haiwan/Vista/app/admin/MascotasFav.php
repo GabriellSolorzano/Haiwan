@@ -87,7 +87,7 @@ include('Menu.php');
         <form action="../../../controlador/crearUsuario.php">
         <div class="form-row">
                 <div class="form-group col-md-6">
-                  <label for="input_tipoDocumento">Usuario</label>
+                  <label style="color:black;" for="input_tipoDocumento">Usuario</label>
                   <select id="inputState" class="form-control">
                     <?php  
                         include( '../../../Control/conex.php');
@@ -103,7 +103,7 @@ include('Menu.php');
 
                 </div>
                 <div class="form-group col-md-6">
-                  <label for="input_tipoDocumento">Animal</label>
+                  <label style="color:black;" for="input_tipoDocumento">Animal</label>
                   <select id="inputState" class="form-control">
                     <?php  
                         include( '../../../Control/conex.php');
@@ -121,7 +121,7 @@ include('Menu.php');
                 </div>
               <div class="form-row">
                 <div class="form-group col-md-12">
-                  <label for="input_documento">Calificación</label>
+                  <label style="color:black;" for="input_documento">Calificación</label>
                   <input type="number" min="0" max="5" class="form-control" name="input_documento" required>
                 </div>
                 </div>

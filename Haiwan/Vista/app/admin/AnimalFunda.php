@@ -95,7 +95,7 @@ include('Menu.php');
             <form>
                 <div class="form-row">
                   <div class="form-group col-md-6">
-                    <label for="inputEmail4">Fundación:</label>
+                    <label style="color:black;" for="inputEmail4">Fundación:</label>
                     <select id="inputState" class="form-control" name="Tipo animal" require>
                 </div>
                     <?php  
@@ -111,7 +111,7 @@ include('Menu.php');
                 </select>
                   </div>
                 <div class="form-group col-md-6">
-                  <label for="inputAddress">Animal:</label>
+                  <label style="color:black;" for="inputAddress">Animal:</label>
                     <select id="inputState" class="form-control" name="Tipo animal" require>
                 </div>
                     <?php  

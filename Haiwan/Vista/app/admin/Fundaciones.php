@@ -20,13 +20,13 @@ include('Menu.php');
                                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                                     <thead>
                                         <tr>
-                                            <th>Cód. de Fundacion</th>
+                                            <th>Cód. de Fundación</th>
                                             <th>Tipo de Documento</th>
                                             <th>Tipo de Fundacion</th>
                                             <th>Documento</th>
                                             <th>Razon Social</th>
-                                            <th>Direccion</th>
-                                            <th>Telefono</th>
+                                            <th>Dirección</th>
+                                            <th>Teléfono</th>
                                             <th>Correo</th>
                                             <th>Clave</th>
                                             <th>Ciudad</th>
@@ -37,9 +37,33 @@ include('Menu.php');
                                         </tr>
                                     </thead>
                                     <tbody>
+
+                                      //SELECT 
+    fundacion.idFundacion, 
+    tipodocumento.Descripcion AS TipoDocumento.Descripcion, 
+    tipofundacion.TipoFundacion AS TipoFundacion.Descripcion, 
+    fundacion.Documento, 
+    fundacion.RazonSocial, 
+    fundacion.Direccion, 
+    fundacion.Telefono, 
+    fundacion.Correo, 
+    fundacion.Clave, 
+    fundacion.foto, 
+    ciudad.idCuidad AS Ciudad.Descripcion, 
+    departamento.idDepartamento AS departamento.Descripcion
+FROM fundacion 
+INNER JOIN tipofundacion 
+    ON fundacion.TipoFundacion = tipofundacion.TipoFundacion
+INNER JOIN tipodocumento
+    ON fundacion.idTipoDoc = tipodocumento.IdTipoDocumento
+INNER JOIN ciudad
+    ON fundacion.idCiudad = ciudad.idCiudad
+INNER JOIN departamento
+    ON fundacion.idDepartamento = departamento.idDepartamento;
+    
                                     <?php 
                                                   include( '../../../Control/conex.php'); 
-                                                  $cons = $conexion -> query("SELECT *  FROM fundacion");
+                                                  $cons = $conexion -> query("SELECT *  FROM fundacion INNER JOIN tipofundacion ON fundacion.TipoFundacion = tipofundacion.TipoFundacion;");
                                                   while ($row = $cons -> fetch_row()) {
                                                 ?>
                                             <tr>
@@ -106,7 +130,7 @@ include('Menu.php');
     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel" style="color:black;">Nueva Fundacion</h5>
+          <h5 class="modal-title" id="exampleModalLabel" style="color:black;">Nueva Fundación</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
@@ -115,22 +139,22 @@ include('Menu.php');
             <form>
                 <div class="form-row">
                   <div class="form-group col-md-6">
-                    <label for="inputAddress2">Razon Social:</label>
+                    <label style="color:black;" for="inputAddress2">Razón Social:</label>
                       <textarea type="text" class="form-control" name="RazonSocial" placeholder="Fundacion..."></textarea>
                   </div>
                   <div class="form-group col-md-6">
-                    <label for="inputAddress">Documento:</label>
+                    <label style="color:black;" for="inputAddress">Documento:</label>
                       <input type="number" class="form-control" name="Documento" placeholder="Cedula del responsable">
                   </div>
                 </div>
                 
                 <div class="form-row">
                   <div class="form-group col-md-6">
-                    <label for="inputPassword4">Logo:</label>
+                    <label style="color:black;" for="inputPassword4">Foto:</label>
                       <input type="file" class="form-control" name="Logo">
                   </div>
                   <div class="form-group col-md-6">
-                    <label for="input_tipoDocumento">Tipo de Fundacion</label>
+                    <label style="color:black;" for="input_tipoDocumento">Tipo de Fundación</label>
                       <select id="inputState" class="form-control">
                       <?php  
                         include( '../../../Control/conex.php');
@@ -148,18 +172,18 @@ include('Menu.php');
 
                 <div class="form-row">
                   <div class="form-group col-md-6">
-                    <label for="inputCity">Direccion:</label>
+                    <label style="color:black;" for="inputCity">Direccion:</label>
                       <input type="text" class="form-control" name="Direccion" placeholder="Direccion de la sede principal">
                   </div>
                   <div class="form-group col-md-6">
-                    <label for="inputState">Telefono:</label>
+                    <label style="color:black;" for="inputState">Teléfono:</label>
                       <input type="number" class="form-control" name="Telefono" placeholder="Numero Telefonico">
                   </div>
                 </div>
 
                 <div class="form-row">
                 <div class="form-group col-md-6">
-                  <label for="input_tipoDocumento">Ciudad</label>
+                  <label style="color:black;" for="input_tipoDocumento">Ciudad</label>
                     <select id="inputState" class="form-control" name="Carateristicas" require>
                     <?php  
                         include( '../../../Control/conex.php');
@@ -174,7 +198,7 @@ include('Menu.php');
                     </select>
                 </div>
                 <div class="form-group col-md-6">
-                  <label for="input_fechaNacimiento">Departamento</label>
+                  <label style="color:black;" for="input_fechaNacimiento">Departamento</label>
                     <select id="inputState" class="form-control" name="Carateristicas" require>
                     <?php  
                         include( '../../../Control/conex.php');
@@ -192,11 +216,11 @@ include('Menu.php');
 
               <div class="form-row">
                   <div class="form-group col-md-6">
-                    <label for="inputZip">Correo:</label>
+                    <label style="color:black;" for="inputZip">Correo:</label>
                       <input type="text" class="form-control" name="CorreoElectronico">
                   </div>
                   <div class="form-group col-md-6">
-                    <label for="inputAddress">Clave:</label>
+                    <label style="color:black;" for="inputAddress">Clave:</label>
                       <input type="passwor" class="form-control" name="Clave" placeholder="Contraseña de la cuenta">
                   </div>
                 </div>

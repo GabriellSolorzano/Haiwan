@@ -98,25 +98,25 @@ include('Menu.php');
             <form action="../../../controlador/crearUsuario.php">
               <div class="form-row">
                 <div class="form-group col-md-6">
-                  <label for="input_nombre">Nombre</label>
+                  <label style="color:black;" for="input_nombre">Nombre</label>
                     <input type="text" class="form-control" name="Nombre" placeholder="Nombre mascota" required>
                 </div>
                 <div class="form-group col-md-6">
-                  <label for="input_apellido">Foto</label>
+                  <label style="color:black;" for="input_apellido">Foto</label>
                     <input type="file" class="form-control" name="Foto" required>
                 </div>
               </div>
 
               <div class="form-row">
                 <div class="form-group col-md-12">
-                  <label for="input_documento">Descripción</label>
+                  <label style="color:black;" for="input_documento">Descripción</label>
                     <textarea class="form-control" name="Descripcion"  required>Descripción</textarea>
                 </div>
               </div>
 
               <div class="form-row">
                 <div class="form-group col-md-6">
-                  <label for="input_tipoDocumento">Raza de animal </label>
+                  <label style="color:black;" for="input_tipoDocumento">Raza de animal </label>
                     <select id="inputState" class="form-control" name="Tipo animal" require>
                     <?php  
                         include( '../../../Control/conex.php');
@@ -131,7 +131,7 @@ include('Menu.php');
                     </select>
                 </div>
                 <div class="form-group col-md-6">
-                  <label for="input_tipoDocumento">Tamaño</label>
+                  <label style="color:black;" for="input_tipoDocumento">Tamaño</label>
                     <select id="inputState" class="form-control" name="Carateristicas" require>
                     <?php  
                         include( '../../../Control/conex.php');
@@ -149,7 +149,7 @@ include('Menu.php');
 
               <div class="form-row">
                 <div class="form-group col-md-6">
-                  <label for="input_tipoDocumento">Color 1</label>
+                  <label style="color:black;" for="input_tipoDocumento">Color 1</label>
                     <select id="inputState" class="form-control" name="Tipo animal" require>
                     <?php  
                         include( '../../../Control/conex.php');
@@ -164,7 +164,7 @@ include('Menu.php');
                     </select>
                 </div>
                 <div class="form-group col-md-6">
-                  <label for="input_tipoDocumento">Color 2</label>
+                  <label style="color:black;" for="input_tipoDocumento">Color 2</label>
                     <select id="inputState" class="form-control" name="Carateristicas" require>
                     <?php  
                         include( '../../../Control/conex.php');
@@ -182,14 +182,14 @@ include('Menu.php');
 
               <div class="form-row">
                 <div class="form-group col-md-12">
-                  <label for="input_tipoUsuario">Edad promedio</label>
+                  <label style="color:black;" for="input_tipoUsuario">Edad promedio</label>
                   <input type="number" class="form-control" name="Edad" required>
                 </div>
               </div>
 
               <div class="form-row">
                 <div class="form-group col-md-6">
-                  <label for="input_tipoDocumento">Ciudad</label>
+                  <label style="color:black;" for="input_tipoDocumento">Ciudad</label>
                     <select id="inputState" class="form-control" name="Carateristicas" require>
                     <?php  
                         include( '../../../Control/conex.php');
@@ -204,7 +204,7 @@ include('Menu.php');
                     </select>
                 </div>
                 <div class="form-group col-md-6">
-                  <label for="input_fechaNacimiento">Departamento</label>
+                  <label style="color:black;" for="input_fechaNacimiento">Departamento</label>
                     <select id="inputState" class="form-control" name="Carateristicas" require>
                     <?php  
                         include( '../../../Control/conex.php');
