@@ -102,13 +102,13 @@ session_start();
                             <div class="row g-3">
                                 <div class="col-sm-12">
                                     <div class="form-floating">
-                                        <input name="CorreoUsuario" type="text" class="form-control bg-light border-0" id="gname">
+                                        <input name="CorreoUsuario" placeholder="Ingrese su Correo Electrónico" type="text" class="form-control bg-light border-0" id="gname">
                                         <label for="gname">Usuario</label>
                                     </div>
                                 </div>
                                 <div class="col-sm-12">
                                     <div class="form-floating">
-                                        <input name="Contraseña" type="password" class="form-control bg-light border-0" id="pass">
+                                        <input name="Contraseña" placeholder="Ingrese su Contraseña" type="password" class="form-control bg-light border-0" id="pass">
                                         <label for="pass">Contraseña</label>
                                     </div>
                                 </div>

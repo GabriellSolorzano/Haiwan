@@ -64,46 +64,46 @@ session_start();
           
             <li class="nav-item">
                 <a class="nav-link" href="Fundaciones.php">
-                    <i class="fas fa-fw fa-table"></i>
+                    <i class="fas fa-fw fa-home"></i>
                     <span>Fundaciones</span></a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="AnimalFunda.php">
-                    <i class="fas fa-fw fa-table"></i>
+                    <i class="fas fa-fw fa-warehouse"></i>
                     <span>Animal en Fundación</span></a>
             </li>
 
             <li class="nav-item">
                 <a class="nav-link" href="PublicaFunda.php">
-                    <i class="fas fa-fw fa-table"></i>
+                    <i class="fas fa-fw fa-file-alt"></i>
                     <span>Publicación Fundación</span></a>
             </li>
 
             
             <li class="nav-item">
                 <a class="nav-link" href="PublicaUsua.php">
-                    <i class="fas fa-fw fa-table"></i>
+                    <i class="fas fa-fw fa-file"></i>
                     <span>Publicación Usuarios</span></a>
             </li>
 
             
             <li class="nav-item">
                 <a class="nav-link" href="Comentarios.php">
-                    <i class="fas fa-fw fa-table"></i>
+                    <i class="fas fa-fw fa-comment"></i>
                     <span>Comentarios</span></a>
             </li>
 
             
             <li class="nav-item">
                 <a class="nav-link" href="MascotasFav.php">
-                    <i class="fas fa-fw fa-table"></i>
+                    <i class="fas fa-fw fa-star"></i>
                     <span>Mascotas Favoritas</span></a>
             </li>
 
             <!-- Nav Item - Tables -->
             <li class="nav-item">
                 <a class="nav-link" href="Mascotas.php">
-                    <i class="fas fa-fw fa-table"></i>
+                    <i class="fas fa-fw fa-dog"></i>
                     <span>Mascotas</span></a>
             </li>
              
@@ -111,7 +111,7 @@ session_start();
 
             <li class="nav-item">
                 <a class="nav-link" href="SolicitudA.php">
-                    <i class="fas fa-fw fa-table"></i>
+                    <i class="fas fa-fw fa-receipt"></i>
                     <span>Solicitud de Adopción</span></a>
             </li>
              <!-- Nav Item - Charts -->

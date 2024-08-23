@@ -143,17 +143,6 @@ INNER JOIN departamento
                       <textarea type="text" class="form-control" name="RazonSocial" placeholder="Fundacion..."></textarea>
                   </div>
                   <div class="form-group col-md-6">
-                    <label style="color:black;" for="inputAddress">Documento:</label>
-                      <input type="number" class="form-control" name="Documento" placeholder="Cedula del responsable">
-                  </div>
-                </div>
-                
-                <div class="form-row">
-                  <div class="form-group col-md-6">
-                    <label style="color:black;" for="inputPassword4">Foto:</label>
-                      <input type="file" class="form-control" name="Logo">
-                  </div>
-                  <div class="form-group col-md-6">
                     <label style="color:black;" for="input_tipoDocumento">Tipo de Fundación</label>
                       <select id="inputState" class="form-control">
                       <?php  
@@ -167,6 +156,28 @@ INNER JOIN departamento
                           }
                         ?>
                     </select>
+                  </div>
+                </div>
+                
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label style="color:black;" for="input_tipoDocumento">Tipo de Documento</label>
+                      <select id="inputState" class="form-control">
+                      <?php  
+                        include( '../../../Control/conex.php');
+                          # Consultamos a la tabla tipodocu, que es la que tiene los tipos de docuementos en la BD:
+                          $sql = "SELECT * FROM tipodocumento";
+                          $eje = $conexion->query($sql);
+                          # Mostramos a través de un ciclo todas las opciones válidas:
+                          while($row1 = $eje->fetch_row()){
+                            echo '<option value="'.$row1[0].'">'.$row1[1].'</option>';
+                          }
+                        ?>
+                    </select>
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label style="color:black;" for="inputAddress">Documento:</label>
+                      <input type="number" class="form-control" name="Documento" placeholder="Cedula del responsable">
                   </div>
                 </div>
 
@@ -217,13 +228,21 @@ INNER JOIN departamento
               <div class="form-row">
                   <div class="form-group col-md-6">
                     <label style="color:black;" for="inputZip">Correo:</label>
-                      <input type="text" class="form-control" name="CorreoElectronico">
+                      <input type="text" class="form-control" name="CorreoElectronico" placeholder="fundacion@...">
                   </div>
                   <div class="form-group col-md-6">
                     <label style="color:black;" for="inputAddress">Clave:</label>
                       <input type="passwor" class="form-control" name="Clave" placeholder="Contraseña de la cuenta">
                   </div>
                 </div>
+
+              <div class="form-row">
+                <div class="form-group col-md-12">
+                    <label style="color:black;" for="inputPassword4">Foto:</label>
+                      <input type="file" class="form-control" name="Logo">
+                </div>
+              </div>
+
 
               <center> <button type="submit" class="btn btn-primary">Guardar</button></center> 
               </form>
