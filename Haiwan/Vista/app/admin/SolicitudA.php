@@ -34,7 +34,14 @@ include('Menu.php');
                                     </tfoot>
                                     <?php 
                                                   include( '../../../Control/Conex.php'); 
-                                                  $cons = $conexion -> query("SELECT *  FROM solicitudadopcion");
+                                                  $cons = $conexion -> query("SELECT solicitudadopcion.idSolicitud, usuario.Nombre, animal.Nombre, solicitudadopcion.FechaSolicitud, solicitudadopcion.DocumentoSop, estadosolicitud.Descripcion
+FROM solicitudadopcion
+INNER JOIN usuario
+ON solicitudadopcion.idUsuario = usuario.idUsuario
+INNER JOIN animal
+ON solicitudadopcion.idAnimal = animal.idanimal
+INNER JOIN estadosolicitud
+ON solicitudadopcion.idEstadoSolicitud = estadosolicitud.idEstadoSolicitud;");
                                                   while ($row = $cons -> fetch_row()) {
                                                 ?>
                                             <tr>

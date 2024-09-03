@@ -7,12 +7,12 @@ include('Menu.php');
                 <div class="container-fluid">
 
                     <!-- Page Heading -->
-                    <h1 class="h3 mb-2 text-gray-800">Publicaciones Usuarios</h1>
+                    <h1 class="h3 mb-2 text-gray-800">Comentarios</h1>
                     <!-- DataTales Example -->
                     <div class="card shadow mb-4">
                        
                         <div class="col-md-12 align-self-end card-header py-3 justify-content-end">
-                            <button class="btn btn-sm btn-primary offset-md-10 col-md-2" data-toggle="modal" data-target="#exampleModal">Nuevo Publicación</button>
+                            <button class="btn btn-sm btn-primary offset-md-10 col-md-2" data-toggle="modal" data-target="#exampleModal">Nueva Opinión</button>
                         </div>
                         <div class="card-body">
                            
@@ -20,26 +20,25 @@ include('Menu.php');
                                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                                     <thead>
                                         <tr>
-                                        <th>Cód. de Publicación</th>
+                                        <th>Cod. Opinión</th>
                                             <th>Usuario</th>
-                                            <th>Animal</th>
-                                            <th>FechaPublicación</th>
-                                            <th>EstadoPublicación</th>
+                                            <th>Publicación de Fundación</th>
+                                            <th>Comentario</th>
+                                            <th>Calificación</th>
                                             <th>Modificar</th>
                                             <th>Eliminar</th>
                                         </tr>
                                     </thead>
-                                    
+                                    <tfoot> 
+                                    </tfoot>
                                     <?php 
-                                                  include( '../../../Control/conex.php'); 
-                                                  $cons = $conexion -> query("SELECT publicacionusua.idPublicaUsua, usuario.Nombre, animal.Nombre, publicacionusua.FechaPub, estadopub.Descripcion
-FROM publicacionusua
+                                                  include( '../../../Control/Conex.php'); 
+                                                  $cons = $conexion -> query("SELECT opiniones.idOpiniones, usuario.Nombre, publicacionfund.idPublicaFund, opiniones.Comentario, opiniones.Calificacion
+FROM opiniones
 INNER JOIN usuario
-ON publicacionusua.idUsuario = usuario.idUsuario
-INNER JOIN animal
-ON publicacionusua.idAnimal = animal.idAnimal
-INNER JOIN estadopub
-ON publicacionusua.idEstadoPub = estadopub.idEstadoPub;");
+ON opiniones.idUsuario = usuario.idUsuario
+INNER JOIN publicacionfund
+ON opiniones.idPublicaFund = publicacionfund.idPublicaFund");
                                                   while ($row = $cons -> fetch_row()) {
                                                 ?>
                                             <tr>
@@ -48,12 +47,11 @@ ON publicacionusua.idEstadoPub = estadopub.idEstadoPub;");
                                         <td><?php echo ''.$row[2].''; ?></td>
                                         <td><?php echo ''.$row[3].''; ?></td>
                                         <td><?php echo ''.$row[4].''; ?></td>
-            
                    
                                         <!-- Si el usuario presiona el botòn Modificar ira a el archivo Modificarusua, si presiona eliminar irà a Borrarusua en la Carpeta Control--> 
                                         <!-- Onclick nos dice a donde se va a dirigir cuando presione el botón-->    
                                         <td> <center> <button type="submit" class="btn btn-sm btn-primary"><img src="img/Modificar.png" width="25px"></button> 
-                                        <td> <center><button type="submit" class="btn btn-sm btn-danger" name="EliminaUsua" onclick="location='../../../Control/borrarPublicaUsua.php?id=<?php echo ''.$row[0].'' ?>'"><img src="img/Eliminar.png" width="25px"></button></center></td>
+                                        <td> <center><button type="submit" class="btn btn-sm btn-danger" name="EliminaUsua" onclick="location='../../../Control/borrarOpiniones.php?id=<?php echo ''.$row[0].'' ?>'"><img src="img/Eliminar.png" width="25px"></button></center></td>
                                           
                                                     
                                     </tr>
@@ -87,7 +85,7 @@ ON publicacionusua.idEstadoPub = estadopub.idEstadoPub;");
     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel" style="color:black;">Nueva Mascota</h5>
+          <h5 class="modal-title" id="exampleModalLabel" style="color:black;">Nueva Opinión</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
@@ -99,7 +97,7 @@ ON publicacionusua.idEstadoPub = estadopub.idEstadoPub;");
                   <label style="color:black;" for="input_nombre">Usuario:</label>
                   <select id="inputState" class="form-control">
                     <?php  
-                        include( '../../../Control/conex.php');
+                        include( '../../../Controlador/conex.php');
                           # Consultamos a la tabla tipodocu, que es la que tiene los tipos de docuementos en la BD:
                           $sql = "SELECT * FROM usuario";
                           $eje = $conexion->query($sql);
@@ -108,50 +106,37 @@ ON publicacionusua.idEstadoPub = estadopub.idEstadoPub;");
                             echo '<option value="'.$row1[0].'">'.$row1[4].'</option>';
                           }
                         ?>
-                </select>             
+                </select>           
+                   </div>
+                <div class="form-group col-md-6">
+                  <label style="color:black;" for="input_apellido">Publicación: </label>
+                  <select id="inputState" class="form-control">
+                    <?php  
+                        include( '../../../Controlador/conex.php');
+                          # Consultamos a la tabla tipodocu, que es la que tiene los tipos de docuementos en la BD:
+                          $sql = "SELECT * FROM publicacionusua";
+                          $eje = $conexion->query($sql);
+                          # Mostramos a través de un ciclo todas las opciones válidas:
+                          while($row1 = $eje->fetch_row()){
+                            echo '<option value="'.$row1[0].'">'.$row1[4].'</option>';
+                          }
+                        ?>
+                </select>               
                  </div>
-                
-                
-               
-                <div class="form-group col-md-6">
-                  <label style="color:black;" for="input_tipoDocumento">Animal: </label>
-                  <select id="inputState" class="form-control">
-                    <?php  
-                        include( '../../../Control/conex.php');
-                          # Consultamos a la tabla tipodocu, que es la que tiene los tipos de docuementos en la BD:
-                          $sql = "SELECT * FROM animal";
-                          $eje = $conexion->query($sql);
-                          # Mostramos a través de un ciclo todas las opciones válidas:
-                          while($row1 = $eje->fetch_row()){
-                            echo '<option value="'.$row1[0].'">'.$row1[1].'</option>';
-                          }
-                        ?>
-                </select>
-                </div>
-                </div>
-                
-              <div class="form-row">
-                <div class="form-group col-md-6">
-                  <label style="color:black;" for="input_fechaNacimiento">Fecha Publicación</label>
-                  <input type="date" class="form-control" name="FechaPub" required>
-                </div>
-                <div class="form-group col-md-6">
-                  <label style="color:black;" for="input_direccion">Estado Publicación:</label>
-                  <select id="inputState" class="form-control">
-                    <?php  
-                        include( '../../../Control/conex.php');
-                          # Consultamos a la tabla tipodocu, que es la que tiene los tipos de docuementos en la BD:
-                          $sql = "SELECT * FROM estadopub";
-                          $eje = $conexion->query($sql);
-                          # Mostramos a través de un ciclo todas las opciones válidas:
-                          while($row1 = $eje->fetch_row()){
-                            echo '<option value="'.$row1[0].'">'.$row1[1].'</option>';
-                          }
-                        ?>
-                </select>              
-                </div>
               </div>
-                     
+              <div class="form-row">
+                <div class="form-group col-md-12">
+                  <label style="color:black;" for="input_documento">Comentario: </label>
+                  <textarea class="form-control" name="Comentario"  required>Me gusto...</textarea>
+                </div>
+               </div>
+               <div class="form-row">
+                <div class="form-group col-md-12">
+                  <label style="color:black;" for="input_tipoDocumento">Calificación: </label>
+                  <input type="number" class="form-control" name="Calificacion" required>
+                </div>
+                </div>
+
               <center> <button type="submit" class="btn btn-primary">Guardar</button></center> 
               </form>
         </div>

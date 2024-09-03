@@ -93,6 +93,13 @@ session_start();
                     <span>Comentarios</span></a>
             </li>
 
+
+            <li class="nav-item">
+                <a class="nav-link" href="Opiniones.php">
+                    <i class="fas fa-fw fa-comment"></i>
+                    <span>Opiniones</span></a>
+            </li>
+
             
             <li class="nav-item">
                 <a class="nav-link" href="MascotasFav.php">
@@ -137,10 +144,17 @@ session_start();
      <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar" >
          <div class="py-2 collapse-inner rounded" style="background-color: #ed7855">
              
-             <a class="collapse-item" href="">Ciudad</a>
-             <a class="collapse-item" href="">Departamento</a>
-             <a class="collapse-item" href="">Tipo Documento</a>
-             <a class="collapse-item" href="">Tipo Usuario</a>
+             <a class="collapse-item" href="ciudad.php">Ciudades</a>
+             <a class="collapse-item" href="Departamento.php">Departamentos</a>
+             <a class="collapse-item" href="TipoDocumento.php">Tipos de Documentos</a>
+             <a class="collapse-item" href="TipoUsuario.php">Tipos de Usuarios</a>
+             <a class="collapse-item" href="TipoAnimal.php">Tipos de Animales</a>
+             <a class="collapse-item" href="Raza.php">Razas Animales</a>
+             <a class="collapse-item" href="Tamaño.php">Tamaños de Animales</a>
+             <a class="collapse-item" href="Colores.php">Colores de Animales</a>
+             <a class="collapse-item" href="TipoFundacion.php">Tipos de Fundacion</a>
+             <a class="collapse-item" href="EstadoPubli.php">Estados de Publicación</a>
+             <a class="collapse-item" href="EstadoSoli.php">Estados de Solicitud</a>
          </div>
      </div>
  </li>

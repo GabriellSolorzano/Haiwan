@@ -36,7 +36,16 @@ include('Menu.php');
                                     </tfoot>
                                     <?php 
                                                   include( '../../../Control/Conex.php'); 
-                                                  $cons = $conexion -> query("SELECT *  FROM usuario");
+                                                  $cons = $conexion -> query("SELECT usuario.idUsuario, tipousuario.Descripcion, tipodocumento.Descripcion, usuario.Documento, usuario.Nombre, usuario.Correo, usuario.Clave, ciudad.Descripcion, departamento.Descripcion, usuario.Direccion
+FROM usuario
+INNER JOIN tipousuario
+ON usuario.idTipoUsuario = tipousuario.idTipoUsuario
+INNER JOIN tipodocumento
+ON usuario.idTipoDocumento = tipodocumento.IdTipoDocumento
+INNER JOIN ciudad
+ON usuario.idCiudad = ciudad.idCiudad
+INNER JOIN departamento
+ON usuario.idDeparta = departamento.idDepartamento");
                                                   while ($row = $cons -> fetch_row()) {
                                                 ?>
                                             <tr>

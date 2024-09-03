@@ -33,7 +33,12 @@ include('Menu.php');
                                     </tfoot>
                                     <?php 
                                                   include( '../../../Control/Conex.php'); 
-                                                  $cons = $conexion -> query("SELECT *  FROM comentarios");
+                                                  $cons = $conexion -> query("SELECT comentarios.idComentario, usuario.Nombre, publicacionusua.idPublicaUsua, comentarios.Comentario, comentarios.Calificacion 
+FROM comentarios
+INNER JOIN usuario
+ON comentarios.idUsuario = usuario.idUsuario
+INNER JOIN publicacionusua
+ON comentarios.idPublica = publicacionusua.idPublicaUsua");
                                                   while ($row = $cons -> fetch_row()) {
                                                 ?>
                                             <tr>
@@ -46,7 +51,7 @@ include('Menu.php');
                                         <!-- Si el usuario presiona el botòn Modificar ira a el archivo Modificarusua, si presiona eliminar irà a Borrarusua en la Carpeta Control--> 
                                         <!-- Onclick nos dice a donde se va a dirigir cuando presione el botón-->    
                                         <td> <center> <button type="submit" class="btn btn-sm btn-primary"><img src="img/Modificar.png" width="25px"></button> 
-                                        <td> <center><button type="submit" class="btn btn-sm btn-danger" name="EliminaUsua" onclick="location='../../../Control/borrarComentario.php?id=<?php echo ''.$row[0].'' ?>'"><img src="img/Eliminar.png" width="25px"></button></center></td>
+                                        <td> <center><button type="submit" class="btn btn-sm btn-danger" name="EliminaUsua" onclick="location='../../../Control/borrarComentarios.php?id=<?php echo ''.$row[0].'' ?>'"><img src="img/Eliminar.png" width="25px"></button></center></td>
                                           
                                                     
                                     </tr>
@@ -122,8 +127,8 @@ include('Menu.php');
               <div class="form-row">
                 <div class="form-group col-md-12">
                   <label style="color:black;" for="input_documento">Comentario: </label>
-                  <input type="text" class="form-control" name="Comentario" required>
-                </div>
+                  <textarea class="form-control" name="Comentario"  required>Me gusto...</textarea>
+                  </div>
                </div>
                <div class="form-row">
                 <div class="form-group col-md-12">

@@ -25,6 +25,7 @@ include('Menu.php');
                                             <th>Tipo de Fundacion</th>
                                             <th>Documento</th>
                                             <th>Razon Social</th>
+                                            <th>Foto</th>
                                             <th>Dirección</th>
                                             <th>Teléfono</th>
                                             <th>Correo</th>
@@ -37,33 +38,21 @@ include('Menu.php');
                                         </tr>
                                     </thead>
                                     <tbody>
-
-                                      //SELECT 
-    fundacion.idFundacion, 
-    tipodocumento.Descripcion AS TipoDocumento.Descripcion, 
-    tipofundacion.TipoFundacion AS TipoFundacion.Descripcion, 
-    fundacion.Documento, 
-    fundacion.RazonSocial, 
-    fundacion.Direccion, 
-    fundacion.Telefono, 
-    fundacion.Correo, 
-    fundacion.Clave, 
-    fundacion.foto, 
-    ciudad.idCuidad AS Ciudad.Descripcion, 
-    departamento.idDepartamento AS departamento.Descripcion
-FROM fundacion 
-INNER JOIN tipofundacion 
-    ON fundacion.TipoFundacion = tipofundacion.TipoFundacion
-INNER JOIN tipodocumento
-    ON fundacion.idTipoDoc = tipodocumento.IdTipoDocumento
-INNER JOIN ciudad
-    ON fundacion.idCiudad = ciudad.idCiudad
-INNER JOIN departamento
-    ON fundacion.idDepartamento = departamento.idDepartamento;
     
                                     <?php 
                                                   include( '../../../Control/conex.php'); 
-                                                  $cons = $conexion -> query("SELECT *  FROM fundacion INNER JOIN tipofundacion ON fundacion.TipoFundacion = tipofundacion.TipoFundacion;");
+                                                  $cons = $conexion -> query(
+                                                "SELECT fundacion.idFundacion, tipodocumento.Descripcion, tipofundacion.Descripcion, fundacion.Documento, fundacion.RazonSocial, fundacion.Foto, fundacion.Direccion, fundacion.Telefono, fundacion.Correo, fundacion.Clave, ciudad.Descripcion, departamento.Descripcion
+
+FROM fundacion 
+INNER JOIN tipofundacion 
+ON fundacion.idTipoFundacion = tipofundacion.idTipoFundacion
+INNER JOIN tipodocumento
+ON fundacion.idTipoDoc = tipodocumento.IdTipoDocumento
+INNER JOIN ciudad
+ON fundacion.idCiudad = ciudad.idCiudad
+INNER JOIN departamento
+ON fundacion.idDeparta = departamento.idDepartamento;");
                                                   while ($row = $cons -> fetch_row()) {
                                                 ?>
                                             <tr>
@@ -78,6 +67,7 @@ INNER JOIN departamento
                                         <td><?php echo ''.$row[8].''; ?></td>
                                         <td><?php echo ''.$row[9].''; ?></td>
                                         <td><?php echo ''.$row[10].''; ?></td>
+                                        <td><?php echo ''.$row[11].''; ?></td>
                                     <!-- Si el usuario presiona el botòn Modificar ira a el archivo Modificarusua, si presiona eliminar irà a Borrarusua en la Carpeta Control--> 
                                         <!-- Onclick nos dice a donde se va a dirigir cuando presione el botón-->    
                                         <td> <center> <button type="submit" class="btn btn-sm btn-primary"><img src="img/Modificar.png" width="25px"></button> 

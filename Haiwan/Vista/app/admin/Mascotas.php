@@ -26,6 +26,9 @@ include('Menu.php');
                                             <th>Descripción</th>
                                             <th>Tipo Animal</th>
                                             <th>Raza</th>
+                                            <th>Tamaño</th>
+                                            <th>Color Primario</th>
+                                            <th>Color Secundario</th>
                                             <th>Edad Promedio</th>
                                             <th>Ciudad</th>
                                             <th>Departamento</th>
@@ -37,7 +40,20 @@ include('Menu.php');
                                     </tfoot>
                                     <?php 
                                                   include( '../../../Control/Conex.php'); 
-                                                  $cons = $conexion -> query("SELECT *  FROM animal");
+                                                  $cons = $conexion -> query("SELECT animal.idAnimal, animal.Nombre, animal.Foto, animal.Descripcion, tipoanimal.Descripcion, raza.Descripcion, tamaños.descripcion, color.Descripcion, color.Descripcion, animal.EdadPromedio, ciudad.Descripcion, departamento.Descripcion
+FROM animal
+INNER JOIN tipoanimal
+ON animal.idTipoAnimal = tipoanimal.idTipoAnimal
+INNER JOIN raza
+ON animal.idRaza = raza.idRaza
+INNER JOIN tamaños
+ON animal.idTamaño = tamaños.idTamaño
+INNER JOIN color
+ON animal.idColor AND animal.idColor2 = color.idColor
+INNER JOIN ciudad
+ON animal.idCiudad = ciudad.idCiudad
+INNER JOIN departamento
+ON animal.idDepartamento = departamento.idDepartamento;");
                                                   while ($row = $cons -> fetch_row()) {
                                                 ?>
                                             <tr>
@@ -50,6 +66,9 @@ include('Menu.php');
                                         <td><?php echo ''.$row[6].''; ?></td>
                                         <td><?php echo ''.$row[7].''; ?></td>    
                                         <td><?php echo ''.$row[8].''; ?></td>       
+                                        <td><?php echo ''.$row[9].''; ?></td>       
+                                        <td><?php echo ''.$row[10].''; ?></td>       
+                                        <td><?php echo ''.$row[11].''; ?></td>       
             
                    
                                         <!-- Si el usuario presiona el botòn Modificar ira a el archivo Modificarusua, si presiona eliminar irà a Borrarusua en la Carpeta Control--> 

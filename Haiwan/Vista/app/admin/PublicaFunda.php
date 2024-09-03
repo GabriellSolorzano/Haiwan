@@ -33,7 +33,14 @@ include('Menu.php');
                                     </tfoot>
                                     <?php 
                                                   include( '../../../Control/Conex.php'); 
-                                                  $cons = $conexion -> query("SELECT *  FROM publicacionfund");
+                                                  $cons = $conexion -> query("SELECT publicacionfund.idPublicaFund, fundacion.RazonSocial, animal.Nombre, publicacionfund.FechaPub, estadopub.Descripcion
+FROM publicacionfund
+INNER JOIN fundacion
+ON publicacionfund.idFundacion = fundacion.idFundacion
+INNER JOIN animal
+ON publicacionfund.idAnimal = animal.idAnimal
+INNER JOIN estadopub
+ON publicacionfund.idEstadoPub = estadopub.idEstadoPub");
                                                   while ($row = $cons -> fetch_row()) {
                                                 ?>
                                             <tr>

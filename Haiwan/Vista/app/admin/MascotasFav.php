@@ -32,7 +32,12 @@ include('Menu.php');
                                     </tfoot>
                                     <?php 
                                                   include( '../../../Control/Conex.php'); 
-                                                  $cons = $conexion -> query("SELECT *  FROM animalfavorito");
+                                                  $cons = $conexion -> query("SELECT animalfavorito.idAnimalFav, usuario.Nombre, animal.Nombre, animalfavorito.Calificacion
+FROM animalfavorito
+INNER JOIN usuario
+ON animalfavorito.idUsuario = usuario.idUsuario
+INNER JOIN animal
+ON animalfavorito.idAnimal = animal.idAnimal");
                                                   while ($row = $cons -> fetch_row()) {
                                                 ?>
                                             <tr>
