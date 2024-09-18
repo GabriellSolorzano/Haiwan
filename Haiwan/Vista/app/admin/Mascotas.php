@@ -135,8 +135,8 @@ ON animal.idDepartamento = departamento.idDepartamento;");
 
               <div class="form-row">
                 <div class="form-group col-md-6">
-                  <label style="color:black;" for="input_tipoDocumento">Raza de animal </label>
-                    <select id="inputState" class="form-control" name="Tipo animal" require>
+                  <label style="color:black;" for="input_tipoDocumento">Raza del animal </label>
+                    <select id="inputState" class="form-control" name="idRaza" require>
                     <?php  
                         include( '../../../Control/conex.php');
                           # Consultamos a la tabla tipodocu, que es la que tiene los tipos de docuementos en la BD:
@@ -151,7 +151,7 @@ ON animal.idDepartamento = departamento.idDepartamento;");
                 </div>
                 <div class="form-group col-md-6">
                   <label style="color:black;" for="input_tipoDocumento">Tamaño</label>
-                    <select id="inputState" class="form-control" name="Carateristicas" require>
+                    <select id="inputState" class="form-control" name="idTamaño" require>
                     <?php  
                         include( '../../../Control/conex.php');
                           # Consultamos a la tabla tipodocu, que es la que tiene los tipos de docuementos en la BD:
@@ -169,7 +169,7 @@ ON animal.idDepartamento = departamento.idDepartamento;");
               <div class="form-row">
                 <div class="form-group col-md-6">
                   <label style="color:black;" for="input_tipoDocumento">Color 1</label>
-                    <select id="inputState" class="form-control" name="Tipo animal" require>
+                    <select id="inputState" class="form-control" name="idColor" require>
                     <?php  
                         include( '../../../Control/conex.php');
                           # Consultamos a la tabla tipodocu, que es la que tiene los tipos de docuementos en la BD:
@@ -184,7 +184,7 @@ ON animal.idDepartamento = departamento.idDepartamento;");
                 </div>
                 <div class="form-group col-md-6">
                   <label style="color:black;" for="input_tipoDocumento">Color 2</label>
-                    <select id="inputState" class="form-control" name="Carateristicas" require>
+                    <select id="inputState" class="form-control" name="idColor2" require>
                     <?php  
                         include( '../../../Control/conex.php');
                           # Consultamos a la tabla tipodocu, que es la que tiene los tipos de docuementos en la BD:
@@ -202,14 +202,14 @@ ON animal.idDepartamento = departamento.idDepartamento;");
               <div class="form-row">
                 <div class="form-group col-md-12">
                   <label style="color:black;" for="input_tipoUsuario">Edad promedio</label>
-                  <input type="number" class="form-control" name="Edad" required>
+                  <input type="number" class="form-control" name="EdadPromedio" required>
                 </div>
               </div>
 
               <div class="form-row">
                 <div class="form-group col-md-6">
                   <label style="color:black;" for="input_tipoDocumento">Ciudad</label>
-                    <select id="inputState" class="form-control" name="Carateristicas" require>
+                    <select id="inputState" class="form-control" name="idCiudad" require>
                     <?php  
                         include( '../../../Control/conex.php');
                           # Consultamos a la tabla tipodocu, que es la que tiene los tipos de docuementos en la BD:
@@ -224,7 +224,7 @@ ON animal.idDepartamento = departamento.idDepartamento;");
                 </div>
                 <div class="form-group col-md-6">
                   <label style="color:black;" for="input_fechaNacimiento">Departamento</label>
-                    <select id="inputState" class="form-control" name="Carateristicas" require>
+                    <select id="inputState" class="form-control" name="idDepartamento" require>
                     <?php  
                         include( '../../../Control/conex.php');
                           # Consultamos a la tabla tipodocu, que es la que tiene los tipos de docuementos en la BD:

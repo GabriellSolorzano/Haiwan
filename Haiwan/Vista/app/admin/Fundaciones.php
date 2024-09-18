@@ -134,7 +134,7 @@ ON fundacion.idDeparta = departamento.idDepartamento;");
                   </div>
                   <div class="form-group col-md-6">
                     <label style="color:black;" for="input_tipoDocumento">Tipo de Fundación</label>
-                      <select id="inputState" class="form-control">
+                      <select id="inputState" class="form-control" name="idTipoFundacion">
                       <?php  
                         include( '../../../Control/conex.php');
                           # Consultamos a la tabla tipodocu, que es la que tiene los tipos de docuementos en la BD:
@@ -152,7 +152,7 @@ ON fundacion.idDeparta = departamento.idDepartamento;");
                 <div class="form-row">
                   <div class="form-group col-md-6">
                     <label style="color:black;" for="input_tipoDocumento">Tipo de Documento</label>
-                      <select id="inputState" class="form-control">
+                      <select id="inputState" class="form-control" name="idTipoDoc">
                       <?php  
                         include( '../../../Control/conex.php');
                           # Consultamos a la tabla tipodocu, que es la que tiene los tipos de docuementos en la BD:
@@ -185,7 +185,7 @@ ON fundacion.idDeparta = departamento.idDepartamento;");
                 <div class="form-row">
                 <div class="form-group col-md-6">
                   <label style="color:black;" for="input_tipoDocumento">Ciudad</label>
-                    <select id="inputState" class="form-control" name="Carateristicas" require>
+                    <select id="inputState" class="form-control" name="idCiudad" require>
                     <?php  
                         include( '../../../Control/conex.php');
                           # Consultamos a la tabla tipodocu, que es la que tiene los tipos de docuementos en la BD:
@@ -200,7 +200,7 @@ ON fundacion.idDeparta = departamento.idDepartamento;");
                 </div>
                 <div class="form-group col-md-6">
                   <label style="color:black;" for="input_fechaNacimiento">Departamento</label>
-                    <select id="inputState" class="form-control" name="Carateristicas" require>
+                    <select id="inputState" class="form-control" name="idDeparta" require>
                     <?php  
                         include( '../../../Control/conex.php');
                           # Consultamos a la tabla tipodocu, que es la que tiene los tipos de docuementos en la BD:
@@ -218,7 +218,7 @@ ON fundacion.idDeparta = departamento.idDepartamento;");
               <div class="form-row">
                   <div class="form-group col-md-6">
                     <label style="color:black;" for="inputZip">Correo:</label>
-                      <input type="text" class="form-control" name="CorreoElectronico" placeholder="fundacion@...">
+                      <input type="text" class="form-control" name="Correo" placeholder="fundacion@...">
                   </div>
                   <div class="form-group col-md-6">
                     <label style="color:black;" for="inputAddress">Clave:</label>
@@ -229,7 +229,7 @@ ON fundacion.idDeparta = departamento.idDepartamento;");
               <div class="form-row">
                 <div class="form-group col-md-12">
                     <label style="color:black;" for="inputPassword4">Foto:</label>
-                      <input type="file" class="form-control" name="Logo">
+                      <input type="file" class="form-control" name="Foto">
                 </div>
               </div>
 

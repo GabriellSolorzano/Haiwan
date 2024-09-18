@@ -93,7 +93,7 @@ ON animalfavorito.idAnimal = animal.idAnimal");
         <div class="form-row">
                 <div class="form-group col-md-6">
                   <label style="color:black;" for="input_tipoDocumento">Usuario</label>
-                  <select id="inputState" class="form-control">
+                  <select id="inputState" class="form-control" name="idUsuario">
                     <?php  
                         include( '../../../Control/conex.php');
                           # Consultamos a la tabla tipodocu, que es la que tiene los tipos de docuementos en la BD:
@@ -109,7 +109,7 @@ ON animalfavorito.idAnimal = animal.idAnimal");
                 </div>
                 <div class="form-group col-md-6">
                   <label style="color:black;" for="input_tipoDocumento">Animal</label>
-                  <select id="inputState" class="form-control">
+                  <select id="inputState" class="form-control" name="idAnimal">
                     <?php  
                         include( '../../../Control/conex.php');
                           # Consultamos a la tabla tipodocu, que es la que tiene los tipos de docuementos en la BD:
@@ -127,7 +127,7 @@ ON animalfavorito.idAnimal = animal.idAnimal");
               <div class="form-row">
                 <div class="form-group col-md-12">
                   <label style="color:black;" for="input_documento">Calificación</label>
-                  <input type="number" min="0" max="5" class="form-control" name="input_documento" required>
+                  <input type="number" min="0" max="5" class="form-control" name="Calificacion" required>
                 </div>
                 </div>
 

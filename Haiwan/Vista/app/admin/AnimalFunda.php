@@ -101,7 +101,7 @@ ON residenciaanimal.idAnimal = animal.idAnimal;");
                 <div class="form-row">
                   <div class="form-group col-md-6">
                     <label style="color:black;" for="inputEmail4">Fundación:</label>
-                    <select id="inputState" class="form-control" name="Tipo animal" require>
+                    <select id="inputState" class="form-control" name="idFundacion" require>
                 </div>
                     <?php  
                         include( '../../../Control/conex.php');
@@ -117,7 +117,7 @@ ON residenciaanimal.idAnimal = animal.idAnimal;");
                   </div>
                 <div class="form-group col-md-6">
                   <label style="color:black;" for="inputAddress">Animal:</label>
-                    <select id="inputState" class="form-control" name="Tipo animal" require>
+                    <select id="inputState" class="form-control" name="idAnimal" require>
                 </div>
                     <?php  
                         include( '../../../Control/conex.php');

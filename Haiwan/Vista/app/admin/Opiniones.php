@@ -95,7 +95,7 @@ ON opiniones.idPublicaFund = publicacionfund.idPublicaFund");
               <div class="form-row">
                 <div class="form-group col-md-6">
                   <label style="color:black;" for="input_nombre">Usuario:</label>
-                  <select id="inputState" class="form-control">
+                  <select id="inputState" class="form-control" name="idUsuario">
                     <?php  
                         include( '../../../Controlador/conex.php');
                           # Consultamos a la tabla tipodocu, que es la que tiene los tipos de docuementos en la BD:
@@ -110,7 +110,7 @@ ON opiniones.idPublicaFund = publicacionfund.idPublicaFund");
                    </div>
                 <div class="form-group col-md-6">
                   <label style="color:black;" for="input_apellido">Publicación: </label>
-                  <select id="inputState" class="form-control">
+                  <select id="inputState" class="form-control" name="idPublicaFund">
                     <?php  
                         include( '../../../Controlador/conex.php');
                           # Consultamos a la tabla tipodocu, que es la que tiene los tipos de docuementos en la BD:

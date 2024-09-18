@@ -97,7 +97,7 @@ ON publicacionusua.idEstadoPub = estadopub.idEstadoPub;");
               <div class="form-row">
                 <div class="form-group col-md-6">
                   <label style="color:black;" for="input_nombre">Usuario:</label>
-                  <select id="inputState" class="form-control">
+                  <select id="inputState" class="form-control" name="idUsuario">
                     <?php  
                         include( '../../../Control/conex.php');
                           # Consultamos a la tabla tipodocu, que es la que tiene los tipos de docuementos en la BD:
@@ -115,7 +115,7 @@ ON publicacionusua.idEstadoPub = estadopub.idEstadoPub;");
                
                 <div class="form-group col-md-6">
                   <label style="color:black;" for="input_tipoDocumento">Animal: </label>
-                  <select id="inputState" class="form-control">
+                  <select id="inputState" class="form-control" name="idAnimal">
                     <?php  
                         include( '../../../Control/conex.php');
                           # Consultamos a la tabla tipodocu, que es la que tiene los tipos de docuementos en la BD:
@@ -133,11 +133,11 @@ ON publicacionusua.idEstadoPub = estadopub.idEstadoPub;");
               <div class="form-row">
                 <div class="form-group col-md-6">
                   <label style="color:black;" for="input_fechaNacimiento">Fecha Publicación</label>
-                  <input type="date" class="form-control" name="FechaPub" required>
+                  <input type="date" class="form-control" name="FechaPub" required name="FechaPub">
                 </div>
                 <div class="form-group col-md-6">
                   <label style="color:black;" for="input_direccion">Estado Publicación:</label>
-                  <select id="inputState" class="form-control">
+                  <select id="inputState" class="form-control" name="idEstadoPub ">
                     <?php  
                         include( '../../../Control/conex.php');
                           # Consultamos a la tabla tipodocu, que es la que tiene los tipos de docuementos en la BD:

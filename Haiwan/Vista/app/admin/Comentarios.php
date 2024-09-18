@@ -95,7 +95,7 @@ ON comentarios.idPublica = publicacionusua.idPublicaUsua");
               <div class="form-row">
                 <div class="form-group col-md-6">
                   <label style="color:black;" for="input_nombre">Usuario:</label>
-                  <select id="inputState" class="form-control">
+                  <select id="inputState" class="form-control" name="idUsuario ">
                     <?php  
                         include( '../../../Controlador/conex.php');
                           # Consultamos a la tabla tipodocu, que es la que tiene los tipos de docuementos en la BD:
@@ -110,7 +110,7 @@ ON comentarios.idPublica = publicacionusua.idPublicaUsua");
                    </div>
                 <div class="form-group col-md-6">
                   <label style="color:black;" for="input_apellido">Publicación: </label>
-                  <select id="inputState" class="form-control">
+                  <select id="inputState" class="form-control" name="idPublica">
                     <?php  
                         include( '../../../Controlador/conex.php');
                           # Consultamos a la tabla tipodocu, que es la que tiene los tipos de docuementos en la BD:
@@ -127,7 +127,7 @@ ON comentarios.idPublica = publicacionusua.idPublicaUsua");
               <div class="form-row">
                 <div class="form-group col-md-12">
                   <label style="color:black;" for="input_documento">Comentario: </label>
-                  <textarea class="form-control" name="Comentario"  required>Me gusto...</textarea>
+                  <textarea class="form-control" name="Comentario" required>Me gusto...</textarea>
                   </div>
                </div>
                <div class="form-row">

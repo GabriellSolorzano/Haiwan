@@ -97,13 +97,13 @@ ON solicitudadopcion.idEstadoSolicitud = estadosolicitud.idEstadoSolicitud;");
         </div>
         <div class="modal-body">
             <form action="../../../controlador/crearUsuario.php">
+
               <div class="form-row">
                 <div class="form-group col-md-6">
                   <label style="color:black;" for="input_nombre">Animal</label>
-                  <select class="form-control" name="Animal" required>
+                  <select class="form-control" name="idAnimal" required>
                 </div>
-
-                <?php  
+                  <?php  
                         include( '../../../Controlador/conex.php');
                           # Consultamos a la tabla tipodocu, que es la que tiene los tipos de docuementos en la BD:
                           $sql = "SELECT * FROM animal";
@@ -115,11 +115,14 @@ ON solicitudadopcion.idEstadoSolicitud = estadosolicitud.idEstadoSolicitud;");
                         ?>
                   </select>
               </div>
+
                 <div class="form-group col-md-6">
                   <label style="color:black;" for="input_apellido">Fecha de solicitud</label>
                   <input type="date" class="form-control" name="FechaSolicitud" required>
                 </div>
               </div>
+
+
               <div class="form-row">
                 <div class="form-group col-md-6">
                   <label style="color:black;" for="input_documento">Documento</label>
@@ -127,8 +130,8 @@ ON solicitudadopcion.idEstadoSolicitud = estadosolicitud.idEstadoSolicitud;");
                 </div>
                 <div class="form-group col-md-6">
                   <label style="color:black;" for="input_tipoDocumento"> Estado de solicitud</label>
-                    <select class="form-control" name= "EstadoSolicitud" require>
-                    <?php  
+                    <select class="form-control" name= "idEstadoSolicitud" require>
+                      <?php  
                         include( '../../../Control/conex.php');
                           # Consultamos a la tabla tipodocu, que es la que tiene los tipos de docuementos en la BD:
                           $sql = "SELECT * FROM estadosolicitud";
@@ -139,8 +142,29 @@ ON solicitudadopcion.idEstadoSolicitud = estadosolicitud.idEstadoSolicitud;");
                           }
                         ?>
                   </select>
+                </div>
+              </div>
+
+
+                  <div class="form-row">
+                <div class="form-group col-md-12">
+                  <label style="color:black;" for="input_nombre">Usuario</label>
+                    <select class="form-control" name= "idUsuario" require>
+                      <?php  
+                        include( '../../../Control/conex.php');
+                          # Consultamos a la tabla tipodocu, que es la que tiene los tipos de docuementos en la BD:
+                          $sql = "SELECT * FROM usuario";
+                          $eje = $conexion->query($sql);
+                          # Mostramos a través de un ciclo todas las opciones válidas:
+                          while($row1 = $eje->fetch_row()){
+                            echo '<option value="'.$row1[0].'">'.$row1[4].'</option>';
+                          }
+                        ?>
+                    </select>                  
                   </div>
-                  </div>
+                </div>
+
+
                   <center> <button type="submit" class="btn btn-primary">Guardar</button></center>
                   </form>
         </div>
