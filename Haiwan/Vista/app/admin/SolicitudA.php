@@ -165,7 +165,7 @@ ON solicitudadopcion.idEstadoSolicitud = estadosolicitud.idEstadoSolicitud;");
                 </div>
 
 
-                  <center> <button type="submit" class="btn btn-primary">Guardar</button></center>
+                  <center> <button type="submit" class="btn btn-primary" name="BTnGuardar">Guardar</button></center>
                   </form>
         </div>
         

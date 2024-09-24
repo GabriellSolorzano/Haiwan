@@ -137,7 +137,7 @@ ON opiniones.idPublicaFund = publicacionfund.idPublicaFund");
                 </div>
                 </div>
 
-              <center> <button type="submit" class="btn btn-primary">Guardar</button></center> 
+              <center> <button type="submit" class="btn btn-primary" name="BTnGuardar">Guardar</button></center> 
               </form>
         </div>
         
