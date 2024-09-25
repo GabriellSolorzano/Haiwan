@@ -120,7 +120,7 @@ ON usuario.idDeparta = departamento.idDepartamento");
                 </div>
                 <div class="form-group col-md-6">
                   <label style="color:black;" for="input_tipoDocumento">Tipo de documento</label>
-                    <select id="inputState" class="form-control">
+                    <select id="inputState" name="input_tipoDocumento" class="form-control">
                     <?php  
                         include( '../../../Control/conex.php');
                           # Consultamos a la tabla tipodocu, que es la que tiene los tipos de docuementos en la BD:
@@ -138,7 +138,7 @@ ON usuario.idDeparta = departamento.idDepartamento");
               <div class="form-row">
                 <div class="form-group col-md-6">
                   <label style="color:black;" for="input_tipoUsuario">Tipo Usuario</label>
-                    <select id="inputState" class="form-control">
+                    <select id="inputState" name="input_tipoUsuario" class="form-control">
                     <?php  
                         include( '../../../Control/conex.php');
                           # Consultamos a la tabla tipodocu, que es la que tiene los tipos de docuementos en la BD:
@@ -153,7 +153,7 @@ ON usuario.idDeparta = departamento.idDepartamento");
                 </div>
                 <div class="form-group col-md-6">
                   <label style="color:black;" for="input_genero">Género</label>
-                  <select name="input_genero" class="form-control" required>
+                  <select name="input_genero" name="input_genero" class="form-control" required>
                   
                     <option>Masculino</option>
                     <option>Femenino</option>
