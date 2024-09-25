@@ -102,25 +102,23 @@ ON usuario.idDeparta = departamento.idDepartamento");
           </button>
         </div>
         <div class="modal-body">
-            <form action="../../../controlador/crearUsuario.php">
+            <form action="../../../Control/guardarUsuarios.php" method="post">
               <div class="form-row">
-                <div class="form-group col-md-6">
-                  <label style="color:black;" for="input_nombre">Nombres</label>
-                  <input type="text" class="form-control" name="input_nombre" required>
-                </div>
-                <div class="form-group col-md-6">
-                  <label style="color:black;" for="input_apellido">Apellidos</label>
-                  <input type="text" class="form-control" name="input_apellido" required>
+                <div class="form-group col-md-12">
+                  <label style="color:black;" for="input_nombre">Nombre y Apellido</label>
+                  <input type="text" class="form-control" name="Nombre" required>
                 </div>
               </div>
+
+
               <div class="form-row">
                 <div class="form-group col-md-6">
                   <label style="color:black;" for="input_documento">Documento</label>
-                  <input type="number" class="form-control" name="input_documento" required>
+                  <input type="number" class="form-control" name="Documento" required>
                 </div>
                 <div class="form-group col-md-6">
                   <label style="color:black;" for="input_tipoDocumento">Tipo de documento</label>
-                    <select id="inputState" name="input_tipoDocumento" class="form-control">
+                    <select id="inputState" name="idTipoDocumento" class="form-control">
                     <?php  
                         include( '../../../Control/conex.php');
                           # Consultamos a la tabla tipodocu, que es la que tiene los tipos de docuementos en la BD:
@@ -135,10 +133,12 @@ ON usuario.idDeparta = departamento.idDepartamento");
 
                 </div>
               </div>
+
+
               <div class="form-row">
                 <div class="form-group col-md-6">
                   <label style="color:black;" for="input_tipoUsuario">Tipo Usuario</label>
-                    <select id="inputState" name="input_tipoUsuario" class="form-control">
+                    <select id="inputState" name="idTipoUsuario" class="form-control">
                     <?php  
                         include( '../../../Control/conex.php');
                           # Consultamos a la tabla tipodocu, que es la que tiene los tipos de docuementos en la BD:
@@ -152,41 +152,60 @@ ON usuario.idDeparta = departamento.idDepartamento");
                     </select>
                 </div>
                 <div class="form-group col-md-6">
-                  <label style="color:black;" for="input_genero">Género</label>
-                  <select name="input_genero" name="input_genero" class="form-control" required>
-                  
-                    <option>Masculino</option>
-                    <option>Femenino</option>
-                  </select>
+                  <label style="color:black;" for="input_email">Correo</label>
+                  <input type="email" class="form-control" name="Correo" required>
                 </div>
               </div>
+
+
               <div class="form-row">
-                <div class="form-group col-md-6">
-                  <label style="color:black;" for="input_fechaNacimiento">Fecha de nacimiento</label>
-                  <input type="date" class="form-control" name="input_fechaNacimiento" required>
-                </div>
-                <div class="form-group col-md-6">
-                  <label style="color:black;" for="input_direccion">Dirección</label>
-                  <input type="address" class="form-control" name="input_direccion" required>
-                </div>
-              </div>
+              <div class="form-group col-md-6">
+                  <label style="color:black;" for="input_tipoUsuario">Ciudad</label>
+                    <select id="inputState" name="idCiudad" class="form-control">
+                    <?php  
+                        include( '../../../Control/conex.php');
+                          # Consultamos a la tabla tipodocu, que es la que tiene los tipos de docuementos en la BD:
+                          $sql = "SELECT * FROM ciudad";
+                          $eje = $conexion->query($sql);
+                          # Mostramos a través de un ciclo todas las opciones válidas:
+                          while($row1 = $eje->fetch_row()){
+                            echo '<option value="'.$row1[0].'">'.$row1[1].'</option>';
+                          }
+                        ?>
+                    </select>
+                </div><div class="form-group col-md-6">
+                  <label style="color:black;" for="input_tipoUsuario">Departamento</label>
+                    <select id="inputState" name="idDeparta" class="form-control">
+                    <?php  
+                        include( '../../../Control/conex.php');
+                          # Consultamos a la tabla tipodocu, que es la que tiene los tipos de docuementos en la BD:
+                          $sql = "SELECT * FROM departamento";
+                          $eje = $conexion->query($sql);
+                          # Mostramos a través de un ciclo todas las opciones válidas:
+                          while($row1 = $eje->fetch_row()){
+                            echo '<option value="'.$row1[0].'">'.$row1[1].'</option>';
+                          }
+                        ?>
+                    </select>
+                    </div>
+                    </div>
+
+
               <div class="form-row">
                 <div class="form-group col-md-12">
-                  <label style="color:black;" for="input_telefono">Teléfono</label>
-                  <input type="tel" class="form-control" name="input_telefono" required>
+                  <label style="color:black;" for="input_direccion">Dirección</label>
+                  <input type="address" class="form-control" name="Direccion" required>
                 </div>
               </div>
+
+
               <div class="form-row">
-                <div class="form-group col-md-6">
-                  <label style="color:black;" for="input_email">Correo</label>
-                  <input type="email" class="form-control" name="input_email" required>
-                </div>
-                <div class="form-group col-md-6">
+                <div class="form-group col-md-12">
                   <label style="color:black;" for="input_contrasena">Contraseña</label>
-                  <input type="password" class="form-control" name="input_contrasena" required>
+                  <input type="password" class="form-control" name="Clave" required>
                 </div>
               </div>
-              <center> <button type="submit" class="btn btn-primary">Guardar</button></center> 
+              <center> <button type="submit" class="btn btn-primary" name="BTnGuardar">Guardar</button></center> 
               </form>
         </div>
         
