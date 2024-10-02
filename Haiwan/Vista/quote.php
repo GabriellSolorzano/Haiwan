@@ -8,7 +8,7 @@ session_start();
 
 <head>
     <meta charset="utf-8">
-    <title>Haiwan</title>
+    <title>Haiwan - Iniciar Sesión como Usuario</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -84,6 +84,19 @@ session_start();
             <div class="navbar-nav ms-auto p-4 p-lg-0">
                 <a href="index.php" class="nav-item nav-link">Home</a>
                 <a href="about.php" class="nav-item nav-link">Nosotros</a>
+                <a href="Fundaciones.php" class="nav-item nav-link">Fundaciones</a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Mascotas
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="Adopcion.php">En Adopción</a></li>
+                        <li><a class="dropdown-item" href="perdidas.php">Perdidas</a></li>
+                        <li><a class="dropdown-item" href="Buscadas.php">Buscadas</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="Adoptados.php">Adoptados</a></li>
+                    </ul>
+                </li>    
                 <a href="service.php" class="nav-item nav-link">Servicios</a>
                 <a href="contact.php" class="nav-item nav-link">Contacto</a>
             </div>
@@ -93,17 +106,17 @@ session_start();
     <!-- Navbar End -->
 
         <!-- Quote Start -->
-            <div class="container py-5">
+            <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-7">
                         <div class="bg-white rounded p-4 p-sm-5 wow fadeIn" data-wow-delay="0.5s">
-                            <h1 class="display-5 text-center mb-5">Iniciar sesión</h1>
+                            <h1 class="display-5 text-center mb-2">Iniciar sesión</h1>
                             <form action="../Control/login.php " method="post">
                             <div class="row g-3">
                                 <div class="col-sm-12">
                                     <div class="form-floating">
                                         <input name="CorreoUsuario" placeholder="Ingrese su Correo Electrónico" type="text" class="form-control bg-light border-0" id="gname">
-                                        <label for="gname">Usuario</label>
+                                        <label for="gname">Correo</label>
                                     </div>
                                 </div>
                                 <div class="col-sm-12">
@@ -116,6 +129,7 @@ session_start();
                                 <div class="col-12 text-center">
                                     <button name="login" class="btn btn-primary py-3 px-4" type="submit">Iniciar sesión</button>
                                     <br><br><p> ¿Nuevo en Haiwan? <a href="registro.php">Registrate</a> </p>
+                                    ¿Quieres iniciar sesión como una Fundación?<a href="IngresoFunda.php"> Haz click aquí</a> </p>
                                 </div>
                             </div>
                             </form>

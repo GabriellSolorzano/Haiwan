@@ -84,6 +84,19 @@ session_start();
             <div class="navbar-nav ms-auto p-4 p-lg-0">
                 <a href="index.php" class="nav-item nav-link">Home</a>
                 <a href="about.php" class="nav-item nav-link">Nosotros</a>
+                <a href="Fundaciones.php" class="nav-item nav-link">Fundaciones</a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Mascotas
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="Adopcion.php">En Adopción</a></li>
+                        <li><a class="dropdown-item" href="perdidas.php">Perdidas</a></li>
+                        <li><a class="dropdown-item" href="Buscadas.php">Buscadas</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="Adoptados.php">Adoptados</a></li>
+                    </ul>
+                </li>    
                 <a href="service.php" class="nav-item nav-link">Servicios</a>
                 <a href="project.php" class="nav-item nav-link">Proyectos</a>
                 <a href="contact.php" class="nav-item nav-link">Contacto</a>

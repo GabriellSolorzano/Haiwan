@@ -65,6 +65,14 @@ session_start();
                     <a class="btn btn-link text-light" href=""><i class="fab fa-twitter"></i></a>
                     <a class="btn btn-link text-light" href=""><i class="fab fa-linkedin-in"></i></a>
                     <a class="btn btn-link text-light" href="https://instagram.com/adoptions_haiwan?igshid=MzRlODBiNWFlZA=="><i class="fab fa-instagram"></i></a>
+                    
+                    <?php
+                        if(isset( $_SESSION['user']))
+                            {
+                                echo '  <span class="py-2 px-lg-5">'.$_SESSION['Nombre'].'</span>';
+                            }
+                    ?>
+
                 </div>
             </div>
         </div>
@@ -84,10 +92,35 @@ session_start();
             <div class="navbar-nav ms-auto p-4 p-lg-0">
                 <a href="index.php" class="nav-item nav-link active">Home</a>
                 <a href="about.php" class="nav-item nav-link">Nosotros</a>
+                <a href="Fundaciones.php" class="nav-item nav-link">Fundaciones</a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Mascotas
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="Adopcion.php">En Adopción</a></li>
+                        <li><a class="dropdown-item" href="perdidas.php">Perdidas</a></li>
+                        <li><a class="dropdown-item" href="Buscadas.php">Buscadas</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="Adoptados.php">Adoptados</a></li>
+                    </ul>
+                </li>           
                 <a href="service.php" class="nav-item nav-link">Servicios</a>
                 <a href="contact.php" class="nav-item nav-link">Contacto</a>
             </div>
-            <a href="quote.php" class="btn btn-primary py-4 px-lg-4 rounded-0 d-none d-lg-block">Iniciar sesión<i class="fa fa-arrow-right ms-3"></i></a>
+
+            <?php
+                if(empty( $_SESSION['user']))
+                    {
+                        echo '  <a href="quote.php" class="btn btn-primary py-4 px-lg-4 rounded-0 d-none d-lg-block">Iniciar Sesión<i class="fa fa-arrow-right ms-3"></i></a>';
+                    }
+
+                else
+                    {
+                        echo '  <a href="../Control/logout.php" class="btn btn-primary py-4 px-lg-4 rounded-0 d-none d-lg-block" data-toggle="modal" data-target="#logoutModal">Salir<i class="fa fa-arrow-right ms-3"></i></a>';
+                    }
+?>
+
         </div>
     </nav>
     <!-- Navbar End -->
@@ -142,12 +175,12 @@ session_start();
         <div class="container py-5 pt-lg-0">
             <div class="row gx-0">
                 <div class="col-lg-4 wow fadeIn" data-wow-delay="0.1s">
-                    <div class="bg-white shadow d-flex align-items-center h-100 px-5" style="min-height: 160px;">
+                    <div class="bg-white shadow d-flex align-items-center h-100 px-5 mt-2" style="min-height: 150px;">
                         <div class="d-flex">
                             <div class="flex-shrink-0 btn-lg-square rounded-circle bg-light">
                                 <i class="fa fa-times text-primary"></i>
                             </div>
-                            <div class="ps-3">
+                            <div class="ps-3 mt-4">
                                 <h4>Sin maltrato animal</h4>
                                 <span>Haiwan registra el cuidado de la mascota luego de que el usuario conozca a su nuevo amigo.</span>
                             </div>
@@ -155,12 +188,12 @@ session_start();
                     </div>
                 </div>
                 <div class="col-lg-4 wow fadeIn" data-wow-delay="0.3s">
-                    <div class="bg-white shadow d-flex align-items-center h-100 px-5" style="min-height: 160px;">
+                    <div class="bg-white shadow d-flex align-items-center h-100 px-5" style="min-height: 150px;">
                         <div class="d-flex">
                             <div class="flex-shrink-0 btn-lg-square rounded-circle bg-light">
                                 <i class="fa fa-users text-primary"></i>
                             </div>
-                            <div class="ps-3">
+                            <div class="ps-3 mt-4">
                                 <h4>Equipo dedicado</h4>
                                 <span>Nuestro equipo trabaja diariamente para mejorar nuestros servicios como empresa y funcionalidad
                                     en nuestro sitio web.</span>
@@ -169,12 +202,12 @@ session_start();
                     </div>
                 </div>
                 <div class="col-lg-4 wow fadeIn" data-wow-delay="0.5s">
-                    <div class="bg-white shadow d-flex align-items-center h-100 px-5" style="min-height: 160px;">
+                    <div class="bg-white shadow d-flex align-items-center h-100 px-5 mt-2" style="min-height: 150px;">
                         <div class="d-flex">
-                            <div class="flex-shrink-0 btn-lg-square rounded-circle bg-light">
+                            <div class="flex-shrink-0 btn-lg-square rounded-circle bg-light mt-2">
                                 <i class="fa fa-phone text-primary"></i>
                             </div>
-                            <div class="ps-3">
+                            <div class="ps-3 mt-4">
                                 <h4>Servicio 24/7</h4>
                                 <span>Haiwan es una via de contacto para conocer información sobre tus mascotas o contactar con lineas de
                                      servicio de ser necesario.</span>
@@ -727,7 +760,25 @@ session_start();
     </div>
     <!-- Footer End -->
 
-
+<!-- Logout Modal-->
+<div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">¿Listo para Salir?</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"></span>
+                    </button>
+                </div>
+                <div class="modal-body" style= "color:black">Presiona "cerrar sesión" en el caso de Salir.</div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancelar</button>
+                    <a class="btn btn-primary" href="../Control/Logout.php">Cerrar sesión</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>

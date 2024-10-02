@@ -44,15 +44,15 @@ include('Menu.php');
                                                   $cons = $conexion -> query(
                                                 "SELECT fundacion.idFundacion, tipodocumento.Descripcion, tipofundacion.Descripcion, fundacion.Documento, fundacion.RazonSocial, fundacion.Foto, fundacion.Direccion, fundacion.Telefono, fundacion.Correo, fundacion.Clave, ciudad.Descripcion, departamento.Descripcion
 
-FROM fundacion 
-INNER JOIN tipofundacion 
-ON fundacion.idTipoFundacion = tipofundacion.idTipoFundacion
-INNER JOIN tipodocumento
-ON fundacion.idTipoDoc = tipodocumento.IdTipoDocumento
-INNER JOIN ciudad
-ON fundacion.idCiudad = ciudad.idCiudad
-INNER JOIN departamento
-ON fundacion.idDeparta = departamento.idDepartamento;");
+                                                FROM fundacion 
+                                                INNER JOIN tipofundacion 
+                                                ON fundacion.idTipoFundacion = tipofundacion.idTipoFundacion
+                                                INNER JOIN tipodocumento
+                                                ON fundacion.idTipoDoc = tipodocumento.IdTipoDocumento
+                                                INNER JOIN ciudad
+                                                ON fundacion.idCiudad = ciudad.idCiudad
+                                                INNER JOIN departamento
+                                                ON fundacion.idDeparta = departamento.idDepartamento;");
                                                   while ($row = $cons -> fetch_row()) {
                                                 ?>
                                             <tr>
@@ -61,7 +61,7 @@ ON fundacion.idDeparta = departamento.idDepartamento;");
                                         <td><?php echo ''.$row[2].''; ?></td>
                                         <td><?php echo ''.$row[3].''; ?></td>
                                         <td><?php echo ''.$row[4].''; ?></td>
-                                        <td><?php echo ''.$row[5].''; ?></td>
+                                        <td><img src="data:image/jpeg;base64,<?php echo base64_encode($row[5]); ?>" width="100"></td>
                                         <td><?php echo ''.$row[6].''; ?></td>
                                         <td><?php echo ''.$row[7].''; ?></td>
                                         <td><?php echo ''.$row[8].''; ?></td>
@@ -91,16 +91,7 @@ ON fundacion.idDeparta = departamento.idDepartamento;");
             </div>
             <!-- End of Main Content -->
 
-            <!-- Footer -->
-            <footer class="sticky-footer bg-white">
-                <div class="container my-auto">
-                    <div class="copyright text-center my-auto">
-                        <span>Copyright &copy; Your Website 2020</span>
-                    </div>
-                </div>
-            </footer>
-            <!-- End of Footer -->
-
+          
         </div>
         <!-- End of Content Wrapper -->
 

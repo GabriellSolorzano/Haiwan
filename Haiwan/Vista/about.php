@@ -65,6 +65,14 @@ session_start();
                     <a class="btn btn-link text-light" href=""><i class="fab fa-twitter"></i></a>
                     <a class="btn btn-link text-light" href=""><i class="fab fa-linkedin-in"></i></a>
                     <a class="btn btn-link text-light" href=""><i class="fab fa-instagram"></i></a>
+
+                    <?php
+                        if(isset( $_SESSION['user']))
+                            {
+                                echo '  <span class="py-2 px-lg-5">'.$_SESSION['Nombre'].'</span>';
+                            }
+                    ?>
+
                 </div>
             </div>
         </div>
@@ -84,10 +92,35 @@ session_start();
             <div class="navbar-nav ms-auto p-4 p-lg-0">
                 <a href="index.php" class="nav-item nav-link">Home</a>
                 <a href="about.php" class="nav-item nav-link active">Nosotros</a>
+                <a href="Fundaciones.php" class="nav-item nav-link">Fundaciones</a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Mascotas
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="Adopcion.php">En Adopción</a></li>
+                        <li><a class="dropdown-item" href="perdidas.php">Perdidas</a></li>
+                        <li><a class="dropdown-item" href="Buscadas.php">Buscadas</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="Adoptados.php">Adoptados</a></li>
+                    </ul>
+                </li>    
                 <a href="service.php" class="nav-item nav-link">Servicios</a>
                 <a href="contact.php" class="nav-item nav-link">Contacto</a>
+
+                <?php
+                if(empty( $_SESSION['user']))
+                    {
+                        echo '  <a href="quote.php" class="btn btn-primary py-4 px-lg-4 rounded-0 d-none d-lg-block">Iniciar sesión<i class="fa fa-arrow-right ms-3"></i></a>';
+                    }
+
+                else
+                    {
+                        echo '  <a href="../Control/logout.php" class="btn btn-primary py-4 px-lg-4 rounded-0 d-none d-lg-block" data-toggle="modal" data-target="#logoutModal">Salir<i class="fa fa-arrow-right ms-3"></i></a>';
+                    }
+?>
+
             </div>
-            <a href="quote.php" class="btn btn-primary py-4 px-lg-4 rounded-0 d-none d-lg-block">Iniciar sesión<i class="fa fa-arrow-right ms-3"></i></a>
         </div>
     </nav>
     <!-- Navbar End -->
@@ -160,7 +193,7 @@ session_start();
                 </div>
                 
                 <div class="col-md-12 col-sm-12">
-                    <h2>Justificacion</h2>
+                    <h2>Justificación</h2>
                     <p>
                     La ciudad de Medellín enfrenta un problema persistente de animales abandonados y en situación de calle, lo que conlleva a diversas problemáticas como el maltrato, la proliferación de enfermedades y la sobrepoblación de animales en los albergues y refugios. Nuestro proyecto surge como respuesta a esta necesidad urgente de proporcionar una solución sostenible y compasiva.
 La adopción de animales es una forma efectiva de brindarles una segunda oportunidad de vida, pero muchas veces carece de una plataforma centralizada y accesible que facilite este proceso. A través de nuestro aplicativo web, buscamos facilitar el encuentro entre las mascotas necesitadas de un hogar y las personas interesadas en adoptar, creando así vínculos duraderos que beneficien tanto a los animales como a las familias adoptantes.
@@ -299,7 +332,25 @@ Además de promover la adopción, también nos dedicamos a sensibilizar a la com
     </div>
     <!-- Footer End -->
 
-
+<!-- Logout Modal-->
+<div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">¿Listo para Salir?</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"></span>
+                    </button>
+                </div>
+                <div class="modal-body" style= "color:black">Presiona "cerrar sesión" en el caso de Salir.</div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancelar</button>
+                    <a class="btn btn-primary" href="../Control/Logout.php">Cerrar sesión</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>

@@ -1,6 +1,7 @@
 <?php
 
 session_start();
+error_reporting(0);
 include('conex.php');
 
 header('Content-Type: text/html; charset=UTF-8');
@@ -29,11 +30,11 @@ if(isset($btn_login)){
                     break;
 
                 case '2':
-                    header('location:../Vista/App/Admin/Index.php?mensaje=$msj');
+                    header('location:../Vista/app/admin/Mascotas.php?mensaje=$msj');
                     break;
                 
                 default:
-                header('location:../Vista/App/Admin/Index.php?msj');
+                header('location:../Vista/app/admin/Mascotas.php?msj');
                     break;
             }
     }
