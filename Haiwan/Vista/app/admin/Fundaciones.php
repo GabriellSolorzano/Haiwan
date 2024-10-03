@@ -117,7 +117,7 @@ include('Menu.php');
           </button>
         </div>
         <div class="modal-body">
-            <form>
+            <form action="../../../Control/guardarFundaciones.php" method="post">
                 <div class="form-row">
                   <div class="form-group col-md-6">
                     <label style="color:black;" for="inputAddress2">Razón Social:</label>
@@ -213,7 +213,7 @@ include('Menu.php');
                   </div>
                   <div class="form-group col-md-6">
                     <label style="color:black;" for="inputAddress">Clave:</label>
-                      <input type="passwor" class="form-control" name="Clave" placeholder="Contraseña de la cuenta">
+                      <input type="password" class="form-control" name="Clave" placeholder="Contraseña de la cuenta">
                   </div>
                 </div>
 

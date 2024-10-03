@@ -6,7 +6,7 @@ error_reporting(0);
 
 $id = $_REQUEST['id'];
 
-$del = $conexion -> query("DELETE FROM animal WHERE dAnimal = '$id' ");
+$del = $conexion -> query("DELETE FROM animal WHERE idAnimal = '$id' ");
 	if ($del) {
 		echo "<script>
 		location.href='../Vista/app/admin/Mascotas.php#';

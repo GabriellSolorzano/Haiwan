@@ -92,7 +92,7 @@ include('Menu.php');
           </button>
         </div>
         <div class="modal-body">
-            <form action="../../../controlador/crearUsuario.php">
+            <form action="../../../Control/guardarMascotas.php" method="post">
               <div class="form-row">
                 <div class="form-group col-md-6">
                   <label style="color:black;" for="input_nombre">Nombre</label>
@@ -104,21 +104,23 @@ include('Menu.php');
                 </div>
               </div>
 
+
               <div class="form-row">
                 <div class="form-group col-md-12">
                   <label style="color:black;" for="input_documento">Descripción</label>
-                    <textarea class="form-control" name="Descripcion"  required>Descripción</textarea>
+                    <textarea class="form-control" name="Descripcion" placeholder="El animal es... Se comporta..." required></textarea>
                 </div>
               </div>
 
+
               <div class="form-row">
                 <div class="form-group col-md-6">
-                  <label style="color:black;" for="input_tipoDocumento">Raza del animal </label>
-                    <select id="inputState" class="form-control" name="idRaza" require>
+                  <label style="color:black;" for="input_tipoDocumento">Tipo de Animal</label>
+                    <select id="inputState" class="form-control" name="idTipoAnimal" require>
                     <?php  
                         include( '../../../Control/conex.php');
                           # Consultamos a la tabla tipodocu, que es la que tiene los tipos de docuementos en la BD:
-                          $sql = "SELECT * FROM raza";
+                          $sql = "SELECT * FROM TipoAnimal";
                           $eje = $conexion->query($sql);
                           # Mostramos a través de un ciclo todas las opciones válidas:
                           while($row1 = $eje->fetch_row()){
@@ -128,12 +130,12 @@ include('Menu.php');
                     </select>
                 </div>
                 <div class="form-group col-md-6">
-                  <label style="color:black;" for="input_tipoDocumento">Tamaño</label>
-                    <select id="inputState" class="form-control" name="idTamaño" require>
+                  <label style="color:black;" for="input_tipoDocumento">Raza</label>
+                    <select id="inputState" class="form-control" name="idRaza" require>
                     <?php  
                         include( '../../../Control/conex.php');
                           # Consultamos a la tabla tipodocu, que es la que tiene los tipos de docuementos en la BD:
-                          $sql = "SELECT * FROM tamaños";
+                          $sql = "SELECT * FROM Raza";
                           $eje = $conexion->query($sql);
                           # Mostramos a través de un ciclo todas las opciones válidas:
                           while($row1 = $eje->fetch_row()){
@@ -178,7 +180,22 @@ include('Menu.php');
               </div>
 
               <div class="form-row">
-                <div class="form-group col-md-12">
+              <div class="form-group col-md-6">
+                  <label style="color:black;" for="input_tipoDocumento">Tamaño</label>
+                    <select id="inputState" class="form-control" name="idTamaño" require>
+                    <?php  
+                        include( '../../../Control/conex.php');
+                          # Consultamos a la tabla tipodocu, que es la que tiene los tipos de docuementos en la BD:
+                          $sql = "SELECT * FROM tamaños";
+                          $eje = $conexion->query($sql);
+                          # Mostramos a través de un ciclo todas las opciones válidas:
+                          while($row1 = $eje->fetch_row()){
+                            echo '<option value="'.$row1[0].'">'.$row1[1].'</option>';
+                          }
+                        ?>
+                    </select>
+                </div>
+                <div class="form-group col-md-6">
                   <label style="color:black;" for="input_tipoUsuario">Edad promedio</label>
                   <input type="number" class="form-control" name="EdadPromedio" required>
                 </div>
@@ -202,7 +219,7 @@ include('Menu.php');
                 </div>
                 <div class="form-group col-md-6">
                   <label style="color:black;" for="input_fechaNacimiento">Departamento</label>
-                    <select id="inputState" class="form-control" name="idDepartamento" require>
+                    <select id="inputState" class="form-control" name="idDeparta" require>
                     <?php  
                         include( '../../../Control/conex.php');
                           # Consultamos a la tabla tipodocu, que es la que tiene los tipos de docuementos en la BD:
