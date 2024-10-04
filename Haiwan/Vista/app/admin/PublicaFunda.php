@@ -93,7 +93,7 @@ ON publicacionfund.idEstadoPub = estadopub.idEstadoPub");
           </button>
         </div>
         <div class="modal-body">
-            <form action="../../../controlador/crearUsuario.php">
+            <form action="../../../Control/guardarPublicaFunda.php" method="post">
               <div class="form-row">
                 <div class="form-group col-md-6">
                   <label style="color:black;" for="input_tipoDocumento">Fundación</label>

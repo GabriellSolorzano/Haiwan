@@ -6,16 +6,16 @@ error_reporting(0);
 
 $id = $_REQUEST['id'];
 
-$del = $conexion -> query("DELETE FROM publicacionfund WHERE idPublicaFund = '$id' ");
+$del = $conexion -> query("DELETE FROM publicacionusua WHERE idPublicaUsua = '$id' ");
 	if ($del) {
 		echo "<script>
-		location.href='../Vista/app/admin/PublicaFunda.php#';
+		location.href='../Vista/app/admin/PublicaUsua.php#';
 		</script>";
 		}
         else{
 			echo "<script>
 			 lert('El registro no pudo ser eliminado');
-			location.href='../Vista/app/admin/PublicaFunda.php';
+			location.href='../Vista/app/admin/PublicaUsua.php';
 			</script>";
 
 		}

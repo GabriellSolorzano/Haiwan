@@ -96,7 +96,7 @@ ON solicitudadopcion.idEstadoSolicitud = estadosolicitud.idEstadoSolicitud;");
           </button>
         </div>
         <div class="modal-body">
-            <form action="../../../controlador/crearUsuario.php">
+            <form action="../../../Control/guardarSolicitudA.php" method="post">
 
               <div class="form-row">
                 <div class="form-group col-md-6">

@@ -89,7 +89,7 @@ ON animalfavorito.idAnimal = animal.idAnimal");
           </button>
         </div>
         <div class="modal-body">
-        <form action="../../../controlador/crearUsuario.php">
+        <form action="../../../Control/guardarMascotaFav.php" method="post">
         <div class="form-row">
                 <div class="form-group col-md-6">
                   <label style="color:black;" for="input_tipoDocumento">Usuario</label>

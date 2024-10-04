@@ -97,7 +97,7 @@ ON residenciaanimal.idAnimal = animal.idAnimal;");
           </button>
         </div>
         <div class="modal-body">
-            <form>
+            <form action="../../../Control/guardarAnimalFunda.php" method="post">
                 <div class="form-row">
                   <div class="form-group col-md-6">
                     <label style="color:black;" for="inputEmail4">Fundación:</label>

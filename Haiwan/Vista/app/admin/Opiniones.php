@@ -7,7 +7,7 @@ include('Menu.php');
                 <div class="container-fluid">
 
                     <!-- Page Heading -->
-                    <h1 class="h3 mb-2 text-gray-800">Comentarios</h1>
+                    <h1 class="h3 mb-2 text-gray-800">Opiniones</h1>
                     <!-- DataTales Example -->
                     <div class="card shadow mb-4">
                        
@@ -91,7 +91,7 @@ ON opiniones.idPublicaFund = publicacionfund.idPublicaFund");
           </button>
         </div>
         <div class="modal-body">
-            <form action="../../../controlador/crearUsuario.php">
+            <form action="../../../Control/guardarOpiniones.php" method="post">
               <div class="form-row">
                 <div class="form-group col-md-6">
                   <label style="color:black;" for="input_nombre">Usuario:</label>
@@ -118,7 +118,7 @@ ON opiniones.idPublicaFund = publicacionfund.idPublicaFund");
                           $eje = $conexion->query($sql);
                           # Mostramos a través de un ciclo todas las opciones válidas:
                           while($row1 = $eje->fetch_row()){
-                            echo '<option value="'.$row1[0].'">'.$row1[4].'</option>';
+                            echo '<option value="'.$row1[0].'">'.$row1[0].'</option>';
                           }
                         ?>
                 </select>               
@@ -127,7 +127,7 @@ ON opiniones.idPublicaFund = publicacionfund.idPublicaFund");
               <div class="form-row">
                 <div class="form-group col-md-12">
                   <label style="color:black;" for="input_documento">Comentario: </label>
-                  <textarea class="form-control" name="Comentario"  required>Me gusto...</textarea>
+                  <textarea class="form-control" name="Comentario" placeholder="Me gusto..." required></textarea>
                 </div>
                </div>
                <div class="form-row">
