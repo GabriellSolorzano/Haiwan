@@ -64,7 +64,7 @@ include('Menu.php');
                                 <td><?php echo htmlspecialchars($row[10]); ?></td>
                                 <td><?php echo htmlspecialchars($row[11]); ?></td>
                                 <td>
-                                    <button type="button" class="btn btn-sm btn-primary" onclick="location.href='modificar.php?id=<?php echo $row[0]; ?>'"><img src="img/Modificar.png" width="25px"></button>
+                                    <button type="button" class="btn btn-sm btn-primary" onclick="location.href='ConsultaMascota.php?id=<?php echo $row[0]; ?>'"><img src="img/Modificar.png" width="25px"></button>
                                 </td>
                                 <td>
                                     <button type="button" class="btn btn-sm btn-danger" onclick="location.href='../../../Control/borrarMascotas.php?id=<?php echo $row[0]; ?>'"><img src="img/Eliminar.png" width="25px"></button>
@@ -81,168 +81,36 @@ include('Menu.php');
 </div>
 <!-- /.container-fluid -->
 
-  <!-- Modal -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<!-- Modal for New Pet -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel" style="color:black;">Nueva Mascota</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel" style="color:black;">Nueva Mascota</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form action="../../../controlador/crearUsuario.php" method="post" enctype="multipart/form-data">
+                    <!-- Form fields... -->
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label style="color:black;" for="input_nombre">Nombre</label>
+                            <input type="text" class="form-control" name="Nombre" placeholder="Nombre mascota" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label style="color:black;" for="input_foto">Foto</label>
+                            <input type="file" class="form-control" name="Foto" required>
+                        </div>
+                    </div>
+                    <!-- Rest of the form... -->
+                    <center><button type="submit" class="btn btn-primary" name="BTnGuardar">Guardar</button></center>
+                </form>
+            </div>
         </div>
-        <div class="modal-body">
-            <form action="../../../Control/guardarMascotas.php" method="post">
-              <div class="form-row">
-                <div class="form-group col-md-6">
-                  <label style="color:black;" for="input_nombre">Nombre</label>
-                    <input type="text" class="form-control" name="Nombre" placeholder="Nombre mascota" required>
-                </div>
-                <div class="form-group col-md-6">
-                  <label style="color:black;" for="input_apellido">Foto</label>
-                    <input type="file" class="form-control" name="Foto" required>
-                </div>
-              </div>
-
-
-              <div class="form-row">
-                <div class="form-group col-md-12">
-                  <label style="color:black;" for="input_documento">Descripción</label>
-                    <textarea class="form-control" name="Descripcion" placeholder="El animal es... Se comporta..." required></textarea>
-                </div>
-              </div>
-
-
-              <div class="form-row">
-                <div class="form-group col-md-6">
-                  <label style="color:black;" for="input_tipoDocumento">Tipo de Animal</label>
-                    <select id="inputState" class="form-control" name="idTipoAnimal" require>
-                    <?php  
-                        include( '../../../Control/conex.php');
-                          # Consultamos a la tabla tipodocu, que es la que tiene los tipos de docuementos en la BD:
-                          $sql = "SELECT * FROM TipoAnimal";
-                          $eje = $conexion->query($sql);
-                          # Mostramos a través de un ciclo todas las opciones válidas:
-                          while($row1 = $eje->fetch_row()){
-                            echo '<option value="'.$row1[0].'">'.$row1[1].'</option>';
-                          }
-                        ?>
-                    </select>
-                </div>
-                <div class="form-group col-md-6">
-                  <label style="color:black;" for="input_tipoDocumento">Raza</label>
-                    <select id="inputState" class="form-control" name="idRaza" require>
-                    <?php  
-                        include( '../../../Control/conex.php');
-                          # Consultamos a la tabla tipodocu, que es la que tiene los tipos de docuementos en la BD:
-                          $sql = "SELECT * FROM Raza";
-                          $eje = $conexion->query($sql);
-                          # Mostramos a través de un ciclo todas las opciones válidas:
-                          while($row1 = $eje->fetch_row()){
-                            echo '<option value="'.$row1[0].'">'.$row1[1].'</option>';
-                          }
-                        ?>
-                    </select>
-                </div>
-              </div>
-
-              <div class="form-row">
-                <div class="form-group col-md-6">
-                  <label style="color:black;" for="input_tipoDocumento">Color 1</label>
-                    <select id="inputState" class="form-control" name="idColor" require>
-                    <?php  
-                        include( '../../../Control/conex.php');
-                          # Consultamos a la tabla tipodocu, que es la que tiene los tipos de docuementos en la BD:
-                          $sql = "SELECT * FROM color";
-                          $eje = $conexion->query($sql);
-                          # Mostramos a través de un ciclo todas las opciones válidas:
-                          while($row1 = $eje->fetch_row()){
-                            echo '<option value="'.$row1[0].'">'.$row1[1].'</option>';
-                          }
-                        ?>
-                    </select>
-                </div>
-                <div class="form-group col-md-6">
-                  <label style="color:black;" for="input_tipoDocumento">Color 2</label>
-                    <select id="inputState" class="form-control" name="idColor2" require>
-                    <?php  
-                        include( '../../../Control/conex.php');
-                          # Consultamos a la tabla tipodocu, que es la que tiene los tipos de docuementos en la BD:
-                          $sql = "SELECT * FROM color";
-                          $eje = $conexion->query($sql);
-                          # Mostramos a través de un ciclo todas las opciones válidas:
-                          while($row1 = $eje->fetch_row()){
-                            echo '<option value="'.$row1[0].'">'.$row1[1].'</option>';
-                          }
-                        ?>
-                    </select>
-                </div>
-              </div>
-
-              <div class="form-row">
-              <div class="form-group col-md-6">
-                  <label style="color:black;" for="input_tipoDocumento">Tamaño</label>
-                    <select id="inputState" class="form-control" name="idTamaño" require>
-                    <?php  
-                        include( '../../../Control/conex.php');
-                          # Consultamos a la tabla tipodocu, que es la que tiene los tipos de docuementos en la BD:
-                          $sql = "SELECT * FROM tamaños";
-                          $eje = $conexion->query($sql);
-                          # Mostramos a través de un ciclo todas las opciones válidas:
-                          while($row1 = $eje->fetch_row()){
-                            echo '<option value="'.$row1[0].'">'.$row1[1].'</option>';
-                          }
-                        ?>
-                    </select>
-                </div>
-                <div class="form-group col-md-6">
-                  <label style="color:black;" for="input_tipoUsuario">Edad promedio</label>
-                  <input type="number" class="form-control" name="EdadPromedio" required>
-                </div>
-              </div>
-
-              <div class="form-row">
-                <div class="form-group col-md-6">
-                  <label style="color:black;" for="input_tipoDocumento">Ciudad</label>
-                    <select id="inputState" class="form-control" name="idCiudad" require>
-                    <?php  
-                        include( '../../../Control/conex.php');
-                          # Consultamos a la tabla tipodocu, que es la que tiene los tipos de docuementos en la BD:
-                          $sql = "SELECT * FROM ciudad";
-                          $eje = $conexion->query($sql);
-                          # Mostramos a través de un ciclo todas las opciones válidas:
-                          while($row1 = $eje->fetch_row()){
-                            echo '<option value="'.$row1[0].'">'.$row1[1].'</option>';
-                          }
-                        ?>
-                    </select>
-                </div>
-                <div class="form-group col-md-6">
-                  <label style="color:black;" for="input_fechaNacimiento">Departamento</label>
-                    <select id="inputState" class="form-control" name="idDeparta" require>
-                    <?php  
-                        include( '../../../Control/conex.php');
-                          # Consultamos a la tabla tipodocu, que es la que tiene los tipos de docuementos en la BD:
-                          $sql = "SELECT * FROM departamento";
-                          $eje = $conexion->query($sql);
-                          # Mostramos a través de un ciclo todas las opciones válidas:
-                          while($row1 = $eje->fetch_row()){
-                            echo '<option value="'.$row1[0].'">'.$row1[1].'</option>';
-                          }
-                        ?>
-                    </select>
-                </div>
-              </div>
-
-            <center> <button type="submit" class="btn btn-primary" name="BTnGuardar">Guardar</button> </center>
-
-            </form>
-        </div>
-        
-      </div>
     </div>
-  </div>
-  </div>
+</div>
 
 
 

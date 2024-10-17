@@ -17,10 +17,10 @@ include('Menu.php');
             <div class="table-responsive">
                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                     <thead>
-                    <tr>
+                        <tr>
                             <th>Cód. Mascota</th>
                             <th>Nombre</th>
-                            <th>Foto</th>
+                           
                             <th>Descripción</th>
                             <th>Tipo Animal</th>
                             <th>Raza</th>
@@ -53,9 +53,6 @@ include('Menu.php');
                                 <td><?php echo htmlspecialchars($row[0]); ?></td>
                                 <td><?php echo htmlspecialchars($row[1]); ?></td>
                                 
-                                   
-                                <td><img src="data:image/jpeg;base64,<?php echo base64_encode($row[2]); ?>" width="100"></td>
-                               
                                 <td><?php echo htmlspecialchars($row[3]); ?></td>
                                 <td><?php echo htmlspecialchars($row[4]); ?></td>
                                 <td><?php echo htmlspecialchars($row[5]); ?></td>
@@ -66,10 +63,14 @@ include('Menu.php');
                                 <td><?php echo htmlspecialchars($row[10]); ?></td>
                                 <td><?php echo htmlspecialchars($row[11]); ?></td>
                                 <td>
-                                    <button type="button" class="btn btn-sm btn-primary" onclick="location.href='modificar.php?id=<?php echo $row[0]; ?>'"><img src="img/Modificar.png" width="25px"></button>
+                                    <button type="button" class="btn btn-sm btn-primary" onclick="location.href='modificar.php?id=<?php echo $row[0]; ?>'">
+                                        <img src="img/Modificar.png" width="25px">
+                                    </button>
                                 </td>
                                 <td>
-                                    <button type="button" class="btn btn-sm btn-danger" onclick="location.href='../../../Control/borrarMascotas.php?id=<?php echo $row[0]; ?>'"><img src="img/Eliminar.png" width="25px"></button>
+                                    <button type="button" class="btn btn-sm btn-danger" onclick="location.href='../../../Control/borrarMascotas.php?id=<?php echo $row[0]; ?>'">
+                                        <img src="img/Eliminar.png" width="25px">
+                                    </button>
                                 </td>
                             </tr>
                         <?php 

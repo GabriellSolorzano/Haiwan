@@ -23,6 +23,7 @@ include('Menu.php');
                                             <th>Cód. de Publicación</th>
                                             <th>Fundación</th>
                                             <th>Animal</th>
+                                            
                                             <th>Fecha de la Publicación</th>
                                             <th>Estado de la Publicación</th>
                                             <th>Modificar</th>
@@ -93,7 +94,7 @@ ON publicacionfund.idEstadoPub = estadopub.idEstadoPub");
           </button>
         </div>
         <div class="modal-body">
-            <form action="../../../Control/guardarPublicaFunda.php" method="post">
+            <form action="../../../controlador/crearUsuario.php">
               <div class="form-row">
                 <div class="form-group col-md-6">
                   <label style="color:black;" for="input_tipoDocumento">Fundación</label>

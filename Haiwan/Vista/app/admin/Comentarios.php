@@ -91,11 +91,11 @@ ON comentarios.idPublica = publicacionusua.idPublicaUsua");
           </button>
         </div>
         <div class="modal-body">
-            <form action="../../../Control/guardarComentarios.php" method="post">
+            <form action="../../../controlador/crearUsuario.php">
               <div class="form-row">
                 <div class="form-group col-md-6">
                   <label style="color:black;" for="input_nombre">Usuario:</label>
-                  <select id="inputState" class="form-control" name="idUsuario">
+                  <select id="inputState" class="form-control" name="idUsuario ">
                     <?php  
                         include( '../../../Controlador/conex.php');
                           # Consultamos a la tabla tipodocu, que es la que tiene los tipos de docuementos en la BD:
@@ -118,7 +118,7 @@ ON comentarios.idPublica = publicacionusua.idPublicaUsua");
                           $eje = $conexion->query($sql);
                           # Mostramos a través de un ciclo todas las opciones válidas:
                           while($row1 = $eje->fetch_row()){
-                            echo '<option value="'.$row1[0].'">'.$row1[0].'</option>';
+                            echo '<option value="'.$row1[0].'">'.$row1[4].'</option>';
                           }
                         ?>
                 </select>               
@@ -127,7 +127,7 @@ ON comentarios.idPublica = publicacionusua.idPublicaUsua");
               <div class="form-row">
                 <div class="form-group col-md-12">
                   <label style="color:black;" for="input_documento">Comentario: </label>
-                  <textarea class="form-control" name="Comentario" placeholder="Me gusto..." required></textarea>
+                  <textarea class="form-control" name="Comentario" required>Me gusto...</textarea>
                   </div>
                </div>
                <div class="form-row">

@@ -93,7 +93,7 @@ ON publicacionusua.idEstadoPub = estadopub.idEstadoPub;");
           </button>
         </div>
         <div class="modal-body">
-            <form action="../../../Control/guardarPublicaUsua.php" method="post">
+            <form action="../../../controlador/crearUsuario.php">
               <div class="form-row">
                 <div class="form-group col-md-6">
                   <label style="color:black;" for="input_nombre">Usuario:</label>
@@ -137,7 +137,7 @@ ON publicacionusua.idEstadoPub = estadopub.idEstadoPub;");
                 </div>
                 <div class="form-group col-md-6">
                   <label style="color:black;" for="input_direccion">Estado Publicación:</label>
-                  <select id="inputState" class="form-control" name="idEstadoPub">
+                  <select id="inputState" class="form-control" name="idEstadoPub ">
                     <?php  
                         include( '../../../Control/conex.php');
                           # Consultamos a la tabla tipodocu, que es la que tiene los tipos de docuementos en la BD:
